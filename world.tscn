@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=3 uid="uid://u03u0v6uuold"]
+
+[ext_resource type="Script" uid="uid://dadb5deeyjlkl" path="res://Assets/Scripts/PlayerController.gd" id="1_pkg7o"]
+[ext_resource type="Texture2D" uid="uid://cp42t5xphblsa" path="res://Assets/Characters/player_0.png" id="4_036b0"]
+[ext_resource type="Material" uid="uid://bvycprxqfdoph" path="res://Assets/Materials/Asphalt.tres" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://dqo87sfe6e6g3" path="res://Assets/Characters/player.glb" id="5_036b0"]
+[ext_resource type="Shader" uid="uid://jybcwocnhirr" path="res://Assets/Visuals/psx.gdshader" id="5_dwbse"]
+[ext_resource type="PackedScene" uid="uid://dj7avjvkrsfnt" path="res://Assets/Buildings/Models/Buildings.glb" id="6_dwbse"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pkg7o"]
+shader = ExtResource("5_dwbse")
+shader_parameter/enabled = true
+shader_parameter/dithering = true
+shader_parameter/colors = 12
+shader_parameter/dither_size = 2
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_aqk2v"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_036b0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwbse"]
+albedo_texture = ExtResource("4_036b0")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tlwt5"]
+radius = 0.348272
+height = 1.7509
+
+[node name="World" type="Node3D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_pkg7o")
+offset_right = 1151.0
+offset_bottom = 650.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+size = Vector2i(1152, 648)
+
+[node name="Ground" type="StaticBody3D" parent="SubViewportContainer/SubViewport"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Ground"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_aqk2v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Ground"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+mesh = SubResource("PlaneMesh_036b0")
+surface_material_override/0 = ExtResource("4_aqk2v")
+
+[node name="Player" parent="SubViewportContainer/SubViewport" instance=ExtResource("5_036b0")]
+transform = Transform3D(0.998849, 0, 0.0479607, 0, 1, 0, -0.0479607, 0, 0.998849, 0, 0.622708, 0)
+script = ExtResource("1_pkg7o")
+
+[node name="Node" parent="SubViewportContainer/SubViewport/Player" index="0"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="rig" parent="SubViewportContainer/SubViewport/Player/Node" index="0"]
+transform = Transform3D(0.997766, 0.025805, 0.0616136, -0.0654759, 0.195127, 0.97859, 0.01323, -0.980438, 0.196381, -0.0597156, -0.0803708, -0.153892)
+
+[node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Player/Node/rig" index="0"]
+transform = Transform3D(1, 7.45058e-09, -9.31323e-10, 0, 1, 7.45058e-09, 0, 0, 1, 0, 0, 0)
+bones/1/rotation = Quaternion(-0.0516063, 0.00742852, 0.0133963, 0.99855)
+bones/2/rotation = Quaternion(0.0252286, 0.00588476, 0.0414722, 0.998804)
+bones/3/rotation = Quaternion(-0.513441, -0.422186, -0.511313, 0.544698)
+bones/4/rotation = Quaternion(-0.331451, 0.695827, -0.401838, 0.494461)
+bones/5/rotation = Quaternion(0.707031, 0.0704353, 0.0103579, 0.70359)
+bones/6/rotation = Quaternion(0.0264785, -0.0906579, 0.102609, 0.990228)
+bones/7/rotation = Quaternion(0.273554, 0.931574, 0.19842, -0.134042)
+bones/10/rotation = Quaternion(0.246506, -0.00343305, -0.00172793, 0.969134)
+bones/12/rotation = Quaternion(-0.512827, 0.422684, 0.51238, 0.543887)
+bones/13/rotation = Quaternion(-0.0692786, -0.558016, 0.52028, 0.64275)
+bones/14/rotation = Quaternion(0.708709, -0.0702677, -0.0103823, 0.701916)
+bones/15/rotation = Quaternion(0.106293, 0.0653279, -0.10309, 0.986816)
+bones/16/rotation = Quaternion(-0.212524, 0.930485, 0.205922, 0.215933)
+bones/19/rotation = Quaternion(0.923398, 0.0702382, 0.0622253, 0.372196)
+bones/20/rotation = Quaternion(0.444727, -0.0099965, -0.0293368, 0.89513)
+bones/22/rotation = Quaternion(0.903549, 0.0480328, -0.0580228, 0.421813)
+bones/23/rotation = Quaternion(0.903478, -0.0149898, -0.0345639, 0.426977)
+
+[node name="male_player" parent="SubViewportContainer/SubViewport/Player/Node/rig/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dwbse")
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport/Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.041081, 1.47214, -0.459868)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0015966, 0.858132, -0.0332513)
+shape = SubResource("CapsuleShape3D_tlwt5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.26389, 0.964553, 0, -0.964553, 0.26389, 0, 6.64722, 0)
+light_color = Color(0.999999, 0.99581, 0.75902, 1)
+shadow_enabled = true
+
+[node name="Buildings" parent="." instance=ExtResource("6_dwbse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9464, 0, 1.55038)
+
+[editable path="SubViewportContainer/SubViewport/Player"]
+[editable path="Buildings"]

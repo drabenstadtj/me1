@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://coqllyqorox8m"]
+
+[ext_resource type="Shader" uid="uid://jybcwocnhirr" path="res://Assets/Visuals/psx.gdshader" id="1_6vimx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u4sdo"]
+shader = ExtResource("1_6vimx")
+shader_parameter/enabled = true
+shader_parameter/dithering = true
+shader_parameter/colors = 12
+shader_parameter/dither_size = 1
+
+[node name="PSX" type="Node3D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_u4sdo")
+offset_right = 1152.0
+offset_bottom = 647.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
