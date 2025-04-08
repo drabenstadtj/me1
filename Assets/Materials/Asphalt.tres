@@ -1,8 +1,8 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bvycprxqfdoph"]
 
-[ext_resource type="Texture2D" uid="uid://clla2ursww2e2" path="res://Assets/Materials/Asphalt025C_1K-JPG/Asphalt025C_1K-JPG_Color.jpg" id="1_2cga2"]
+[ext_resource type="Texture2D" uid="uid://dkltts3k0yv73" path="res://Assets/World/grass.png" id="1_2cga2"]
 
 [resource]
-albedo_color = Color(0.953222, 0.963316, 0.95895, 1)
+albedo_color = Color(0.855496, 0.778159, 3.85046e-07, 1)
 albedo_texture = ExtResource("1_2cga2")
-uv1_scale = Vector3(8, 8, 8)
+uv1_scale = Vector3(50, 50, 50)
