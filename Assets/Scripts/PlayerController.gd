@@ -12,7 +12,7 @@ const BOB_SPEED = 15.0
 const BOB_AMOUNT = 0.05
 
 @onready var camera = $Camera3D
-@onready var footstep_player = $AudioStreamPlayer
+@onready var footstep_player = $FootstepPlayer
 
 var pitch = 0.0
 var bob_timer = 0.0
@@ -62,9 +62,6 @@ func _physics_process(delta):
 		var bob_offset = sin(bob_timer) * BOB_AMOUNT
 
 		var current_sign = sign(sin(bob_timer))
-		if last_bob_sign > 0 and current_sign <= 0:
-			footstep_player.stop()
-			footstep_player.play()
 			
 		last_bob_sign = current_sign
 
