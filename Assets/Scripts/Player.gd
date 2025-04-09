@@ -40,7 +40,7 @@ func _ready():
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
-		pitch = clamp(pitch - event.relative.y * MOUSE_SENSITIVITY, deg_to_rad(-89), deg_to_rad(89))
+		pitch = clamp(pitch - event.relative.y * MOUSE_SENSITIVITY, deg_to_rad(-60), deg_to_rad(60))
 		camera.rotation.x = pitch
 
 	if event.is_action_pressed("ui_cancel"):

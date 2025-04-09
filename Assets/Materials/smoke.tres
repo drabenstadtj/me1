@@ -1,0 +1,7 @@
+[gd_resource type="QuadMesh" load_steps=2 format=3 uid="uid://cajbh0h7vq4g8"]
+
+[ext_resource type="Material" uid="uid://cl8tts4hhodft" path="res://Assets/Materials/smoke_mat.tres" id="1_443mt"]
+
+[resource]
+material = ExtResource("1_443mt")
+size = Vector2(0.2, 0.2)

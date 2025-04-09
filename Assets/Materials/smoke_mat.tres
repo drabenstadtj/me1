@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cl8tts4hhodft"]
+
+[ext_resource type="Texture2D" uid="uid://b5hyi3jse0l1g" path="res://Assets/Materials/smoke.png" id="1_tpwge"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_tpwge")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false

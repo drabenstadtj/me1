@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bsqai35rv41c6"
-path="res://.godot/imported/low_poly_psx_street_lamp.glb-eb13428aa47aa004b2d25dbeafaf2bd4.scn"
+uid="uid://oogxa0hykawx"
+path="res://.godot/imported/cig.glb-2844a1bbb3f638754ad5390fa809877d.scn"
 
 [deps]
 
-source_file="res://Assets/World/low_poly_psx_street_lamp.glb"
-dest_files=["res://.godot/imported/low_poly_psx_street_lamp.glb-eb13428aa47aa004b2d25dbeafaf2bd4.scn"]
+source_file="res://Assets/Characters/cig.glb"
+dest_files=["res://.godot/imported/cig.glb-2844a1bbb3f638754ad5390fa809877d.scn"]
 
 [params]
 
