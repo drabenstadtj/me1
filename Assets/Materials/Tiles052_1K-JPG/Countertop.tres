@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bhwiyr5a5kjt2"]
+
+[ext_resource type="Texture2D" uid="uid://c5f5vvlt3qebn" path="res://Assets/Materials/Tiles052_1K-JPG/Tiles052_1K-JPG_Color.jpg" id="1_bjsh0"]
+
+[resource]
+albedo_texture = ExtResource("1_bjsh0")
+uv1_scale = Vector3(10, 1, 10)

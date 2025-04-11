@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.1 commit date:2023-11-16, commit time:16:40, hash:d0dd92834a08</authoring_tool>
+    </contributor>
+    <created>2023-11-28T13:09:35</created>
+    <modified>2023-11-28T13:09:35</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Door_02-effect">
+      <profile_COMMON>
+        <newparam sid="Door_02_jpg-surface">
+          <surface type="2D">
+            <init_from>Door_02_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Door_02_jpg-sampler">
+          <sampler2D>
+            <source>Door_02_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Door_02_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Door_02_jpg" name="Door_02_jpg">
+      <init_from>Door_02.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Door_02-material" name="Door_02">
+      <instance_effect url="#Door_02-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Door_02-mesh" name="Door_02">
+      <mesh>
+        <source id="Door_02-mesh-positions">
+          <float_array id="Door_02-mesh-positions-array" count="24">-0.04114633 -1.037261 -1.422634 -0.04114633 -1.19209e-5 -1.422634 -0.04114633 -1.037261 1.030425 -0.04114633 -1.19209e-5 1.030425 0.04022711 -1.037261 -1.422634 0.04022711 -1.19209e-5 -1.422634 0.04022711 -1.037261 1.030425 0.04022711 -1.19209e-5 1.030425</float_array>
+          <technique_common>
+            <accessor source="#Door_02-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Door_02-mesh-normals">
+          <float_array id="Door_02-mesh-normals-array" count="27">-1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 -1 0 0 0 1 0 1 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Door_02-mesh-normals-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Door_02-mesh-map-0">
+          <float_array id="Door_02-mesh-map-0-array" count="72">0.9700551 0.005193054 0.02313375 0.994807 0.9700551 0.994807 0.02313375 0.005193054 0.9700551 0.994807 0.02313375 0.9948071 0.4649494 0.7056993 0.5350506 0.29132 0.4649494 0.29132 0.4649494 0.005193054 0.5350506 0.994807 0.4649494 0.994807 0.4649494 0.29132 0.5350506 0.7056993 0.4649494 0.7056994 0.4649494 0.994807 0.5350506 0.005193054 0.4649494 0.005193054 0.9700551 0.005193054 0.02313369 0.005193054 0.02313375 0.994807 0.02313375 0.005193054 0.970055 0.005193054 0.9700551 0.994807 0.4649494 0.7056993 0.5350506 0.7056994 0.5350506 0.29132 0.4649494 0.005193054 0.5350506 0.005193054 0.5350506 0.994807 0.4649494 0.29132 0.5350506 0.29132 0.5350506 0.7056993 0.4649494 0.994807 0.5350506 0.994807 0.5350506 0.005193054</float_array>
+          <technique_common>
+            <accessor source="#Door_02-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Door_02-mesh-vertices">
+          <input semantic="POSITION" source="#Door_02-mesh-positions"/>
+        </vertices>
+        <triangles material="Door_02-material" count="12">
+          <input semantic="VERTEX" source="#Door_02-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Door_02-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Door_02-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 3 0 2 4 1 3 7 2 4 6 3 5 1 4 6 4 4 7 0 4 8 0 5 9 6 5 10 2 5 11 2 6 12 7 6 13 3 6 14 3 7 15 5 7 16 1 7 17 1 0 18 0 0 19 2 0 20 4 1 21 5 8 22 7 2 23 1 4 24 5 4 25 4 4 26 0 5 27 4 5 28 6 5 29 2 6 30 6 6 31 7 6 32 3 7 33 7 7 34 5 7 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Door_02" name="Door_02" type="NODE">
+        <matrix sid="transform">-4.37114e-8 -1 0 0 1 -4.37114e-8 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Door_02-mesh" name="Door_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Door_02-material" target="#Door_02-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

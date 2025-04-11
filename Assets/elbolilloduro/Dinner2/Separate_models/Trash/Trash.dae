@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.1 commit date:2023-11-16, commit time:16:40, hash:d0dd92834a08</authoring_tool>
+    </contributor>
+    <created>2023-11-28T13:13:22</created>
+    <modified>2023-11-28T13:13:22</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Trash-effect">
+      <profile_COMMON>
+        <newparam sid="Trash_png-surface">
+          <surface type="2D">
+            <init_from>Trash_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Trash_png-sampler">
+          <sampler2D>
+            <source>Trash_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Trash_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Trash_png" name="Trash_png">
+      <init_from>Trash.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Trash-material" name="Trash">
+      <instance_effect url="#Trash-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Trash-mesh" name="Trash">
+      <mesh>
+        <source id="Trash-mesh-positions">
+          <float_array id="Trash-mesh-positions-array" count="42">-1 -1 0 1 -1 0 -1 1 0 1 1 0 -0.361305 -0.5420975 0 0.3613051 -0.5420975 0 -0.5846038 0.1451456 0 0.5846038 0.1451457 0 0 0.5698852 0 -0.3314332 0.07969772 0.1269463 -0.1964827 -0.3060204 0.1493073 0.2110639 -0.2955381 0.1851679 0.3279911 0.09665846 0.1849699 -0.007290601 0.328567 0.148987</float_array>
+          <technique_common>
+            <accessor source="#Trash-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Trash-mesh-normals">
+          <float_array id="Trash-mesh-normals-array" count="36">0 0 -1 0.1809983 0.054448 0.9819751 0.1946499 -0.2919153 0.9364277 0.09329104 -0.1386281 0.9859408 0 0 1 -0.133127 0.04327565 0.9901537 -0.007032454 0.1699464 0.9854282 -0.08432662 -0.1171028 0.9895333 0.337288 0.1635002 0.9270947 -0.09116297 0.3755684 0.9223003 -0.3196449 0.1312001 0.9384103 -0.2171629 -0.2569832 0.9417005</float_array>
+          <technique_common>
+            <accessor source="#Trash-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Trash-mesh-map-0">
+          <float_array id="Trash-mesh-map-0-array" count="144">0.05164837 1 0.9483516 0 0.05164837 0 0.7621081 0.5725728 0.594631 0.352231 0.6619918 0.2289512 0.9483516 0 0.7621081 0.5725728 0.6619918 0.2289512 0.05164837 0 0.2378919 0.5725728 0.05164837 1 0.9483516 1 0.05164837 1 0.5 0.7849426 0.9483516 0 0.3380083 0.2289512 0.05164837 0 0.6470553 0.5483293 0.4959843 0.6654299 0.3455566 0.5377311 0.2378919 0.5725728 0.4119067 0.3457264 0.3455566 0.5377311 0.5 0.7849426 0.3455566 0.5377311 0.4959843 0.6654299 0.6619918 0.2289512 0.4119067 0.3457264 0.3380083 0.2289512 0.5 0.7849426 0.6470553 0.5483293 0.7621081 0.5725728 0.05164837 1 0.9483516 1 0.9483516 0 0.7621081 0.5725728 0.6470553 0.5483293 0.594631 0.352231 0.9483516 0 0.9483516 1 0.7621081 0.5725728 0.05164837 0 0.3380083 0.2289512 0.2378919 0.5725728 0.05164837 1 0.2378919 0.5725728 0.5 0.7849426 0.5 0.7849426 0.7621081 0.5725728 0.9483516 1 0.9483516 0 0.6619918 0.2289512 0.3380083 0.2289512 0.3455566 0.5377311 0.4119067 0.3457264 0.594631 0.352231 0.594631 0.352231 0.6470553 0.5483293 0.3455566 0.5377311 0.2378919 0.5725728 0.3380083 0.2289512 0.4119067 0.3457264 0.5 0.7849426 0.2378919 0.5725728 0.3455566 0.5377311 0.6619918 0.2289512 0.594631 0.352231 0.4119067 0.3457264 0.5 0.7849426 0.4959843 0.6654299 0.6470553 0.5483293</float_array>
+          <technique_common>
+            <accessor source="#Trash-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Trash-mesh-vertices">
+          <input semantic="POSITION" source="#Trash-mesh-positions"/>
+        </vertices>
+        <triangles material="Trash-material" count="24">
+          <input semantic="VERTEX" source="#Trash-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Trash-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Trash-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 1 0 1 0 0 2 7 1 3 11 2 4 5 3 5 1 4 6 7 1 7 5 3 8 0 4 9 6 5 10 2 4 11 3 4 12 2 4 13 8 6 14 1 4 15 4 7 16 0 4 17 12 8 18 13 9 19 9 10 20 6 5 21 10 11 22 9 10 23 8 6 24 9 10 25 13 9 26 5 3 27 10 11 28 4 7 29 8 6 30 12 8 31 7 1 32 2 0 33 3 0 34 1 0 35 7 1 36 12 8 37 11 2 38 1 4 39 3 4 40 7 1 41 0 4 42 4 7 43 6 5 44 2 4 45 6 5 46 8 6 47 8 6 48 7 1 49 3 4 50 1 4 51 5 3 52 4 7 53 9 10 54 10 11 55 11 2 56 11 2 57 12 8 58 9 10 59 6 5 60 4 7 61 10 11 62 8 6 63 6 5 64 9 10 65 5 3 66 11 2 67 10 11 68 8 6 69 13 9 70 12 8 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Trash" name="Trash" type="NODE">
+        <matrix sid="transform">-1.849471 6.02634e-7 0 0 -6.02634e-7 -1.849471 0 0 0 0 1.849471 0 0 0 0 1</matrix>
+        <instance_geometry url="#Trash-mesh" name="Trash">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Trash-material" target="#Trash-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

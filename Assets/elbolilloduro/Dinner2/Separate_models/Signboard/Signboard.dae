@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.1 commit date:2023-11-16, commit time:16:40, hash:d0dd92834a08</authoring_tool>
+    </contributor>
+    <created>2023-11-28T13:28:15</created>
+    <modified>2023-11-28T13:28:15</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Signboards-effect">
+      <profile_COMMON>
+        <newparam sid="Signboards_png-surface">
+          <surface type="2D">
+            <init_from>Signboards_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Signboards_png-sampler">
+          <sampler2D>
+            <source>Signboards_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Signboards_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Signboards_png" name="Signboards_png">
+      <init_from>Signboards.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Signboards-material" name="Signboards">
+      <instance_effect url="#Signboards-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Signboard_16-mesh" name="Signboard_16">
+      <mesh>
+        <source id="Signboard_16-mesh-positions">
+          <float_array id="Signboard_16-mesh-positions-array" count="12">-0.3278821 -0.08776944 0 0.3278821 -0.08776944 0 -0.3278821 0.08776944 0 0.3278821 0.08776944 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_16-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_16-mesh-normals">
+          <float_array id="Signboard_16-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_16-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_16-mesh-map-0">
+          <float_array id="Signboard_16-mesh-map-0-array" count="12">0.9553834 0.009156644 0.6275005 0.09692561 0.6275007 0.009156227 0.9553834 0.009156644 0.9553833 0.09692609 0.6275005 0.09692561</float_array>
+          <technique_common>
+            <accessor source="#Signboard_16-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_16-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_16-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_16-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_16-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_16-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_15-mesh" name="Signboard_15">
+      <mesh>
+        <source id="Signboard_15-mesh-positions">
+          <float_array id="Signboard_15-mesh-positions-array" count="12">-0.09619885 -0.1995074 0 0.09619885 -0.1995074 0 -0.09619885 0.1995074 0 0.09619885 0.1995074 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_15-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_15-mesh-normals">
+          <float_array id="Signboard_15-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_15-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_15-mesh-map-0">
+          <float_array id="Signboard_15-mesh-map-0-array" count="12">0.9482657 0.1098149 0.8520664 0.3093221 0.8520668 0.1098148 0.9482657 0.1098149 0.9482654 0.3093222 0.8520664 0.3093221</float_array>
+          <technique_common>
+            <accessor source="#Signboard_15-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_15-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_15-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_15-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_15-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_15-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_14-mesh" name="Signboard_14">
+      <mesh>
+        <source id="Signboard_14-mesh-positions">
+          <float_array id="Signboard_14-mesh-positions-array" count="12">-0.09619885 -0.1995074 0 0.09619885 -0.1995074 0 -0.09619885 0.1995074 0 0.09619885 0.1995074 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_14-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_14-mesh-normals">
+          <float_array id="Signboard_14-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_14-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_14-mesh-map-0">
+          <float_array id="Signboard_14-mesh-map-0-array" count="12">0.8402817 0.1098147 0.7440823 0.309322 0.7440827 0.1098147 0.8402817 0.1098147 0.8402813 0.3093221 0.7440823 0.309322</float_array>
+          <technique_common>
+            <accessor source="#Signboard_14-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_14-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_14-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_14-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_14-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_14-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_13-mesh" name="Signboard_13">
+      <mesh>
+        <source id="Signboard_13-mesh-positions">
+          <float_array id="Signboard_13-mesh-positions-array" count="12">-0.09619885 -0.2006995 0 0.09619885 -0.2006995 0 -0.09619885 0.2006995 0 0.09619885 0.2006995 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_13-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_13-mesh-normals">
+          <float_array id="Signboard_13-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_13-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_13-mesh-map-0">
+          <float_array id="Signboard_13-mesh-map-0-array" count="12">0.7315398 0.1098146 0.6353404 0.3105139 0.6353407 0.1098145 0.7315398 0.1098146 0.7315394 0.310514 0.6353404 0.3105139</float_array>
+          <technique_common>
+            <accessor source="#Signboard_13-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_13-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_13-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_13-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_13-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_13-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_12-mesh" name="Signboard_12">
+      <mesh>
+        <source id="Signboard_12-mesh-positions">
+          <float_array id="Signboard_12-mesh-positions-array" count="12">-0.154866 -0.1507139 0 0.154866 -0.1507139 0 -0.154866 0.1507139 0 0.154866 0.1507139 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_12-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_12-mesh-normals">
+          <float_array id="Signboard_12-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_12-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_12-mesh-map-0">
+          <float_array id="Signboard_12-mesh-map-0-array" count="12">0.6224094 0.1743323 0.4675428 0.325046 0.467543 0.1743321 0.6224094 0.1743323 0.6224091 0.3250461 0.4675428 0.325046</float_array>
+          <technique_common>
+            <accessor source="#Signboard_12-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_12-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_12-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_12-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_12-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_12-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_11-mesh" name="Signboard_11">
+      <mesh>
+        <source id="Signboard_11-mesh-positions">
+          <float_array id="Signboard_11-mesh-positions-array" count="12">-0.1992666 -0.1465799 0 0.1992666 -0.1465799 0 -0.1992666 0.1465799 0 0.1992666 0.1465799 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_11-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_11-mesh-normals">
+          <float_array id="Signboard_11-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_11-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_11-mesh-map-0">
+          <float_array id="Signboard_11-mesh-map-0-array" count="12">0.6144703 0.01295053 0.4152033 0.1595302 0.4152035 0.0129503 0.6144703 0.01295053 0.6144701 0.1595305 0.4152033 0.1595302</float_array>
+          <technique_common>
+            <accessor source="#Signboard_11-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_11-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_11-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_11-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_11-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_11-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_10-mesh" name="Signboard_10">
+      <mesh>
+        <source id="Signboard_10-mesh-positions">
+          <float_array id="Signboard_10-mesh-positions-array" count="12">-0.1448099 -0.1395475 0 0.1448099 -0.1395475 0 -0.1448099 0.1395475 0 0.1448099 0.1395475 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_10-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_10-mesh-normals">
+          <float_array id="Signboard_10-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_10-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_10-mesh-map-0">
+          <float_array id="Signboard_10-mesh-map-0-array" count="12">0.4008541 0.02031266 0.2560439 0.15986 0.2560441 0.02031248 0.4008541 0.02031266 0.4008539 0.1598602 0.2560439 0.15986</float_array>
+          <technique_common>
+            <accessor source="#Signboard_10-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_10-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_10-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_10-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_10-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_10-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_09-mesh" name="Signboard_09">
+      <mesh>
+        <source id="Signboard_09-mesh-positions">
+          <float_array id="Signboard_09-mesh-positions-array" count="12">-0.2040051 -0.1411841 0 0.2040051 -0.1411841 0 -0.2040051 0.1411841 0 0.2040051 0.1411841 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_09-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_09-mesh-normals">
+          <float_array id="Signboard_09-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_09-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_09-mesh-map-0">
+          <float_array id="Signboard_09-mesh-map-0-array" count="12">0.4582182 0.1741366 0.2542127 0.3153206 0.254213 0.1741365 0.4582182 0.1741366 0.458218 0.3153207 0.2542127 0.3153206</float_array>
+          <technique_common>
+            <accessor source="#Signboard_09-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_09-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_09-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_09-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_09-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_09-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_08-mesh" name="Signboard_08">
+      <mesh>
+        <source id="Signboard_08-mesh-positions">
+          <float_array id="Signboard_08-mesh-positions-array" count="12">-0.2362257 -0.2914336 0 0.2362257 -0.2914336 0 -0.2362257 0.2914332 0 0.2362257 0.2914332 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_08-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_08-mesh-normals">
+          <float_array id="Signboard_08-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_08-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_08-mesh-map-0">
+          <float_array id="Signboard_08-mesh-map-0-array" count="12">0.2443327 0.02513372 0.00810641 0.3165668 0.008106708 0.02513355 0.2443327 0.02513372 0.2443324 0.3165671 0.00810641 0.3165668</float_array>
+          <technique_common>
+            <accessor source="#Signboard_08-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_08-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_08-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_08-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_08-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_08-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_07-mesh" name="Signboard_07">
+      <mesh>
+        <source id="Signboard_07-mesh-positions">
+          <float_array id="Signboard_07-mesh-positions-array" count="12">-0.2358882 -0.3254364 0 0.2358882 -0.3254364 0 -0.2358882 0.3254364 0 0.2358882 0.3254364 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_07-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_07-mesh-normals">
+          <float_array id="Signboard_07-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_07-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_07-mesh-map-0">
+          <float_array id="Signboard_07-mesh-map-0-array" count="12">0.9841034 0.3223495 0.7482146 0.6477855 0.7482149 0.3223492 0.9841034 0.3223495 0.984103 0.6477857 0.7482146 0.6477855</float_array>
+          <technique_common>
+            <accessor source="#Signboard_07-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_07-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_07-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_07-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_07-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_07-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_06-mesh" name="Signboard_06">
+      <mesh>
+        <source id="Signboard_06-mesh-positions">
+          <float_array id="Signboard_06-mesh-positions-array" count="12">-0.2379327 -0.3155158 0 0.2379327 -0.3155158 0 -0.2379327 0.3155158 0 0.2379327 0.3155158 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_06-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_06-mesh-normals">
+          <float_array id="Signboard_06-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_06-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_06-mesh-map-0">
+          <float_array id="Signboard_06-mesh-map-0-array" count="12">0.7398599 0.3332037 0.5019266 0.6487192 0.501927 0.3332035 0.7398599 0.3332037 0.7398596 0.6487194 0.5019266 0.6487192</float_array>
+          <technique_common>
+            <accessor source="#Signboard_06-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_06-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_06-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_06-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_06-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_06-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_05-mesh" name="Signboard_05">
+      <mesh>
+        <source id="Signboard_05-mesh-positions">
+          <float_array id="Signboard_05-mesh-positions-array" count="12">-0.2392042 -0.2947091 0 0.2392041 -0.2947091 0 -0.2392042 0.2947091 0 0.2392041 0.2947091 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_05-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_05-mesh-normals">
+          <float_array id="Signboard_05-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_05-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_05-mesh-map-0">
+          <float_array id="Signboard_05-mesh-map-0-array" count="12">0.4895168 0.3364188 0.2503121 0.6311277 0.2503125 0.3364186 0.4895168 0.3364188 0.4895165 0.6311279 0.2503121 0.6311277</float_array>
+          <technique_common>
+            <accessor source="#Signboard_05-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_05-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_05-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_05-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_05-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_05-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_04-mesh" name="Signboard_04">
+      <mesh>
+        <source id="Signboard_04-mesh-positions">
+          <float_array id="Signboard_04-mesh-positions-array" count="12">-0.2327687 -0.32748 0 0.2327687 -0.32748 0 -0.2327687 0.32748 0 0.2327687 0.32748 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_04-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_04-mesh-normals">
+          <float_array id="Signboard_04-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_04-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_04-mesh-map-0">
+          <float_array id="Signboard_04-mesh-map-0-array" count="12">0.2375653 0.3303812 0.004795968 0.6578608 0.004796326 0.3303809 0.2375653 0.3303812 0.237565 0.657861 0.004795968 0.6578608</float_array>
+          <technique_common>
+            <accessor source="#Signboard_04-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_04-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_04-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_04-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_04-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_04-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_03-mesh" name="Signboard_03">
+      <mesh>
+        <source id="Signboard_03-mesh-positions">
+          <float_array id="Signboard_03-mesh-positions-array" count="12">-0.2355431 -0.3243082 0 0.2355431 -0.3243082 0 -0.2355431 0.3243082 0 0.2355431 0.3243082 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_03-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_03-mesh-normals">
+          <float_array id="Signboard_03-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_03-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_03-mesh-map-0">
+          <float_array id="Signboard_03-mesh-map-0-array" count="12">0.9740836 0.6662843 0.7385401 0.9905922 0.7385402 0.6662841 0.9740836 0.6662843 0.9740834 0.9905924 0.7385401 0.9905922</float_array>
+          <technique_common>
+            <accessor source="#Signboard_03-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_03-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_03-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_03-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_03-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_03-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_02-mesh" name="Signboard_02">
+      <mesh>
+        <source id="Signboard_02-mesh-positions">
+          <float_array id="Signboard_02-mesh-positions-array" count="12">-0.2355431 -0.2887684 0 0.2355431 -0.2887684 0 -0.2355431 0.2887684 0 0.2355431 0.2887684 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_02-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_02-mesh-normals">
+          <float_array id="Signboard_02-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_02-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_02-mesh-map-0">
+          <float_array id="Signboard_02-mesh-map-0-array" count="12">0.7283675 0.6874703 0.4928241 0.9762385 0.4928241 0.6874701 0.7283675 0.6874703 0.7283674 0.9762387 0.4928241 0.9762385</float_array>
+          <technique_common>
+            <accessor source="#Signboard_02-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_02-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_02-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_02-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_02-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_02-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard_01-mesh" name="Signboard_01">
+      <mesh>
+        <source id="Signboard_01-mesh-positions">
+          <float_array id="Signboard_01-mesh-positions-array" count="12">-0.2349462 -0.3225297 0 0.2349461 -0.3225297 0 -0.2349462 0.3225297 0 0.2349461 0.3225297 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard_01-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_01-mesh-normals">
+          <float_array id="Signboard_01-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard_01-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard_01-mesh-map-0">
+          <float_array id="Signboard_01-mesh-map-0-array" count="12">0.4851335 0.6699303 0.2501872 0.9924599 0.2501872 0.6699302 0.4851335 0.6699303 0.4851335 0.99246 0.2501872 0.9924599</float_array>
+          <technique_common>
+            <accessor source="#Signboard_01-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard_01-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard_01-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard_01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard_01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard_01-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Signboard-mesh" name="Signboard">
+      <mesh>
+        <source id="Signboard-mesh-positions">
+          <float_array id="Signboard-mesh-positions-array" count="12">-0.2371395 -0.3225298 0 0.2371395 -0.3225298 0 -0.2371395 0.3225297 0 0.2371395 0.3225297 0</float_array>
+          <technique_common>
+            <accessor source="#Signboard-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard-mesh-normals">
+          <float_array id="Signboard-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Signboard-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Signboard-mesh-map-0">
+          <float_array id="Signboard-mesh-map-0-array" count="12">0.2399824 0.6699302 0.002842903 0.99246 0.002842903 0.6699302 0.2399824 0.6699302 0.2399824 0.99246 0.002842903 0.99246</float_array>
+          <technique_common>
+            <accessor source="#Signboard-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Signboard-mesh-vertices">
+          <input semantic="POSITION" source="#Signboard-mesh-positions"/>
+        </vertices>
+        <triangles material="Signboards-material" count="2">
+          <input semantic="VERTEX" source="#Signboard-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Signboard-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Signboard-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Signboard_16" name="Signboard_16" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.5511208 0 1 -4.37114e-8 -0.3312361 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_16-mesh" name="Signboard_16">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_15" name="Signboard_15" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.7685738 0 1 -4.37114e-8 -0.01742575 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_15-mesh" name="Signboard_15">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_14" name="Signboard_14" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.5526009 0 1 -4.37114e-8 -0.01742575 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_14-mesh" name="Signboard_14">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_13" name="Signboard_13" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.3351173 0 1 -4.37114e-8 -0.01623365 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_13-mesh" name="Signboard_13">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_12" name="Signboard_12" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.01579668 0 1 -4.37114e-8 0.06281641 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_12-mesh" name="Signboard_12">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_11" name="Signboard_11" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.08361433 0 1 -4.37114e-8 -0.2634184 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_11-mesh" name="Signboard_11">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_10" name="Signboard_10" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.4563866 0 1 -4.37114e-8 -0.2557261 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_10-mesh" name="Signboard_10">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_09" name="Signboard_09" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.4008598 0 1 -4.37114e-8 0.05355814 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_09-mesh" name="Signboard_09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_08" name="Signboard_08" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.8608513 0 1 -4.37114e-8 -0.09419844 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_08-mesh" name="Signboard_08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_07" name="Signboard_07" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.6190376 0 1 -4.37114e-8 0.5342348 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_07-mesh" name="Signboard_07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_06" name="Signboard_06" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.1284981 0 1 -4.37114e-8 0.5460241 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_06-mesh" name="Signboard_06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_05" name="Signboard_05" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.373455 0 1 -4.37114e-8 0.5316484 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_05-mesh" name="Signboard_05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_04" name="Signboard_04" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.8709221 0 1 -4.37114e-8 0.5523431 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_04-mesh" name="Signboard_04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_03" name="Signboard_03" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.5993385 0 1 -4.37114e-8 1.288624 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_03-mesh" name="Signboard_03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_02" name="Signboard_02" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 -0.03387834 0 1 -4.37114e-8 1.295456 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_02-mesh" name="Signboard_02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard_01" name="Signboard_01" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 0.5217552 0 1 -4.37114e-8 1.294138 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard_01-mesh" name="Signboard_01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Signboard" name="Signboard" type="NODE">
+        <matrix sid="transform">4.88762e-7 -4.37114e-8 -1 0.1108578 -1 -2.13645e-14 -4.88762e-7 1.053631 0 1 -4.37114e-8 1.294138 0 0 0 1</matrix>
+        <instance_geometry url="#Signboard-mesh" name="Signboard">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Signboards-material" target="#Signboards-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
