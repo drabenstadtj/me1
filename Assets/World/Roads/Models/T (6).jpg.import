@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0gqowulbr0ee"
 path.s3tc="res://.godot/imported/T (6).jpg-48b9ab01b4b199bae335fdca1eec815e.s3tc.ctex"
+path.etc2="res://.godot/imported/T (6).jpg-48b9ab01b4b199bae335fdca1eec815e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/World/Roads/Models/T (6).jpg"
-dest_files=["res://.godot/imported/T (6).jpg-48b9ab01b4b199bae335fdca1eec815e.s3tc.ctex"]
+dest_files=["res://.godot/imported/T (6).jpg-48b9ab01b4b199bae335fdca1eec815e.s3tc.ctex", "res://.godot/imported/T (6).jpg-48b9ab01b4b199bae335fdca1eec815e.etc2.ctex"]
 
 [params]
 

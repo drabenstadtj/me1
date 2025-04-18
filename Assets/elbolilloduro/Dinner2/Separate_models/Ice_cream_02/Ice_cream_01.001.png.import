@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://crx0lcby4dmf0"
 path.s3tc="res://.godot/imported/Ice_cream_01.001.png-046f7c3ef41e37be0d88a51ddf17591d.s3tc.ctex"
+path.etc2="res://.godot/imported/Ice_cream_01.001.png-046f7c3ef41e37be0d88a51ddf17591d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Ice_cream_02/Ice_cream_01.001.png"
-dest_files=["res://.godot/imported/Ice_cream_01.001.png-046f7c3ef41e37be0d88a51ddf17591d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ice_cream_01.001.png-046f7c3ef41e37be0d88a51ddf17591d.s3tc.ctex", "res://.godot/imported/Ice_cream_01.001.png-046f7c3ef41e37be0d88a51ddf17591d.etc2.ctex"]
 
 [params]
 

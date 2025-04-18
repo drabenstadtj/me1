@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bthy2chim1k43"
-path.s3tc="res://.godot/imported/Ventilation.png-3d4de79a4ed843029b9eff801ff7f932.s3tc.ctex"
+path.s3tc="res://.godot/imported/Ventilation.png-51bc04f8c5fa9b61df6032b88fecf39c.s3tc.ctex"
+path.etc2="res://.godot/imported/Ventilation.png-51bc04f8c5fa9b61df6032b88fecf39c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Ventilation.png"
-dest_files=["res://.godot/imported/Ventilation.png-3d4de79a4ed843029b9eff801ff7f932.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Ventilation.png"
+dest_files=["res://.godot/imported/Ventilation.png-51bc04f8c5fa9b61df6032b88fecf39c.s3tc.ctex", "res://.godot/imported/Ventilation.png-51bc04f8c5fa9b61df6032b88fecf39c.etc2.ctex"]
 
 [params]
 

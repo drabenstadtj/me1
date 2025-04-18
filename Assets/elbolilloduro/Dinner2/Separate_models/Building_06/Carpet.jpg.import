@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgmln24s217up"
 path.s3tc="res://.godot/imported/Carpet.jpg-2892476dc5e94e517dbc6b4e748a001e.s3tc.ctex"
+path.etc2="res://.godot/imported/Carpet.jpg-2892476dc5e94e517dbc6b4e748a001e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Carpet.jpg"
-dest_files=["res://.godot/imported/Carpet.jpg-2892476dc5e94e517dbc6b4e748a001e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Carpet.jpg-2892476dc5e94e517dbc6b4e748a001e.s3tc.ctex", "res://.godot/imported/Carpet.jpg-2892476dc5e94e517dbc6b4e748a001e.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw8pjkio66bh4"
-path.s3tc="res://.godot/imported/POPCORN.png-7416d19818be13a9db4a2e1ab6571ec0.s3tc.ctex"
+path.s3tc="res://.godot/imported/POPCORN.png-a321af9d8d2ba8187a55275bdccfb596.s3tc.ctex"
+path.etc2="res://.godot/imported/POPCORN.png-a321af9d8d2ba8187a55275bdccfb596.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/POPCORN.png"
-dest_files=["res://.godot/imported/POPCORN.png-7416d19818be13a9db4a2e1ab6571ec0.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/POPCORN.png"
+dest_files=["res://.godot/imported/POPCORN.png-a321af9d8d2ba8187a55275bdccfb596.s3tc.ctex", "res://.godot/imported/POPCORN.png-a321af9d8d2ba8187a55275bdccfb596.etc2.ctex"]
 
 [params]
 

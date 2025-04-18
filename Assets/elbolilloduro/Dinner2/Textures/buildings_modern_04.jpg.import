@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq5atq8c2uygn"
-path.s3tc="res://.godot/imported/buildings_modern_04.jpg-538f72beebdf9ffad9adf72c99183e3b.s3tc.ctex"
+path.s3tc="res://.godot/imported/buildings_modern_04.jpg-86c0f28d7d20b6321f96d54c818eff2d.s3tc.ctex"
+path.etc2="res://.godot/imported/buildings_modern_04.jpg-86c0f28d7d20b6321f96d54c818eff2d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/buildings_modern_04.jpg"
-dest_files=["res://.godot/imported/buildings_modern_04.jpg-538f72beebdf9ffad9adf72c99183e3b.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/buildings_modern_04.jpg"
+dest_files=["res://.godot/imported/buildings_modern_04.jpg-86c0f28d7d20b6321f96d54c818eff2d.s3tc.ctex", "res://.godot/imported/buildings_modern_04.jpg-86c0f28d7d20b6321f96d54c818eff2d.etc2.ctex"]
 
 [params]
 

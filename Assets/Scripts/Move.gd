@@ -3,6 +3,7 @@ extends State
 func enter():
 	player.last_bob_sign = 0
 	player.bob_timer = 0.0
+	player.anim_player.play("Walking")
 
 func exit():
 	player.reset_camera_height()

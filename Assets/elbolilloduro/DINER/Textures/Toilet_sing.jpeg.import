@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8oin3p7as3du"
-path.s3tc="res://.godot/imported/Toilet_sing.jpeg-8c6939f1399459116f6e17e20ae58618.s3tc.ctex"
+path.s3tc="res://.godot/imported/Toilet_sing.jpeg-16677bbf71b4ad755b29dd4d6b5328e7.s3tc.ctex"
+path.etc2="res://.godot/imported/Toilet_sing.jpeg-16677bbf71b4ad755b29dd4d6b5328e7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Toilet_sing.jpeg"
-dest_files=["res://.godot/imported/Toilet_sing.jpeg-8c6939f1399459116f6e17e20ae58618.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Toilet_sing.jpeg"
+dest_files=["res://.godot/imported/Toilet_sing.jpeg-16677bbf71b4ad755b29dd4d6b5328e7.s3tc.ctex", "res://.godot/imported/Toilet_sing.jpeg-16677bbf71b4ad755b29dd4d6b5328e7.etc2.ctex"]
 
 [params]
 

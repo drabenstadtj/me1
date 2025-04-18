@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb6i36hpn2mx2"
-path.s3tc="res://.godot/imported/Brick.jpg-1e316c0882123ffa1af3a455c160e3d8.s3tc.ctex"
+path.s3tc="res://.godot/imported/Brick.jpg-9526ca9757ca2cc69a73f6ea26ad5dd4.s3tc.ctex"
+path.etc2="res://.godot/imported/Brick.jpg-9526ca9757ca2cc69a73f6ea26ad5dd4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Brick.jpg"
-dest_files=["res://.godot/imported/Brick.jpg-1e316c0882123ffa1af3a455c160e3d8.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Brick.jpg"
+dest_files=["res://.godot/imported/Brick.jpg-9526ca9757ca2cc69a73f6ea26ad5dd4.s3tc.ctex", "res://.godot/imported/Brick.jpg-9526ca9757ca2cc69a73f6ea26ad5dd4.etc2.ctex"]
 
 [params]
 

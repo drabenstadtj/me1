@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcmvp4si7iffq"
-path.s3tc="res://.godot/imported/Soda.png-26b38513abcd35ff245ff7173b832cab.s3tc.ctex"
+path.s3tc="res://.godot/imported/Soda.png-2104b05e1e7754d4da5c74330a8a8014.s3tc.ctex"
+path.etc2="res://.godot/imported/Soda.png-2104b05e1e7754d4da5c74330a8a8014.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Soda.png"
-dest_files=["res://.godot/imported/Soda.png-26b38513abcd35ff245ff7173b832cab.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Soda.png"
+dest_files=["res://.godot/imported/Soda.png-2104b05e1e7754d4da5c74330a8a8014.s3tc.ctex", "res://.godot/imported/Soda.png-2104b05e1e7754d4da5c74330a8a8014.etc2.ctex"]
 
 [params]
 

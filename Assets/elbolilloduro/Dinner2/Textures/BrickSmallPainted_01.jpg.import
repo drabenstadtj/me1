@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6etmhj4vmep7"
-path.s3tc="res://.godot/imported/BrickSmallPainted_01.jpg-355b086b23cfff3b8400c18bd3c29893.s3tc.ctex"
+path.s3tc="res://.godot/imported/BrickSmallPainted_01.jpg-220aaadc34e33a44bb2b3c95dc761df5.s3tc.ctex"
+path.etc2="res://.godot/imported/BrickSmallPainted_01.jpg-220aaadc34e33a44bb2b3c95dc761df5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/BrickSmallPainted_01.jpg"
-dest_files=["res://.godot/imported/BrickSmallPainted_01.jpg-355b086b23cfff3b8400c18bd3c29893.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/BrickSmallPainted_01.jpg"
+dest_files=["res://.godot/imported/BrickSmallPainted_01.jpg-220aaadc34e33a44bb2b3c95dc761df5.s3tc.ctex", "res://.godot/imported/BrickSmallPainted_01.jpg-220aaadc34e33a44bb2b3c95dc761df5.etc2.ctex"]
 
 [params]
 

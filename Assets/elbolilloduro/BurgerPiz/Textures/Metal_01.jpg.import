@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df08ep6n6k3kn"
-path.s3tc="res://.godot/imported/Metal_01.jpg-607331c0f87a7b87d9d46a47b4578ac5.s3tc.ctex"
+path.s3tc="res://.godot/imported/Metal_01.jpg-b243226d1be27f6d2a9e802f62bc76e0.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal_01.jpg-b243226d1be27f6d2a9e802f62bc76e0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Metal_01.jpg"
-dest_files=["res://.godot/imported/Metal_01.jpg-607331c0f87a7b87d9d46a47b4578ac5.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Metal_01.jpg"
+dest_files=["res://.godot/imported/Metal_01.jpg-b243226d1be27f6d2a9e802f62bc76e0.s3tc.ctex", "res://.godot/imported/Metal_01.jpg-b243226d1be27f6d2a9e802f62bc76e0.etc2.ctex"]
 
 [params]
 

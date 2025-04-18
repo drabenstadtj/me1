@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c04cckh2aqs2"
 path.s3tc="res://.godot/imported/Stove.png-1b62a0fb4fea96279a9ab7b22b3b1baa.s3tc.ctex"
+path.etc2="res://.godot/imported/Stove.png-1b62a0fb4fea96279a9ab7b22b3b1baa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Stove/Stove.png"
-dest_files=["res://.godot/imported/Stove.png-1b62a0fb4fea96279a9ab7b22b3b1baa.s3tc.ctex"]
+dest_files=["res://.godot/imported/Stove.png-1b62a0fb4fea96279a9ab7b22b3b1baa.s3tc.ctex", "res://.godot/imported/Stove.png-1b62a0fb4fea96279a9ab7b22b3b1baa.etc2.ctex"]
 
 [params]
 

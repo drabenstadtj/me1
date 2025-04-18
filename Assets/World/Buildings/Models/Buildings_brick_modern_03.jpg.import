@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmfrs5yjx84ci"
 path.s3tc="res://.godot/imported/Buildings_brick_modern_03.jpg-11a3d84edb51ef6d6feb05e7f193e27d.s3tc.ctex"
+path.etc2="res://.godot/imported/Buildings_brick_modern_03.jpg-11a3d84edb51ef6d6feb05e7f193e27d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/Buildings/Models/Buildings_brick_modern_03.jpg"
-dest_files=["res://.godot/imported/Buildings_brick_modern_03.jpg-11a3d84edb51ef6d6feb05e7f193e27d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Buildings_brick_modern_03.jpg-11a3d84edb51ef6d6feb05e7f193e27d.s3tc.ctex", "res://.godot/imported/Buildings_brick_modern_03.jpg-11a3d84edb51ef6d6feb05e7f193e27d.etc2.ctex"]
 
 [params]
 

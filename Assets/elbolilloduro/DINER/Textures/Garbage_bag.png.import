@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nvq0lqrlmhwv"
-path.s3tc="res://.godot/imported/Garbage_bag.png-d37007f973b9b0ad1abf5bff37b7f521.s3tc.ctex"
+path.s3tc="res://.godot/imported/Garbage_bag.png-44c6cbf0683a37d24a47c84749eeb21d.s3tc.ctex"
+path.etc2="res://.godot/imported/Garbage_bag.png-44c6cbf0683a37d24a47c84749eeb21d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Garbage_bag.png"
-dest_files=["res://.godot/imported/Garbage_bag.png-d37007f973b9b0ad1abf5bff37b7f521.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Garbage_bag.png"
+dest_files=["res://.godot/imported/Garbage_bag.png-44c6cbf0683a37d24a47c84749eeb21d.s3tc.ctex", "res://.godot/imported/Garbage_bag.png-44c6cbf0683a37d24a47c84749eeb21d.etc2.ctex"]
 
 [params]
 

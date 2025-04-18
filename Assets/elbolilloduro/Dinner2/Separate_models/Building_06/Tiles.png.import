@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvpjptn8267ce"
 path.s3tc="res://.godot/imported/Tiles.png-96b1a03abf5f0610a5eb9558d4594354.s3tc.ctex"
+path.etc2="res://.godot/imported/Tiles.png-96b1a03abf5f0610a5eb9558d4594354.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-96b1a03abf5f0610a5eb9558d4594354.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tiles.png-96b1a03abf5f0610a5eb9558d4594354.s3tc.ctex", "res://.godot/imported/Tiles.png-96b1a03abf5f0610a5eb9558d4594354.etc2.ctex"]
 
 [params]
 

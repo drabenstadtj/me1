@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://badlni64h40jn"
-path.s3tc="res://.godot/imported/Cash_register.png-2b2f87115f1da1f195ddbe9019fb4bf4.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cash_register.png-0d72cb418b8243c1ae62ec7465c3ca86.s3tc.ctex"
+path.etc2="res://.godot/imported/Cash_register.png-0d72cb418b8243c1ae62ec7465c3ca86.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Cash_register.png"
-dest_files=["res://.godot/imported/Cash_register.png-2b2f87115f1da1f195ddbe9019fb4bf4.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Cash_register.png"
+dest_files=["res://.godot/imported/Cash_register.png-0d72cb418b8243c1ae62ec7465c3ca86.s3tc.ctex", "res://.godot/imported/Cash_register.png-0d72cb418b8243c1ae62ec7465c3ca86.etc2.ctex"]
 
 [params]
 

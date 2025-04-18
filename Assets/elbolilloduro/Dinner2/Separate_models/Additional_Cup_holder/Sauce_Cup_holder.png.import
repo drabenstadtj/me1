@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0nrxny1y1ame"
 path.s3tc="res://.godot/imported/Sauce_Cup_holder.png-026a5cc3966124e25fcb14fbf7111bdd.s3tc.ctex"
+path.etc2="res://.godot/imported/Sauce_Cup_holder.png-026a5cc3966124e25fcb14fbf7111bdd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Additional_Cup_holder/Sauce_Cup_holder.png"
-dest_files=["res://.godot/imported/Sauce_Cup_holder.png-026a5cc3966124e25fcb14fbf7111bdd.s3tc.ctex"]
+dest_files=["res://.godot/imported/Sauce_Cup_holder.png-026a5cc3966124e25fcb14fbf7111bdd.s3tc.ctex", "res://.godot/imported/Sauce_Cup_holder.png-026a5cc3966124e25fcb14fbf7111bdd.etc2.ctex"]
 
 [params]
 

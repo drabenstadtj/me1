@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqbhn1ip2v6j7"
-path.s3tc="res://.godot/imported/Fryer_basket.png-418f9f771314643b58ffa99221130852.s3tc.ctex"
+path.s3tc="res://.godot/imported/Fryer_basket.png-4b1c308f21f093eac5a39ef4ff83fe65.s3tc.ctex"
+path.etc2="res://.godot/imported/Fryer_basket.png-4b1c308f21f093eac5a39ef4ff83fe65.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Fryer_basket.png"
-dest_files=["res://.godot/imported/Fryer_basket.png-418f9f771314643b58ffa99221130852.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Fryer_basket.png"
+dest_files=["res://.godot/imported/Fryer_basket.png-4b1c308f21f093eac5a39ef4ff83fe65.s3tc.ctex", "res://.godot/imported/Fryer_basket.png-4b1c308f21f093eac5a39ef4ff83fe65.etc2.ctex"]
 
 [params]
 

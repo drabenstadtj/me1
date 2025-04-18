@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7ee03ashpyp1"
 path.s3tc="res://.godot/imported/Rooftiles.png-7cf9e842450b0c4ebcde043375201400.s3tc.ctex"
+path.etc2="res://.godot/imported/Rooftiles.png-7cf9e842450b0c4ebcde043375201400.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_01/Rooftiles.png"
-dest_files=["res://.godot/imported/Rooftiles.png-7cf9e842450b0c4ebcde043375201400.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rooftiles.png-7cf9e842450b0c4ebcde043375201400.s3tc.ctex", "res://.godot/imported/Rooftiles.png-7cf9e842450b0c4ebcde043375201400.etc2.ctex"]
 
 [params]
 

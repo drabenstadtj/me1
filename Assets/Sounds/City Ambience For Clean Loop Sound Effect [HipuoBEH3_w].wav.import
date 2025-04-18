@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cssvdhihv6xxu"
+path="res://.godot/imported/City Ambience For Clean Loop Sound Effect [HipuoBEH3_w].wav-aa6932288bcf7492f76c7e2ccb2c318b.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/City Ambience For Clean Loop Sound Effect [HipuoBEH3_w].wav"
+dest_files=["res://.godot/imported/City Ambience For Clean Loop Sound Effect [HipuoBEH3_w].wav-aa6932288bcf7492f76c7e2ccb2c318b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

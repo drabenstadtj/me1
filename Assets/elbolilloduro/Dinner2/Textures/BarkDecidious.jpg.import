@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bew2abj07naj8"
-path.s3tc="res://.godot/imported/BarkDecidious.jpg-04a73f489de2eb8d955aa397aa333c8f.s3tc.ctex"
+path.s3tc="res://.godot/imported/BarkDecidious.jpg-e88a8caa90eff45f0d36c90598bf8454.s3tc.ctex"
+path.etc2="res://.godot/imported/BarkDecidious.jpg-e88a8caa90eff45f0d36c90598bf8454.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/BarkDecidious.jpg"
-dest_files=["res://.godot/imported/BarkDecidious.jpg-04a73f489de2eb8d955aa397aa333c8f.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/BarkDecidious.jpg"
+dest_files=["res://.godot/imported/BarkDecidious.jpg-e88a8caa90eff45f0d36c90598bf8454.s3tc.ctex", "res://.godot/imported/BarkDecidious.jpg-e88a8caa90eff45f0d36c90598bf8454.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgc3jusc68uid"
-path.s3tc="res://.godot/imported/cardboard_boxes.png-2580d8d267a74215824c544be7a37aab.s3tc.ctex"
+path.s3tc="res://.godot/imported/cardboard_boxes.png-6d37e3e79affcd6ba1dc68bdfd90e004.s3tc.ctex"
+path.etc2="res://.godot/imported/cardboard_boxes.png-6d37e3e79affcd6ba1dc68bdfd90e004.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/cardboard_boxes.png"
-dest_files=["res://.godot/imported/cardboard_boxes.png-2580d8d267a74215824c544be7a37aab.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/cardboard_boxes.png"
+dest_files=["res://.godot/imported/cardboard_boxes.png-6d37e3e79affcd6ba1dc68bdfd90e004.s3tc.ctex", "res://.godot/imported/cardboard_boxes.png-6d37e3e79affcd6ba1dc68bdfd90e004.etc2.ctex"]
 
 [params]
 

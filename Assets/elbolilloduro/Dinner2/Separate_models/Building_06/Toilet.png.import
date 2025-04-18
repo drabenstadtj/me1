@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://m4ws85xgo6wu"
 path.s3tc="res://.godot/imported/Toilet.png-208f0f06d70ed505572eb090a6d3beea.s3tc.ctex"
+path.etc2="res://.godot/imported/Toilet.png-208f0f06d70ed505572eb090a6d3beea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Toilet.png"
-dest_files=["res://.godot/imported/Toilet.png-208f0f06d70ed505572eb090a6d3beea.s3tc.ctex"]
+dest_files=["res://.godot/imported/Toilet.png-208f0f06d70ed505572eb090a6d3beea.s3tc.ctex", "res://.godot/imported/Toilet.png-208f0f06d70ed505572eb090a6d3beea.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdbtnjv2ulije"
-path.s3tc="res://.godot/imported/Resources.png-70ff11ec3ca5db7f88bb70c228b09e79.s3tc.ctex"
+path.s3tc="res://.godot/imported/Resources.png-c62ed35e4393eb182bad1bdb8ddb6560.s3tc.ctex"
+path.etc2="res://.godot/imported/Resources.png-c62ed35e4393eb182bad1bdb8ddb6560.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Resources.png"
-dest_files=["res://.godot/imported/Resources.png-70ff11ec3ca5db7f88bb70c228b09e79.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Resources.png"
+dest_files=["res://.godot/imported/Resources.png-c62ed35e4393eb182bad1bdb8ddb6560.s3tc.ctex", "res://.godot/imported/Resources.png-c62ed35e4393eb182bad1bdb8ddb6560.etc2.ctex"]
 
 [params]
 

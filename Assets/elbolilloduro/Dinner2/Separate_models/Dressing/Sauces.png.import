@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://4nj7dyxlqyix"
 path.s3tc="res://.godot/imported/Sauces.png-7767ba938c4e6f256e6eb451abe9de25.s3tc.ctex"
+path.etc2="res://.godot/imported/Sauces.png-7767ba938c4e6f256e6eb451abe9de25.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Dressing/Sauces.png"
-dest_files=["res://.godot/imported/Sauces.png-7767ba938c4e6f256e6eb451abe9de25.s3tc.ctex"]
+dest_files=["res://.godot/imported/Sauces.png-7767ba938c4e6f256e6eb451abe9de25.s3tc.ctex", "res://.godot/imported/Sauces.png-7767ba938c4e6f256e6eb451abe9de25.etc2.ctex"]
 
 [params]
 

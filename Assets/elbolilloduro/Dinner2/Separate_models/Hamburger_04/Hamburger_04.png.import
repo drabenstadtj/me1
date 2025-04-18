@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyjsy38bltdjm"
 path.s3tc="res://.godot/imported/Hamburger_04.png-92d5384985164d319b8c81673cc0a139.s3tc.ctex"
+path.etc2="res://.godot/imported/Hamburger_04.png-92d5384985164d319b8c81673cc0a139.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Hamburger_04/Hamburger_04.png"
-dest_files=["res://.godot/imported/Hamburger_04.png-92d5384985164d319b8c81673cc0a139.s3tc.ctex"]
+dest_files=["res://.godot/imported/Hamburger_04.png-92d5384985164d319b8c81673cc0a139.s3tc.ctex", "res://.godot/imported/Hamburger_04.png-92d5384985164d319b8c81673cc0a139.etc2.ctex"]
 
 [params]
 

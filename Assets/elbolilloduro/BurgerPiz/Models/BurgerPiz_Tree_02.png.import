@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxc8qbs56nd0v"
 path.s3tc="res://.godot/imported/BurgerPiz_Tree_02.png-a8ebbda9df7a6bc26407e32abd4d3f4b.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_Tree_02.png-a8ebbda9df7a6bc26407e32abd4d3f4b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/elbolilloduro/BurgerPiz/Models/BurgerPiz_Tree_02.png"
-dest_files=["res://.godot/imported/BurgerPiz_Tree_02.png-a8ebbda9df7a6bc26407e32abd4d3f4b.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_Tree_02.png-a8ebbda9df7a6bc26407e32abd4d3f4b.s3tc.ctex", "res://.godot/imported/BurgerPiz_Tree_02.png-a8ebbda9df7a6bc26407e32abd4d3f4b.etc2.ctex"]
 
 [params]
 

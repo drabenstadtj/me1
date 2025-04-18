@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7gwws8y4k2p5"
 path.s3tc="res://.godot/imported/French_fries.png-6de17db2fa716bac78b52142ecaa1470.s3tc.ctex"
+path.etc2="res://.godot/imported/French_fries.png-6de17db2fa716bac78b52142ecaa1470.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/French_fries/French_fries.png"
-dest_files=["res://.godot/imported/French_fries.png-6de17db2fa716bac78b52142ecaa1470.s3tc.ctex"]
+dest_files=["res://.godot/imported/French_fries.png-6de17db2fa716bac78b52142ecaa1470.s3tc.ctex", "res://.godot/imported/French_fries.png-6de17db2fa716bac78b52142ecaa1470.etc2.ctex"]
 
 [params]
 

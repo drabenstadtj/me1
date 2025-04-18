@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0llhwup8qthl"
 path.s3tc="res://.godot/imported/Buildings_Roof_tiles.jpg-614937ea9102174d840b7a0c845d8e13.s3tc.ctex"
+path.etc2="res://.godot/imported/Buildings_Roof_tiles.jpg-614937ea9102174d840b7a0c845d8e13.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/Buildings/Models/Buildings_Roof_tiles.jpg"
-dest_files=["res://.godot/imported/Buildings_Roof_tiles.jpg-614937ea9102174d840b7a0c845d8e13.s3tc.ctex"]
+dest_files=["res://.godot/imported/Buildings_Roof_tiles.jpg-614937ea9102174d840b7a0c845d8e13.s3tc.ctex", "res://.godot/imported/Buildings_Roof_tiles.jpg-614937ea9102174d840b7a0c845d8e13.etc2.ctex"]
 
 [params]
 

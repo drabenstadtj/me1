@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctpwajwcldl6e"
 path.s3tc="res://.godot/imported/Plaster.png-9986390c4145d2e1cea3958d798ee6bf.s3tc.ctex"
+path.etc2="res://.godot/imported/Plaster.png-9986390c4145d2e1cea3958d798ee6bf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Establishment/Plaster.png"
-dest_files=["res://.godot/imported/Plaster.png-9986390c4145d2e1cea3958d798ee6bf.s3tc.ctex"]
+dest_files=["res://.godot/imported/Plaster.png-9986390c4145d2e1cea3958d798ee6bf.s3tc.ctex", "res://.godot/imported/Plaster.png-9986390c4145d2e1cea3958d798ee6bf.etc2.ctex"]
 
 [params]
 

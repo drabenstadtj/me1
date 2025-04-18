@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c85eghk6nwlrr"
-path.s3tc="res://.godot/imported/Door_02.jpg-99db9b396aca139a067a4e8deab6a3c5.s3tc.ctex"
+path.s3tc="res://.godot/imported/Door_02.jpg-c860419154bfacb0350b39cca1eeca39.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_02.jpg-c860419154bfacb0350b39cca1eeca39.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Door_02.jpg"
-dest_files=["res://.godot/imported/Door_02.jpg-99db9b396aca139a067a4e8deab6a3c5.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Door_02.jpg"
+dest_files=["res://.godot/imported/Door_02.jpg-c860419154bfacb0350b39cca1eeca39.s3tc.ctex", "res://.godot/imported/Door_02.jpg-c860419154bfacb0350b39cca1eeca39.etc2.ctex"]
 
 [params]
 

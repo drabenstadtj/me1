@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b35ywsqut2itl"
-path.s3tc="res://.godot/imported/Sauces.png-9d81aaa497e7a0a44ea505611ab8af58.s3tc.ctex"
+path.s3tc="res://.godot/imported/Sauces.png-622d3243d8d74bf99a611b0a200cea3b.s3tc.ctex"
+path.etc2="res://.godot/imported/Sauces.png-622d3243d8d74bf99a611b0a200cea3b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Sauces.png"
-dest_files=["res://.godot/imported/Sauces.png-9d81aaa497e7a0a44ea505611ab8af58.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Sauces.png"
+dest_files=["res://.godot/imported/Sauces.png-622d3243d8d74bf99a611b0a200cea3b.s3tc.ctex", "res://.godot/imported/Sauces.png-622d3243d8d74bf99a611b0a200cea3b.etc2.ctex"]
 
 [params]
 

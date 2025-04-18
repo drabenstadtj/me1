@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba7b25ddlwofg"
-path.s3tc="res://.godot/imported/Soap_dispenser.png-d63acb2498d1c5ec8429990bf6365bff.s3tc.ctex"
+path.s3tc="res://.godot/imported/Soap_dispenser.png-36b33ab9a18385e9fc38e73c47bbbafe.s3tc.ctex"
+path.etc2="res://.godot/imported/Soap_dispenser.png-36b33ab9a18385e9fc38e73c47bbbafe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Soap_dispenser.png"
-dest_files=["res://.godot/imported/Soap_dispenser.png-d63acb2498d1c5ec8429990bf6365bff.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Soap_dispenser.png"
+dest_files=["res://.godot/imported/Soap_dispenser.png-36b33ab9a18385e9fc38e73c47bbbafe.s3tc.ctex", "res://.godot/imported/Soap_dispenser.png-36b33ab9a18385e9fc38e73c47bbbafe.etc2.ctex"]
 
 [params]
 

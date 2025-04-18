@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ewf6wufbc4jn"
-path.s3tc="res://.godot/imported/Refrijerator_M.png-834c19aeb998cc98c7aa038d44f916cd.s3tc.ctex"
+path.s3tc="res://.godot/imported/Refrijerator_M.png-e88855b227fccfff62a5c4c17a2f94f6.s3tc.ctex"
+path.etc2="res://.godot/imported/Refrijerator_M.png-e88855b227fccfff62a5c4c17a2f94f6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Refrijerator_M.png"
-dest_files=["res://.godot/imported/Refrijerator_M.png-834c19aeb998cc98c7aa038d44f916cd.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Refrijerator_M.png"
+dest_files=["res://.godot/imported/Refrijerator_M.png-e88855b227fccfff62a5c4c17a2f94f6.s3tc.ctex", "res://.godot/imported/Refrijerator_M.png-e88855b227fccfff62a5c4c17a2f94f6.etc2.ctex"]
 
 [params]
 

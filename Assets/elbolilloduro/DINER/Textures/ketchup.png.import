@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyjudyd77a4df"
-path.s3tc="res://.godot/imported/ketchup.png-cd6a220c8cfe355c0e2ece5d5ded2e87.s3tc.ctex"
+path.s3tc="res://.godot/imported/ketchup.png-4cf359ea980f85928e48a0c49fc8636e.s3tc.ctex"
+path.etc2="res://.godot/imported/ketchup.png-4cf359ea980f85928e48a0c49fc8636e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/ketchup.png"
-dest_files=["res://.godot/imported/ketchup.png-cd6a220c8cfe355c0e2ece5d5ded2e87.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/ketchup.png"
+dest_files=["res://.godot/imported/ketchup.png-4cf359ea980f85928e48a0c49fc8636e.s3tc.ctex", "res://.godot/imported/ketchup.png-4cf359ea980f85928e48a0c49fc8636e.etc2.ctex"]
 
 [params]
 

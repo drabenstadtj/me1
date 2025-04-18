@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cspxli8ndxknp"
-path.s3tc="res://.godot/imported/Hotdog_01.png-a931f987e5bfe25244d71d5817b36fdd.s3tc.ctex"
+path.s3tc="res://.godot/imported/Hotdog_01.png-d6bc9eb33453a1790decb2bec53b3ebd.s3tc.ctex"
+path.etc2="res://.godot/imported/Hotdog_01.png-d6bc9eb33453a1790decb2bec53b3ebd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Hotdog_01.png"
-dest_files=["res://.godot/imported/Hotdog_01.png-a931f987e5bfe25244d71d5817b36fdd.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Hotdog_01.png"
+dest_files=["res://.godot/imported/Hotdog_01.png-d6bc9eb33453a1790decb2bec53b3ebd.s3tc.ctex", "res://.godot/imported/Hotdog_01.png-d6bc9eb33453a1790decb2bec53b3ebd.etc2.ctex"]
 
 [params]
 

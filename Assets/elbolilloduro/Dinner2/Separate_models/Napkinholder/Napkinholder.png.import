@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmk7x3vaoipg8"
 path.s3tc="res://.godot/imported/Napkinholder.png-16919a3ee7552ff45d0a407d4b5c52ff.s3tc.ctex"
+path.etc2="res://.godot/imported/Napkinholder.png-16919a3ee7552ff45d0a407d4b5c52ff.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Napkinholder/Napkinholder.png"
-dest_files=["res://.godot/imported/Napkinholder.png-16919a3ee7552ff45d0a407d4b5c52ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/Napkinholder.png-16919a3ee7552ff45d0a407d4b5c52ff.s3tc.ctex", "res://.godot/imported/Napkinholder.png-16919a3ee7552ff45d0a407d4b5c52ff.etc2.ctex"]
 
 [params]
 

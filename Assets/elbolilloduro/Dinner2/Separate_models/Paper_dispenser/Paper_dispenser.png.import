@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://770gpqjhan4t"
 path.s3tc="res://.godot/imported/Paper_dispenser.png-90aac756ed21462f9911d4f1e29966eb.s3tc.ctex"
+path.etc2="res://.godot/imported/Paper_dispenser.png-90aac756ed21462f9911d4f1e29966eb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Paper_dispenser/Paper_dispenser.png"
-dest_files=["res://.godot/imported/Paper_dispenser.png-90aac756ed21462f9911d4f1e29966eb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Paper_dispenser.png-90aac756ed21462f9911d4f1e29966eb.s3tc.ctex", "res://.godot/imported/Paper_dispenser.png-90aac756ed21462f9911d4f1e29966eb.etc2.ctex"]
 
 [params]
 

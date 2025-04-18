@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8ol8xiqt41hh"
-path.s3tc="res://.godot/imported/Oven.png-b18f91ddc3818fc8e533ac4c1d388804.s3tc.ctex"
+path.s3tc="res://.godot/imported/Oven.png-eb7e41fbd5a0550622f107065f41aab6.s3tc.ctex"
+path.etc2="res://.godot/imported/Oven.png-eb7e41fbd5a0550622f107065f41aab6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Oven.png"
-dest_files=["res://.godot/imported/Oven.png-b18f91ddc3818fc8e533ac4c1d388804.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Oven.png"
+dest_files=["res://.godot/imported/Oven.png-eb7e41fbd5a0550622f107065f41aab6.s3tc.ctex", "res://.godot/imported/Oven.png-eb7e41fbd5a0550622f107065f41aab6.etc2.ctex"]
 
 [params]
 

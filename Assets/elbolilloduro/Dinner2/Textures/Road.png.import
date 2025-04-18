@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pus15kcqvrqe"
-path.s3tc="res://.godot/imported/Road.png-e8b8896f85ed39ff10065e215ace66ca.s3tc.ctex"
+path.s3tc="res://.godot/imported/Road.png-6b8e60df8b49527ff460484abde3c06e.s3tc.ctex"
+path.etc2="res://.godot/imported/Road.png-6b8e60df8b49527ff460484abde3c06e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Road.png"
-dest_files=["res://.godot/imported/Road.png-e8b8896f85ed39ff10065e215ace66ca.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Road.png"
+dest_files=["res://.godot/imported/Road.png-6b8e60df8b49527ff460484abde3c06e.s3tc.ctex", "res://.godot/imported/Road.png-6b8e60df8b49527ff460484abde3c06e.etc2.ctex"]
 
 [params]
 

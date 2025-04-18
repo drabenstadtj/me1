@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://33ltnqhe85f0"
 path.s3tc="res://.godot/imported/Store_08.png-de8a15f3f4c44a1c5e0928016c4e9504.s3tc.ctex"
+path.etc2="res://.godot/imported/Store_08.png-de8a15f3f4c44a1c5e0928016c4e9504.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Store_08.png"
-dest_files=["res://.godot/imported/Store_08.png-de8a15f3f4c44a1c5e0928016c4e9504.s3tc.ctex"]
+dest_files=["res://.godot/imported/Store_08.png-de8a15f3f4c44a1c5e0928016c4e9504.s3tc.ctex", "res://.godot/imported/Store_08.png-de8a15f3f4c44a1c5e0928016c4e9504.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfnym7v88he7r"
-path.s3tc="res://.godot/imported/Toilet.png-b4e1247a59de5242c390896d80df05f2.s3tc.ctex"
+path.s3tc="res://.godot/imported/Toilet.png-f8e3b5408fd9dec3654f93ff2fa0d05c.s3tc.ctex"
+path.etc2="res://.godot/imported/Toilet.png-f8e3b5408fd9dec3654f93ff2fa0d05c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Toilet.png"
-dest_files=["res://.godot/imported/Toilet.png-b4e1247a59de5242c390896d80df05f2.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Toilet.png"
+dest_files=["res://.godot/imported/Toilet.png-f8e3b5408fd9dec3654f93ff2fa0d05c.s3tc.ctex", "res://.godot/imported/Toilet.png-f8e3b5408fd9dec3654f93ff2fa0d05c.etc2.ctex"]
 
 [params]
 

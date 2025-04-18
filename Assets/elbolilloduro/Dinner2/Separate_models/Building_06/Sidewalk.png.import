@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dswfi1x7bo3u0"
 path.s3tc="res://.godot/imported/Sidewalk.png-bffe3da629d0805c3a8e636584734c2b.s3tc.ctex"
+path.etc2="res://.godot/imported/Sidewalk.png-bffe3da629d0805c3a8e636584734c2b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Sidewalk.png"
-dest_files=["res://.godot/imported/Sidewalk.png-bffe3da629d0805c3a8e636584734c2b.s3tc.ctex"]
+dest_files=["res://.godot/imported/Sidewalk.png-bffe3da629d0805c3a8e636584734c2b.s3tc.ctex", "res://.godot/imported/Sidewalk.png-bffe3da629d0805c3a8e636584734c2b.etc2.ctex"]
 
 [params]
 

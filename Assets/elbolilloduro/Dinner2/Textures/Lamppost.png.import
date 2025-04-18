@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4kq2psk8jtif"
-path.s3tc="res://.godot/imported/Lamppost.png-60cd7f6bddeb350e4c7a3e62f2af3ff7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Lamppost.png-9934b9a9273f870b22cd3b1a14dc5fc4.s3tc.ctex"
+path.etc2="res://.godot/imported/Lamppost.png-9934b9a9273f870b22cd3b1a14dc5fc4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Lamppost.png"
-dest_files=["res://.godot/imported/Lamppost.png-60cd7f6bddeb350e4c7a3e62f2af3ff7.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Lamppost.png"
+dest_files=["res://.godot/imported/Lamppost.png-9934b9a9273f870b22cd3b1a14dc5fc4.s3tc.ctex", "res://.godot/imported/Lamppost.png-9934b9a9273f870b22cd3b1a14dc5fc4.etc2.ctex"]
 
 [params]
 

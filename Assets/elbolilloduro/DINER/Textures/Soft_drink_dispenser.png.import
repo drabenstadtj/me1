@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r2crdo556yta"
-path.s3tc="res://.godot/imported/Soft_drink_dispenser.png-1bb30a67293ed3fb4bb3afa2bf1c25bf.s3tc.ctex"
+path.s3tc="res://.godot/imported/Soft_drink_dispenser.png-8e53c5eff24f59747336a705cac47dfd.s3tc.ctex"
+path.etc2="res://.godot/imported/Soft_drink_dispenser.png-8e53c5eff24f59747336a705cac47dfd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Soft_drink_dispenser.png"
-dest_files=["res://.godot/imported/Soft_drink_dispenser.png-1bb30a67293ed3fb4bb3afa2bf1c25bf.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Soft_drink_dispenser.png"
+dest_files=["res://.godot/imported/Soft_drink_dispenser.png-8e53c5eff24f59747336a705cac47dfd.s3tc.ctex", "res://.godot/imported/Soft_drink_dispenser.png-8e53c5eff24f59747336a705cac47dfd.etc2.ctex"]
 
 [params]
 

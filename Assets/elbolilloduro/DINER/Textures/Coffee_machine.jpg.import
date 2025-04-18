@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4xc7exxwm40t"
-path.s3tc="res://.godot/imported/Coffee_machine.jpg-9897a03f8fe4386e7c8f328adc57c36c.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffee_machine.jpg-52ee77e693651199c5020d8d6e7d795c.s3tc.ctex"
+path.etc2="res://.godot/imported/Coffee_machine.jpg-52ee77e693651199c5020d8d6e7d795c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Coffee_machine.jpg"
-dest_files=["res://.godot/imported/Coffee_machine.jpg-9897a03f8fe4386e7c8f328adc57c36c.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Coffee_machine.jpg"
+dest_files=["res://.godot/imported/Coffee_machine.jpg-52ee77e693651199c5020d8d6e7d795c.s3tc.ctex", "res://.godot/imported/Coffee_machine.jpg-52ee77e693651199c5020d8d6e7d795c.etc2.ctex"]
 
 [params]
 

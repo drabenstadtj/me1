@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb1ytb32rfa3j"
-path.s3tc="res://.godot/imported/Cans.png-4f069c08d68009c6c2f4c282caa5e3e4.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cans.png-bb0c42641e0830b68a2e3994a346ac22.s3tc.ctex"
+path.etc2="res://.godot/imported/Cans.png-bb0c42641e0830b68a2e3994a346ac22.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Cans.png"
-dest_files=["res://.godot/imported/Cans.png-4f069c08d68009c6c2f4c282caa5e3e4.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Cans.png"
+dest_files=["res://.godot/imported/Cans.png-bb0c42641e0830b68a2e3994a346ac22.s3tc.ctex", "res://.godot/imported/Cans.png-bb0c42641e0830b68a2e3994a346ac22.etc2.ctex"]
 
 [params]
 

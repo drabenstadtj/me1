@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2jj4ji0dh8vt"
 path.s3tc="res://.godot/imported/DoorsMetal.jpg-2ff78361199cff3a24228fcfd73cf855.s3tc.ctex"
+path.etc2="res://.godot/imported/DoorsMetal.jpg-2ff78361199cff3a24228fcfd73cf855.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Establishment/DoorsMetal.jpg"
-dest_files=["res://.godot/imported/DoorsMetal.jpg-2ff78361199cff3a24228fcfd73cf855.s3tc.ctex"]
+dest_files=["res://.godot/imported/DoorsMetal.jpg-2ff78361199cff3a24228fcfd73cf855.s3tc.ctex", "res://.godot/imported/DoorsMetal.jpg-2ff78361199cff3a24228fcfd73cf855.etc2.ctex"]
 
 [params]
 

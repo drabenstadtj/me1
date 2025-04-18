@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gu04loqbx16m"
-path.s3tc="res://.godot/imported/Grid.png-c4adc3af335848bd8c0e6f363022d5a0.s3tc.ctex"
+path.s3tc="res://.godot/imported/Grid.png-55547b0f2a9a6c4cd0b064d16bce8f47.s3tc.ctex"
+path.etc2="res://.godot/imported/Grid.png-55547b0f2a9a6c4cd0b064d16bce8f47.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Grid.png"
-dest_files=["res://.godot/imported/Grid.png-c4adc3af335848bd8c0e6f363022d5a0.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Grid.png"
+dest_files=["res://.godot/imported/Grid.png-55547b0f2a9a6c4cd0b064d16bce8f47.s3tc.ctex", "res://.godot/imported/Grid.png-55547b0f2a9a6c4cd0b064d16bce8f47.etc2.ctex"]
 
 [params]
 

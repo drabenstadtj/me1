@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmgslcopleorh"
 path.s3tc="res://.godot/imported/Metal_03.png-5d01c7562c428723dc2698d41573cacd.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal_03.png-5d01c7562c428723dc2698d41573cacd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Table_M_01/Metal_03.png"
-dest_files=["res://.godot/imported/Metal_03.png-5d01c7562c428723dc2698d41573cacd.s3tc.ctex"]
+dest_files=["res://.godot/imported/Metal_03.png-5d01c7562c428723dc2698d41573cacd.s3tc.ctex", "res://.godot/imported/Metal_03.png-5d01c7562c428723dc2698d41573cacd.etc2.ctex"]
 
 [params]
 

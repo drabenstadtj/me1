@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://x7r30fl3ntc8"
 path.s3tc="res://.godot/imported/Man_Pot.png-6bf2d23de8b6626d6d76f8166cdac8e2.s3tc.ctex"
+path.etc2="res://.godot/imported/Man_Pot.png-6bf2d23de8b6626d6d76f8166cdac8e2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Characters/Characters/Man_Pot/Man_Pot.png"
-dest_files=["res://.godot/imported/Man_Pot.png-6bf2d23de8b6626d6d76f8166cdac8e2.s3tc.ctex"]
+dest_files=["res://.godot/imported/Man_Pot.png-6bf2d23de8b6626d6d76f8166cdac8e2.s3tc.ctex", "res://.godot/imported/Man_Pot.png-6bf2d23de8b6626d6d76f8166cdac8e2.etc2.ctex"]
 
 [params]
 

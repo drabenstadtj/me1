@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk6yfniayc2en"
-path.s3tc="res://.godot/imported/Grass.jpg-4c590e6b62e2a4dfdefa14a723365c17.s3tc.ctex"
+path.s3tc="res://.godot/imported/Grass.jpg-c2444f34718407dc2ffbdcd746ce20dd.s3tc.ctex"
+path.etc2="res://.godot/imported/Grass.jpg-c2444f34718407dc2ffbdcd746ce20dd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Grass.jpg"
-dest_files=["res://.godot/imported/Grass.jpg-4c590e6b62e2a4dfdefa14a723365c17.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Grass.jpg"
+dest_files=["res://.godot/imported/Grass.jpg-c2444f34718407dc2ffbdcd746ce20dd.s3tc.ctex", "res://.godot/imported/Grass.jpg-c2444f34718407dc2ffbdcd746ce20dd.etc2.ctex"]
 
 [params]
 

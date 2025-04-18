@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfqm0t4dxadqm"
-path.s3tc="res://.godot/imported/Icecream_Machine.png-1042b7fd97122c7b512994d5977c5ce8.s3tc.ctex"
+path.s3tc="res://.godot/imported/Icecream_Machine.png-d00a2ff5bba913a5e5b7b8734b5b10fa.s3tc.ctex"
+path.etc2="res://.godot/imported/Icecream_Machine.png-d00a2ff5bba913a5e5b7b8734b5b10fa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Icecream_Machine.png"
-dest_files=["res://.godot/imported/Icecream_Machine.png-1042b7fd97122c7b512994d5977c5ce8.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Icecream_Machine.png"
+dest_files=["res://.godot/imported/Icecream_Machine.png-d00a2ff5bba913a5e5b7b8734b5b10fa.s3tc.ctex", "res://.godot/imported/Icecream_Machine.png-d00a2ff5bba913a5e5b7b8734b5b10fa.etc2.ctex"]
 
 [params]
 

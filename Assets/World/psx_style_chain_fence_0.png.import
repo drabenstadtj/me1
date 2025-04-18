@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckkcxsiunhh5d"
 path.s3tc="res://.godot/imported/psx_style_chain_fence_0.png-c5a4b865bb8c0cc36179c34b11f7d1a6.s3tc.ctex"
+path.etc2="res://.godot/imported/psx_style_chain_fence_0.png-c5a4b865bb8c0cc36179c34b11f7d1a6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/psx_style_chain_fence_0.png"
-dest_files=["res://.godot/imported/psx_style_chain_fence_0.png-c5a4b865bb8c0cc36179c34b11f7d1a6.s3tc.ctex"]
+dest_files=["res://.godot/imported/psx_style_chain_fence_0.png-c5a4b865bb8c0cc36179c34b11f7d1a6.s3tc.ctex", "res://.godot/imported/psx_style_chain_fence_0.png-c5a4b865bb8c0cc36179c34b11f7d1a6.etc2.ctex"]
 
 [params]
 

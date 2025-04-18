@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv4s30bge6h4m"
-path.s3tc="res://.godot/imported/Light_Emissor.png-b0ab1eee769c0da61c2482425923837d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Light_Emissor.png-282cba3f1a9922f5bc5a9f3c1c1b9c55.s3tc.ctex"
+path.etc2="res://.godot/imported/Light_Emissor.png-282cba3f1a9922f5bc5a9f3c1c1b9c55.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Light_Emissor.png"
-dest_files=["res://.godot/imported/Light_Emissor.png-b0ab1eee769c0da61c2482425923837d.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Light_Emissor.png"
+dest_files=["res://.godot/imported/Light_Emissor.png-282cba3f1a9922f5bc5a9f3c1c1b9c55.s3tc.ctex", "res://.godot/imported/Light_Emissor.png-282cba3f1a9922f5bc5a9f3c1c1b9c55.etc2.ctex"]
 
 [params]
 

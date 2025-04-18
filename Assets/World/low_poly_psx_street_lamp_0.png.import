@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://blshdevw5uwgv"
 path.s3tc="res://.godot/imported/low_poly_psx_street_lamp_0.png-9a6c4db9469089467065ddc7ca11bc3e.s3tc.ctex"
+path.etc2="res://.godot/imported/low_poly_psx_street_lamp_0.png-9a6c4db9469089467065ddc7ca11bc3e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/low_poly_psx_street_lamp_0.png"
-dest_files=["res://.godot/imported/low_poly_psx_street_lamp_0.png-9a6c4db9469089467065ddc7ca11bc3e.s3tc.ctex"]
+dest_files=["res://.godot/imported/low_poly_psx_street_lamp_0.png-9a6c4db9469089467065ddc7ca11bc3e.s3tc.ctex", "res://.godot/imported/low_poly_psx_street_lamp_0.png-9a6c4db9469089467065ddc7ca11bc3e.etc2.ctex"]
 
 [params]
 

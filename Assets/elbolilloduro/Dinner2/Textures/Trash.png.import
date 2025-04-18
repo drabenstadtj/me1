@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3tmoysfnh3jj"
-path.s3tc="res://.godot/imported/Trash.png-92229741cf4ce796797bb1430188c42b.s3tc.ctex"
+path.s3tc="res://.godot/imported/Trash.png-e5eff563a270de154ff3e66b8a9c1190.s3tc.ctex"
+path.etc2="res://.godot/imported/Trash.png-e5eff563a270de154ff3e66b8a9c1190.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Trash.png"
-dest_files=["res://.godot/imported/Trash.png-92229741cf4ce796797bb1430188c42b.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Trash.png"
+dest_files=["res://.godot/imported/Trash.png-e5eff563a270de154ff3e66b8a9c1190.s3tc.ctex", "res://.godot/imported/Trash.png-e5eff563a270de154ff3e66b8a9c1190.etc2.ctex"]
 
 [params]
 

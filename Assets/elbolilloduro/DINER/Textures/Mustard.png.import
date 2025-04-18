@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7qf3o15idagd"
-path.s3tc="res://.godot/imported/Mustard.png-54511828a2131a3d054696aaf222c45a.s3tc.ctex"
+path.s3tc="res://.godot/imported/Mustard.png-d1f925ad9b416396f530e865824e6c7c.s3tc.ctex"
+path.etc2="res://.godot/imported/Mustard.png-d1f925ad9b416396f530e865824e6c7c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Mustard.png"
-dest_files=["res://.godot/imported/Mustard.png-54511828a2131a3d054696aaf222c45a.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Mustard.png"
+dest_files=["res://.godot/imported/Mustard.png-d1f925ad9b416396f530e865824e6c7c.s3tc.ctex", "res://.godot/imported/Mustard.png-d1f925ad9b416396f530e865824e6c7c.etc2.ctex"]
 
 [params]
 

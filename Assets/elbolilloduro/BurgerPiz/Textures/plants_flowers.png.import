@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tlssnayx28t3"
-path.s3tc="res://.godot/imported/plants_flowers.png-492f5049bc58824c247ecd54eaa750fd.s3tc.ctex"
+path.s3tc="res://.godot/imported/plants_flowers.png-8fd4d2d1236aa08b7aa1f4abaa384d0b.s3tc.ctex"
+path.etc2="res://.godot/imported/plants_flowers.png-8fd4d2d1236aa08b7aa1f4abaa384d0b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/plants_flowers.png"
-dest_files=["res://.godot/imported/plants_flowers.png-492f5049bc58824c247ecd54eaa750fd.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/plants_flowers.png"
+dest_files=["res://.godot/imported/plants_flowers.png-8fd4d2d1236aa08b7aa1f4abaa384d0b.s3tc.ctex", "res://.godot/imported/plants_flowers.png-8fd4d2d1236aa08b7aa1f4abaa384d0b.etc2.ctex"]
 
 [params]
 

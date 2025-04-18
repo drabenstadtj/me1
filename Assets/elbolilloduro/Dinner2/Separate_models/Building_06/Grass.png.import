@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7kxy8nyqi7vy"
 path.s3tc="res://.godot/imported/Grass.png-70f7af6dd9535c1bd9d48188996c07d1.s3tc.ctex"
+path.etc2="res://.godot/imported/Grass.png-70f7af6dd9535c1bd9d48188996c07d1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Grass.png"
-dest_files=["res://.godot/imported/Grass.png-70f7af6dd9535c1bd9d48188996c07d1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Grass.png-70f7af6dd9535c1bd9d48188996c07d1.s3tc.ctex", "res://.godot/imported/Grass.png-70f7af6dd9535c1bd9d48188996c07d1.etc2.ctex"]
 
 [params]
 

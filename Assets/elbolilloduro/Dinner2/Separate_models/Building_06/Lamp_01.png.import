@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba5uapfbfwqg4"
 path.s3tc="res://.godot/imported/Lamp_01.png-11e71d5f008fb4dcffbd6987a9a4e0d8.s3tc.ctex"
+path.etc2="res://.godot/imported/Lamp_01.png-11e71d5f008fb4dcffbd6987a9a4e0d8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Lamp_01.png"
-dest_files=["res://.godot/imported/Lamp_01.png-11e71d5f008fb4dcffbd6987a9a4e0d8.s3tc.ctex"]
+dest_files=["res://.godot/imported/Lamp_01.png-11e71d5f008fb4dcffbd6987a9a4e0d8.s3tc.ctex", "res://.godot/imported/Lamp_01.png-11e71d5f008fb4dcffbd6987a9a4e0d8.etc2.ctex"]
 
 [params]
 

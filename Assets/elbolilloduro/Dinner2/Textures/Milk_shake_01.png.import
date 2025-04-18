@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3ea2x3nheopp"
-path.s3tc="res://.godot/imported/Milk_shake_01.png-6322afe8398af665dc37e42a52a6c426.s3tc.ctex"
+path.s3tc="res://.godot/imported/Milk_shake_01.png-d5ac6cba3758a8227e3dbb26c7c33637.s3tc.ctex"
+path.etc2="res://.godot/imported/Milk_shake_01.png-d5ac6cba3758a8227e3dbb26c7c33637.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Milk_shake_01.png"
-dest_files=["res://.godot/imported/Milk_shake_01.png-6322afe8398af665dc37e42a52a6c426.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Milk_shake_01.png"
+dest_files=["res://.godot/imported/Milk_shake_01.png-d5ac6cba3758a8227e3dbb26c7c33637.s3tc.ctex", "res://.godot/imported/Milk_shake_01.png-d5ac6cba3758a8227e3dbb26c7c33637.etc2.ctex"]
 
 [params]
 

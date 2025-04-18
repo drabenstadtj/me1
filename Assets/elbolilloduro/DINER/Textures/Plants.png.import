@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2q3pweknb64l"
-path.s3tc="res://.godot/imported/Plants.png-ef3f42025d4ff51c671988565207848c.s3tc.ctex"
+path.s3tc="res://.godot/imported/Plants.png-4e7a15b55c5a2727800601878e3621cf.s3tc.ctex"
+path.etc2="res://.godot/imported/Plants.png-4e7a15b55c5a2727800601878e3621cf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Plants.png"
-dest_files=["res://.godot/imported/Plants.png-ef3f42025d4ff51c671988565207848c.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Plants.png"
+dest_files=["res://.godot/imported/Plants.png-4e7a15b55c5a2727800601878e3621cf.s3tc.ctex", "res://.godot/imported/Plants.png-4e7a15b55c5a2727800601878e3621cf.etc2.ctex"]
 
 [params]
 

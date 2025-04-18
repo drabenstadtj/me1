@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyjvwm5fi5jiv"
 path.s3tc="res://.godot/imported/Wet_floor_sign.png-152606400b742bb099eb06c8c9976012.s3tc.ctex"
+path.etc2="res://.godot/imported/Wet_floor_sign.png-152606400b742bb099eb06c8c9976012.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Wet_floor_sign.png"
-dest_files=["res://.godot/imported/Wet_floor_sign.png-152606400b742bb099eb06c8c9976012.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wet_floor_sign.png-152606400b742bb099eb06c8c9976012.s3tc.ctex", "res://.godot/imported/Wet_floor_sign.png-152606400b742bb099eb06c8c9976012.etc2.ctex"]
 
 [params]
 

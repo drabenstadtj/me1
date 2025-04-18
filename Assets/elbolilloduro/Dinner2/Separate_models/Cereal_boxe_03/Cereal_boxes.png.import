@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddqba62s4d4l4"
 path.s3tc="res://.godot/imported/Cereal_boxes.png-1af46a831bddad5578c0435e987957ff.s3tc.ctex"
+path.etc2="res://.godot/imported/Cereal_boxes.png-1af46a831bddad5578c0435e987957ff.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Cereal_boxe_03/Cereal_boxes.png"
-dest_files=["res://.godot/imported/Cereal_boxes.png-1af46a831bddad5578c0435e987957ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cereal_boxes.png-1af46a831bddad5578c0435e987957ff.s3tc.ctex", "res://.godot/imported/Cereal_boxes.png-1af46a831bddad5578c0435e987957ff.etc2.ctex"]
 
 [params]
 

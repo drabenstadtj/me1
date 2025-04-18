@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://neqgyuiudiol"
 path.s3tc="res://.godot/imported/PaintedPlaster012_1K-JPG_Color.jpg-5cbe98d6e331d3055e3dbae6f76db981.s3tc.ctex"
+path.etc2="res://.godot/imported/PaintedPlaster012_1K-JPG_Color.jpg-5cbe98d6e331d3055e3dbae6f76db981.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Materials/PaintedPlaster012_1K-JPG/PaintedPlaster012_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/PaintedPlaster012_1K-JPG_Color.jpg-5cbe98d6e331d3055e3dbae6f76db981.s3tc.ctex"]
+dest_files=["res://.godot/imported/PaintedPlaster012_1K-JPG_Color.jpg-5cbe98d6e331d3055e3dbae6f76db981.s3tc.ctex", "res://.godot/imported/PaintedPlaster012_1K-JPG_Color.jpg-5cbe98d6e331d3055e3dbae6f76db981.etc2.ctex"]
 
 [params]
 

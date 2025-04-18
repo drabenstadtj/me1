@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di8si746g8gvu"
-path.s3tc="res://.godot/imported/Cash_register.png-32c7df5f807297da1ef75fcc686ce610.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cash_register.png-6bda1cdc55c57efc205b134e67ce055b.s3tc.ctex"
+path.etc2="res://.godot/imported/Cash_register.png-6bda1cdc55c57efc205b134e67ce055b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Cash_register.png"
-dest_files=["res://.godot/imported/Cash_register.png-32c7df5f807297da1ef75fcc686ce610.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Cash_register.png"
+dest_files=["res://.godot/imported/Cash_register.png-6bda1cdc55c57efc205b134e67ce055b.s3tc.ctex", "res://.godot/imported/Cash_register.png-6bda1cdc55c57efc205b134e67ce055b.etc2.ctex"]
 
 [params]
 

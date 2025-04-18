@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4kqnsvxbntjx"
-path.s3tc="res://.godot/imported/lemon.png-b899f0f28f4bc8065bf18d11fa2d623a.s3tc.ctex"
+path.s3tc="res://.godot/imported/lemon.png-4dab81c7dde0f852c34bbae061c6578a.s3tc.ctex"
+path.etc2="res://.godot/imported/lemon.png-4dab81c7dde0f852c34bbae061c6578a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/lemon.png"
-dest_files=["res://.godot/imported/lemon.png-b899f0f28f4bc8065bf18d11fa2d623a.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/lemon.png"
+dest_files=["res://.godot/imported/lemon.png-4dab81c7dde0f852c34bbae061c6578a.s3tc.ctex", "res://.godot/imported/lemon.png-4dab81c7dde0f852c34bbae061c6578a.etc2.ctex"]
 
 [params]
 

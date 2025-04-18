@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://brg4ik214gdmv"
 path.s3tc="res://.godot/imported/Washbasin.png-8b037613793b1e0ce3096c137d2a3800.s3tc.ctex"
+path.etc2="res://.godot/imported/Washbasin.png-8b037613793b1e0ce3096c137d2a3800.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Washbasin/Washbasin.png"
-dest_files=["res://.godot/imported/Washbasin.png-8b037613793b1e0ce3096c137d2a3800.s3tc.ctex"]
+dest_files=["res://.godot/imported/Washbasin.png-8b037613793b1e0ce3096c137d2a3800.s3tc.ctex", "res://.godot/imported/Washbasin.png-8b037613793b1e0ce3096c137d2a3800.etc2.ctex"]
 
 [params]
 

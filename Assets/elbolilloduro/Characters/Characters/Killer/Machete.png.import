@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddeihghm4cp0n"
 path.s3tc="res://.godot/imported/Machete.png-2d53a726701c509d6250f666120c84b9.s3tc.ctex"
+path.etc2="res://.godot/imported/Machete.png-2d53a726701c509d6250f666120c84b9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Characters/Characters/Killer/Machete.png"
-dest_files=["res://.godot/imported/Machete.png-2d53a726701c509d6250f666120c84b9.s3tc.ctex"]
+dest_files=["res://.godot/imported/Machete.png-2d53a726701c509d6250f666120c84b9.s3tc.ctex", "res://.godot/imported/Machete.png-2d53a726701c509d6250f666120c84b9.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://qrhq65nuutvr"
 path.s3tc="res://.godot/imported/BrickSmallPainted.jpg-54b84fa4296df40f6c8b3b4092ae5c67.s3tc.ctex"
+path.etc2="res://.godot/imported/BrickSmallPainted.jpg-54b84fa4296df40f6c8b3b4092ae5c67.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_01/BrickSmallPainted.jpg"
-dest_files=["res://.godot/imported/BrickSmallPainted.jpg-54b84fa4296df40f6c8b3b4092ae5c67.s3tc.ctex"]
+dest_files=["res://.godot/imported/BrickSmallPainted.jpg-54b84fa4296df40f6c8b3b4092ae5c67.s3tc.ctex", "res://.godot/imported/BrickSmallPainted.jpg-54b84fa4296df40f6c8b3b4092ae5c67.etc2.ctex"]
 
 [params]
 

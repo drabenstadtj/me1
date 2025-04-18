@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr24edatlv2bs"
-path.s3tc="res://.godot/imported/Tiles_01.jpg-220bc97ca5ba58fb97fc0f26274cfc4c.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tiles_01.jpg-5d085020709c91f468c05fcbcfa59be5.s3tc.ctex"
+path.etc2="res://.godot/imported/Tiles_01.jpg-5d085020709c91f468c05fcbcfa59be5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Tiles_01.jpg"
-dest_files=["res://.godot/imported/Tiles_01.jpg-220bc97ca5ba58fb97fc0f26274cfc4c.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Tiles_01.jpg"
+dest_files=["res://.godot/imported/Tiles_01.jpg-5d085020709c91f468c05fcbcfa59be5.s3tc.ctex", "res://.godot/imported/Tiles_01.jpg-5d085020709c91f468c05fcbcfa59be5.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqgcvya1p4s5a"
-path.s3tc="res://.godot/imported/Blinds.png-43f4782ba63052c59e1df439b82f9775.s3tc.ctex"
+path.s3tc="res://.godot/imported/Blinds.png-6e2da6218c7c45f60863943815bd26e4.s3tc.ctex"
+path.etc2="res://.godot/imported/Blinds.png-6e2da6218c7c45f60863943815bd26e4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Blinds.png"
-dest_files=["res://.godot/imported/Blinds.png-43f4782ba63052c59e1df439b82f9775.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Blinds.png"
+dest_files=["res://.godot/imported/Blinds.png-6e2da6218c7c45f60863943815bd26e4.s3tc.ctex", "res://.godot/imported/Blinds.png-6e2da6218c7c45f60863943815bd26e4.etc2.ctex"]
 
 [params]
 

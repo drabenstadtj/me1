@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cagx7iij71v13"
 path.s3tc="res://.godot/imported/MetalFence.png-035300d1b5feb910b9a8d655907f2e4c.s3tc.ctex"
+path.etc2="res://.godot/imported/MetalFence.png-035300d1b5feb910b9a8d655907f2e4c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Fence/MetalFence.png"
-dest_files=["res://.godot/imported/MetalFence.png-035300d1b5feb910b9a8d655907f2e4c.s3tc.ctex"]
+dest_files=["res://.godot/imported/MetalFence.png-035300d1b5feb910b9a8d655907f2e4c.s3tc.ctex", "res://.godot/imported/MetalFence.png-035300d1b5feb910b9a8d655907f2e4c.etc2.ctex"]
 
 [params]
 

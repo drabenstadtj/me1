@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ter26a4vsovj"
 path.s3tc="res://.godot/imported/Character_02.png-3c0fa8a06c2c1504b92a9083e7871acc.s3tc.ctex"
+path.etc2="res://.godot/imported/Character_02.png-3c0fa8a06c2c1504b92a9083e7871acc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Characters/Characters/Character_02/Character_02.png"
-dest_files=["res://.godot/imported/Character_02.png-3c0fa8a06c2c1504b92a9083e7871acc.s3tc.ctex"]
+dest_files=["res://.godot/imported/Character_02.png-3c0fa8a06c2c1504b92a9083e7871acc.s3tc.ctex", "res://.godot/imported/Character_02.png-3c0fa8a06c2c1504b92a9083e7871acc.etc2.ctex"]
 
 [params]
 

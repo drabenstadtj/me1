@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf88oeqs3d6na"
-path.s3tc="res://.godot/imported/Salt_Pepper.png-3a7ec077d2f27f78f62d419fccd5ab08.s3tc.ctex"
+path.s3tc="res://.godot/imported/Salt_Pepper.png-04170e9545cce442cf246242daa557f1.s3tc.ctex"
+path.etc2="res://.godot/imported/Salt_Pepper.png-04170e9545cce442cf246242daa557f1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Salt_Pepper.png"
-dest_files=["res://.godot/imported/Salt_Pepper.png-3a7ec077d2f27f78f62d419fccd5ab08.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Salt_Pepper.png"
+dest_files=["res://.godot/imported/Salt_Pepper.png-04170e9545cce442cf246242daa557f1.s3tc.ctex", "res://.godot/imported/Salt_Pepper.png-04170e9545cce442cf246242daa557f1.etc2.ctex"]
 
 [params]
 

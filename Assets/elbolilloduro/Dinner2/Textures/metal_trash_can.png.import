@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxhbib0rv802n"
-path.s3tc="res://.godot/imported/metal_trash_can.png-67fc56488c0b9f273db7e9419749ccfb.s3tc.ctex"
+path.s3tc="res://.godot/imported/metal_trash_can.png-9b93d3dc9666467cbcc3608029acc787.s3tc.ctex"
+path.etc2="res://.godot/imported/metal_trash_can.png-9b93d3dc9666467cbcc3608029acc787.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/metal_trash_can.png"
-dest_files=["res://.godot/imported/metal_trash_can.png-67fc56488c0b9f273db7e9419749ccfb.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/metal_trash_can.png"
+dest_files=["res://.godot/imported/metal_trash_can.png-9b93d3dc9666467cbcc3608029acc787.s3tc.ctex", "res://.godot/imported/metal_trash_can.png-9b93d3dc9666467cbcc3608029acc787.etc2.ctex"]
 
 [params]
 

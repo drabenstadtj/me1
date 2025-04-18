@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqgmbx1h8ph76"
-path.s3tc="res://.godot/imported/Sidewalk.png-b48e16a18f37d24776e9329092ff37fa.s3tc.ctex"
+path.s3tc="res://.godot/imported/Sidewalk.png-51722b463d9746b711c7b228a0348cd8.s3tc.ctex"
+path.etc2="res://.godot/imported/Sidewalk.png-51722b463d9746b711c7b228a0348cd8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Sidewalk.png"
-dest_files=["res://.godot/imported/Sidewalk.png-b48e16a18f37d24776e9329092ff37fa.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Sidewalk.png"
+dest_files=["res://.godot/imported/Sidewalk.png-51722b463d9746b711c7b228a0348cd8.s3tc.ctex", "res://.godot/imported/Sidewalk.png-51722b463d9746b711c7b228a0348cd8.etc2.ctex"]
 
 [params]
 

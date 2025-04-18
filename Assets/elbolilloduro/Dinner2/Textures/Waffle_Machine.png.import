@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caw0x7bakejs8"
-path.s3tc="res://.godot/imported/Waffle_Machine.png-c492cb7edccb62ba41eb46e9f24711a2.s3tc.ctex"
+path.s3tc="res://.godot/imported/Waffle_Machine.png-f480bad1c09af7f47363016a401e396e.s3tc.ctex"
+path.etc2="res://.godot/imported/Waffle_Machine.png-f480bad1c09af7f47363016a401e396e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Waffle_Machine.png"
-dest_files=["res://.godot/imported/Waffle_Machine.png-c492cb7edccb62ba41eb46e9f24711a2.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Waffle_Machine.png"
+dest_files=["res://.godot/imported/Waffle_Machine.png-f480bad1c09af7f47363016a401e396e.s3tc.ctex", "res://.godot/imported/Waffle_Machine.png-f480bad1c09af7f47363016a401e396e.etc2.ctex"]
 
 [params]
 

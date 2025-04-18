@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://br2puj2h3v8c8"
 path.s3tc="res://.godot/imported/BurgerPiz_Refrijerator_M.png-89c0db8d83dd074ab1d123f2b05221e5.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_Refrijerator_M.png-89c0db8d83dd074ab1d123f2b05221e5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/elbolilloduro/BurgerPiz/Models/BurgerPiz_Refrijerator_M.png"
-dest_files=["res://.godot/imported/BurgerPiz_Refrijerator_M.png-89c0db8d83dd074ab1d123f2b05221e5.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_Refrijerator_M.png-89c0db8d83dd074ab1d123f2b05221e5.s3tc.ctex", "res://.godot/imported/BurgerPiz_Refrijerator_M.png-89c0db8d83dd074ab1d123f2b05221e5.etc2.ctex"]
 
 [params]
 

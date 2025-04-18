@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfj6jgnlksi83"
-path.s3tc="res://.godot/imported/Smoothie_Machine.png-dc845567d7f730e19b0340ab938af7a1.s3tc.ctex"
+path.s3tc="res://.godot/imported/Smoothie_Machine.png-72b7c61313a6debf9d82757afdf2acfe.s3tc.ctex"
+path.etc2="res://.godot/imported/Smoothie_Machine.png-72b7c61313a6debf9d82757afdf2acfe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Smoothie_Machine.png"
-dest_files=["res://.godot/imported/Smoothie_Machine.png-dc845567d7f730e19b0340ab938af7a1.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Smoothie_Machine.png"
+dest_files=["res://.godot/imported/Smoothie_Machine.png-72b7c61313a6debf9d82757afdf2acfe.s3tc.ctex", "res://.godot/imported/Smoothie_Machine.png-72b7c61313a6debf9d82757afdf2acfe.etc2.ctex"]
 
 [params]
 

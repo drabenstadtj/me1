@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2wvkh84pg2si"
 path.s3tc="res://.godot/imported/Mop.png-86910c9846e804889c1655b8b9cace22.s3tc.ctex"
+path.etc2="res://.godot/imported/Mop.png-86910c9846e804889c1655b8b9cace22.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Mop/Mop.png"
-dest_files=["res://.godot/imported/Mop.png-86910c9846e804889c1655b8b9cace22.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mop.png-86910c9846e804889c1655b8b9cace22.s3tc.ctex", "res://.godot/imported/Mop.png-86910c9846e804889c1655b8b9cace22.etc2.ctex"]
 
 [params]
 

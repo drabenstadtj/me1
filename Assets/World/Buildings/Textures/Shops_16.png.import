@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://blimumujqcdm3"
 path.s3tc="res://.godot/imported/Shops_16.png-bb1acf75cc7d0f20a6195d4a72e021ff.s3tc.ctex"
+path.etc2="res://.godot/imported/Shops_16.png-bb1acf75cc7d0f20a6195d4a72e021ff.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/World/Buildings/Textures/Shops_16.png"
-dest_files=["res://.godot/imported/Shops_16.png-bb1acf75cc7d0f20a6195d4a72e021ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/Shops_16.png-bb1acf75cc7d0f20a6195d4a72e021ff.s3tc.ctex", "res://.godot/imported/Shops_16.png-bb1acf75cc7d0f20a6195d4a72e021ff.etc2.ctex"]
 
 [params]
 

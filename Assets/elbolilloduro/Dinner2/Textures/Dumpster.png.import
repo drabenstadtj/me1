@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bidg4xkdplpb4"
-path.s3tc="res://.godot/imported/Dumpster.png-e241903f96160138dafc0a2d101111bd.s3tc.ctex"
+path.s3tc="res://.godot/imported/Dumpster.png-93bb8b0748b078502f01a5a670751f82.s3tc.ctex"
+path.etc2="res://.godot/imported/Dumpster.png-93bb8b0748b078502f01a5a670751f82.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Dumpster.png"
-dest_files=["res://.godot/imported/Dumpster.png-e241903f96160138dafc0a2d101111bd.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Dumpster.png"
+dest_files=["res://.godot/imported/Dumpster.png-93bb8b0748b078502f01a5a670751f82.s3tc.ctex", "res://.godot/imported/Dumpster.png-93bb8b0748b078502f01a5a670751f82.etc2.ctex"]
 
 [params]
 

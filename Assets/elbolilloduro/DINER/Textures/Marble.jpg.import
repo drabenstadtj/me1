@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g8x7s5o0144v"
-path.s3tc="res://.godot/imported/Marble.jpg-e9621e30b64ec4554f33570993c7577d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Marble.jpg-85ff1e55e992492a4f17fbb057b1bcf1.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble.jpg-85ff1e55e992492a4f17fbb057b1bcf1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Marble.jpg"
-dest_files=["res://.godot/imported/Marble.jpg-e9621e30b64ec4554f33570993c7577d.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Marble.jpg"
+dest_files=["res://.godot/imported/Marble.jpg-85ff1e55e992492a4f17fbb057b1bcf1.s3tc.ctex", "res://.godot/imported/Marble.jpg-85ff1e55e992492a4f17fbb057b1bcf1.etc2.ctex"]
 
 [params]
 

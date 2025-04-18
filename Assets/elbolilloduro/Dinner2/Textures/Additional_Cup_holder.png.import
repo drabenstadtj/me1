@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn4rw4p277nkq"
-path.s3tc="res://.godot/imported/Additional_Cup_holder.png-ff5ce8280f58071ac64fca8577700e73.s3tc.ctex"
+path.s3tc="res://.godot/imported/Additional_Cup_holder.png-35064fedcdaa4e21abe1714afaf710b5.s3tc.ctex"
+path.etc2="res://.godot/imported/Additional_Cup_holder.png-35064fedcdaa4e21abe1714afaf710b5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Additional_Cup_holder.png"
-dest_files=["res://.godot/imported/Additional_Cup_holder.png-ff5ce8280f58071ac64fca8577700e73.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Additional_Cup_holder.png"
+dest_files=["res://.godot/imported/Additional_Cup_holder.png-35064fedcdaa4e21abe1714afaf710b5.s3tc.ctex", "res://.godot/imported/Additional_Cup_holder.png-35064fedcdaa4e21abe1714afaf710b5.etc2.ctex"]
 
 [params]
 

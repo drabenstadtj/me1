@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nk5louw3i76s"
-path.s3tc="res://.godot/imported/R_V.png-ab8da82d28197341dcdfddb22babd46d.s3tc.ctex"
+path.s3tc="res://.godot/imported/R_V.png-475ef11d9e2d5ee11d253c5a152a5052.s3tc.ctex"
+path.etc2="res://.godot/imported/R_V.png-475ef11d9e2d5ee11d253c5a152a5052.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/R_V.png"
-dest_files=["res://.godot/imported/R_V.png-ab8da82d28197341dcdfddb22babd46d.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/R_V.png"
+dest_files=["res://.godot/imported/R_V.png-475ef11d9e2d5ee11d253c5a152a5052.s3tc.ctex", "res://.godot/imported/R_V.png-475ef11d9e2d5ee11d253c5a152a5052.etc2.ctex"]
 
 [params]
 

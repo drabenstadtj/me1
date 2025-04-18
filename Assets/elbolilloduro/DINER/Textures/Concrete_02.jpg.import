@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkf5yu3xsvyls"
-path.s3tc="res://.godot/imported/Concrete_02.jpg-4149cad44cbc4a395dde60d8e8236cc3.s3tc.ctex"
+path.s3tc="res://.godot/imported/Concrete_02.jpg-139b0427c9716129079a234a1f64a422.s3tc.ctex"
+path.etc2="res://.godot/imported/Concrete_02.jpg-139b0427c9716129079a234a1f64a422.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Concrete_02.jpg"
-dest_files=["res://.godot/imported/Concrete_02.jpg-4149cad44cbc4a395dde60d8e8236cc3.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Concrete_02.jpg"
+dest_files=["res://.godot/imported/Concrete_02.jpg-139b0427c9716129079a234a1f64a422.s3tc.ctex", "res://.godot/imported/Concrete_02.jpg-139b0427c9716129079a234a1f64a422.etc2.ctex"]
 
 [params]
 

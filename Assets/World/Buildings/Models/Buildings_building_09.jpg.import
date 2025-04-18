@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcotlb6ea24y3"
 path.s3tc="res://.godot/imported/Buildings_building_09.jpg-4e3fbd29d0cfbb3cfa9382bbf7c180d2.s3tc.ctex"
+path.etc2="res://.godot/imported/Buildings_building_09.jpg-4e3fbd29d0cfbb3cfa9382bbf7c180d2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/Buildings/Models/Buildings_building_09.jpg"
-dest_files=["res://.godot/imported/Buildings_building_09.jpg-4e3fbd29d0cfbb3cfa9382bbf7c180d2.s3tc.ctex"]
+dest_files=["res://.godot/imported/Buildings_building_09.jpg-4e3fbd29d0cfbb3cfa9382bbf7c180d2.s3tc.ctex", "res://.godot/imported/Buildings_building_09.jpg-4e3fbd29d0cfbb3cfa9382bbf7c180d2.etc2.ctex"]
 
 [params]
 

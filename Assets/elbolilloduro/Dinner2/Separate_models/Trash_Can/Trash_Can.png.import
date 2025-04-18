@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://brte4gr4837hi"
 path.s3tc="res://.godot/imported/Trash_Can.png-d5b7157c5a116f62bdd6b9d279b4c58a.s3tc.ctex"
+path.etc2="res://.godot/imported/Trash_Can.png-d5b7157c5a116f62bdd6b9d279b4c58a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Trash_Can/Trash_Can.png"
-dest_files=["res://.godot/imported/Trash_Can.png-d5b7157c5a116f62bdd6b9d279b4c58a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Trash_Can.png-d5b7157c5a116f62bdd6b9d279b4c58a.s3tc.ctex", "res://.godot/imported/Trash_Can.png-d5b7157c5a116f62bdd6b9d279b4c58a.etc2.ctex"]
 
 [params]
 

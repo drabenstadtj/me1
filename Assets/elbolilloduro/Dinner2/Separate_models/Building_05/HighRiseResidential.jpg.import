@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpik5os64txis"
 path.s3tc="res://.godot/imported/HighRiseResidential.jpg-0f26172c143f22f7871ee40ef262f75d.s3tc.ctex"
+path.etc2="res://.godot/imported/HighRiseResidential.jpg-0f26172c143f22f7871ee40ef262f75d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_05/HighRiseResidential.jpg"
-dest_files=["res://.godot/imported/HighRiseResidential.jpg-0f26172c143f22f7871ee40ef262f75d.s3tc.ctex"]
+dest_files=["res://.godot/imported/HighRiseResidential.jpg-0f26172c143f22f7871ee40ef262f75d.s3tc.ctex", "res://.godot/imported/HighRiseResidential.jpg-0f26172c143f22f7871ee40ef262f75d.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cooqkojwml1ip"
-path.s3tc="res://.godot/imported/Tray.png-236cacab58d50af69feea706bbce01be.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tray.png-69f6e1580063534b25474fa9ff48150d.s3tc.ctex"
+path.etc2="res://.godot/imported/Tray.png-69f6e1580063534b25474fa9ff48150d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Tray.png"
-dest_files=["res://.godot/imported/Tray.png-236cacab58d50af69feea706bbce01be.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Tray.png"
+dest_files=["res://.godot/imported/Tray.png-69f6e1580063534b25474fa9ff48150d.s3tc.ctex", "res://.godot/imported/Tray.png-69f6e1580063534b25474fa9ff48150d.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7vs10q6tg1dq"
-path.s3tc="res://.godot/imported/MetalRollup.jpg-cb68813f5c3df453738deb288a52ed02.s3tc.ctex"
+path.s3tc="res://.godot/imported/MetalRollup.jpg-15621d3ed37ac80c0562f974af680857.s3tc.ctex"
+path.etc2="res://.godot/imported/MetalRollup.jpg-15621d3ed37ac80c0562f974af680857.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/MetalRollup.jpg"
-dest_files=["res://.godot/imported/MetalRollup.jpg-cb68813f5c3df453738deb288a52ed02.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/MetalRollup.jpg"
+dest_files=["res://.godot/imported/MetalRollup.jpg-15621d3ed37ac80c0562f974af680857.s3tc.ctex", "res://.godot/imported/MetalRollup.jpg-15621d3ed37ac80c0562f974af680857.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dikxs8w8v8brn"
-path.s3tc="res://.godot/imported/Moss.png-c46301a46245d8ed7d8a23407f779644.s3tc.ctex"
+path.s3tc="res://.godot/imported/Moss.png-89188bb2e39a22b5ef75347c8ccfa406.s3tc.ctex"
+path.etc2="res://.godot/imported/Moss.png-89188bb2e39a22b5ef75347c8ccfa406.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Moss.png"
-dest_files=["res://.godot/imported/Moss.png-c46301a46245d8ed7d8a23407f779644.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Moss.png"
+dest_files=["res://.godot/imported/Moss.png-89188bb2e39a22b5ef75347c8ccfa406.s3tc.ctex", "res://.godot/imported/Moss.png-89188bb2e39a22b5ef75347c8ccfa406.etc2.ctex"]
 
 [params]
 

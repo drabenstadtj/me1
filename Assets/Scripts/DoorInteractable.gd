@@ -2,46 +2,56 @@ extends Node3D
 
 @export var prompt_text: String = "Press E to Enter"
 @export var interaction_distance: float = 3.0
+@export var target_scene_path: String = "res://Scenes/bar.tscn"
+@export var fade_duration: float = 1.0
+@export var pause_after_fade: float = 0.5
 
 signal interacted
 
 var player_camera: Camera3D
 var ui_prompt: Label
+var fade_rect: ColorRect
+var fading := false
 
 func _ready():
-	# Dynamically find references (adjust paths to your actual scene structure)
 	player_camera = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/Player/Camera3D")
 	ui_prompt = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/PromptLabel")
+	fade_rect = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/Fade")
 
 	if ui_prompt:
 		ui_prompt.visible = false
 
 func _process(_delta):
-	if not player_camera or not ui_prompt:
+	if fading or not player_camera or not ui_prompt or not fade_rect:
 		return
 
 	var from = player_camera.global_transform.origin
 	var to = from + -player_camera.global_transform.basis.z * interaction_distance
 
 	var query = PhysicsRayQueryParameters3D.create(from, to)
-	query.collide_with_areas = true   # Enable detection of Area3Ds
+	query.collide_with_areas = true
 	query.collide_with_bodies = true
 	query.exclude = [player_camera.get_camera_rid()]
 
 	var result = get_world_3d().direct_space_state.intersect_ray(query)
 
-	if result:
-		print("Hit: ", result.collider.name)
+	if result and self.is_ancestor_of(result.collider):
+		ui_prompt.text = prompt_text
+		ui_prompt.visible = true
 
-		if self.is_ancestor_of(result.collider):
-			ui_prompt.text = prompt_text
-			ui_prompt.visible = true
-
-			if Input.is_action_just_pressed("interact"):
-				emit_signal("interacted")
-		else:
-			if ui_prompt.visible:
-				ui_prompt.visible = false
+		if Input.is_action_just_pressed("interact"):
+			emit_signal("interacted")
+			fading = true
+			start_fade()
 	else:
-		if ui_prompt.visible:
-			ui_prompt.visible = false
+		ui_prompt.visible = false
+
+func start_fade():
+	# Animate the alpha to 1.0
+	var tween := get_tree().create_tween()
+	tween.tween_property(fade_rect, "modulate:a", 1.0, fade_duration)
+	tween.tween_callback(Callable(self, "_on_fade_complete"))
+
+func _on_fade_complete():
+	await get_tree().create_timer(pause_after_fade).timeout
+	get_tree().change_scene_to_file(target_scene_path)

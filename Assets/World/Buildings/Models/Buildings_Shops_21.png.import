@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhaghb4016mxo"
 path.s3tc="res://.godot/imported/Buildings_Shops_21.png-d47f35d159b375f666e8e4a856d6b242.s3tc.ctex"
+path.etc2="res://.godot/imported/Buildings_Shops_21.png-d47f35d159b375f666e8e4a856d6b242.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/World/Buildings/Models/Buildings_Shops_21.png"
-dest_files=["res://.godot/imported/Buildings_Shops_21.png-d47f35d159b375f666e8e4a856d6b242.s3tc.ctex"]
+dest_files=["res://.godot/imported/Buildings_Shops_21.png-d47f35d159b375f666e8e4a856d6b242.s3tc.ctex", "res://.godot/imported/Buildings_Shops_21.png-d47f35d159b375f666e8e4a856d6b242.etc2.ctex"]
 
 [params]
 

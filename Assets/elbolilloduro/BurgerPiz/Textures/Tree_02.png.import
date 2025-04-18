@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btunr3eeia4j2"
-path.s3tc="res://.godot/imported/Tree_02.png-da22899f4717998559da925c66dc6501.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tree_02.png-466179779bfa77d1b8d773a315359dce.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree_02.png-466179779bfa77d1b8d773a315359dce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Tree_02.png"
-dest_files=["res://.godot/imported/Tree_02.png-da22899f4717998559da925c66dc6501.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Tree_02.png"
+dest_files=["res://.godot/imported/Tree_02.png-466179779bfa77d1b8d773a315359dce.s3tc.ctex", "res://.godot/imported/Tree_02.png-466179779bfa77d1b8d773a315359dce.etc2.ctex"]
 
 [params]
 

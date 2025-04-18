@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgb5bvoy5u14a"
-path.s3tc="res://.godot/imported/Branch.png-90adceaed239ba8c29c81ebb86231190.s3tc.ctex"
+path.s3tc="res://.godot/imported/Branch.png-39d7c623950d43e3fbb3b21764e258cb.s3tc.ctex"
+path.etc2="res://.godot/imported/Branch.png-39d7c623950d43e3fbb3b21764e258cb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Branch.png"
-dest_files=["res://.godot/imported/Branch.png-90adceaed239ba8c29c81ebb86231190.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Branch.png"
+dest_files=["res://.godot/imported/Branch.png-39d7c623950d43e3fbb3b21764e258cb.s3tc.ctex", "res://.godot/imported/Branch.png-39d7c623950d43e3fbb3b21764e258cb.etc2.ctex"]
 
 [params]
 

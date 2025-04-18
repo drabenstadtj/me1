@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsnt2ar0cap5q"
-path.s3tc="res://.godot/imported/Paperboard.jpg-69462319939123b42304f0a16e93486e.s3tc.ctex"
+path.s3tc="res://.godot/imported/Paperboard.jpg-cdc06a624b72c6ee754514fa072b7a78.s3tc.ctex"
+path.etc2="res://.godot/imported/Paperboard.jpg-cdc06a624b72c6ee754514fa072b7a78.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Paperboard.jpg"
-dest_files=["res://.godot/imported/Paperboard.jpg-69462319939123b42304f0a16e93486e.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Paperboard.jpg"
+dest_files=["res://.godot/imported/Paperboard.jpg-cdc06a624b72c6ee754514fa072b7a78.s3tc.ctex", "res://.godot/imported/Paperboard.jpg-cdc06a624b72c6ee754514fa072b7a78.etc2.ctex"]
 
 [params]
 

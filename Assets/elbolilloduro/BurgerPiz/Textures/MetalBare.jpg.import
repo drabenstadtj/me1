@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jwitn3yhdsy8"
-path.s3tc="res://.godot/imported/MetalBare.jpg-fd99c830da5597a2710aeca82ecbed7c.s3tc.ctex"
+path.s3tc="res://.godot/imported/MetalBare.jpg-4eaf36ad63123772baecce32bbd6feb0.s3tc.ctex"
+path.etc2="res://.godot/imported/MetalBare.jpg-4eaf36ad63123772baecce32bbd6feb0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/MetalBare.jpg"
-dest_files=["res://.godot/imported/MetalBare.jpg-fd99c830da5597a2710aeca82ecbed7c.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/MetalBare.jpg"
+dest_files=["res://.godot/imported/MetalBare.jpg-4eaf36ad63123772baecce32bbd6feb0.s3tc.ctex", "res://.godot/imported/MetalBare.jpg-4eaf36ad63123772baecce32bbd6feb0.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://42120radud0i"
 path.s3tc="res://.godot/imported/BurgerPiz_Shelf_fd.png-512427ce0f6ce9bbbbae65d214960add.s3tc.ctex"
+path.etc2="res://.godot/imported/BurgerPiz_Shelf_fd.png-512427ce0f6ce9bbbbae65d214960add.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/elbolilloduro/BurgerPiz/Models/BurgerPiz_Shelf_fd.png"
-dest_files=["res://.godot/imported/BurgerPiz_Shelf_fd.png-512427ce0f6ce9bbbbae65d214960add.s3tc.ctex"]
+dest_files=["res://.godot/imported/BurgerPiz_Shelf_fd.png-512427ce0f6ce9bbbbae65d214960add.s3tc.ctex", "res://.godot/imported/BurgerPiz_Shelf_fd.png-512427ce0f6ce9bbbbae65d214960add.etc2.ctex"]
 
 [params]
 

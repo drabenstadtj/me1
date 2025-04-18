@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgn0asqgt8epu"
-path.s3tc="res://.godot/imported/Wood_06.jpg-6577d6172aa129639d73aca49332e82a.s3tc.ctex"
+path.s3tc="res://.godot/imported/Wood_06.jpg-b9a8cad176b07735e0794480c871dd6f.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood_06.jpg-b9a8cad176b07735e0794480c871dd6f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Wood_06.jpg"
-dest_files=["res://.godot/imported/Wood_06.jpg-6577d6172aa129639d73aca49332e82a.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Wood_06.jpg"
+dest_files=["res://.godot/imported/Wood_06.jpg-b9a8cad176b07735e0794480c871dd6f.s3tc.ctex", "res://.godot/imported/Wood_06.jpg-b9a8cad176b07735e0794480c871dd6f.etc2.ctex"]
 
 [params]
 

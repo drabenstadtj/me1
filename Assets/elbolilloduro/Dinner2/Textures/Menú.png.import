@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b077s52c40rp8"
-path.s3tc="res://.godot/imported/Menú.png-f7d70986681ee32eb4779d8e0e85916e.s3tc.ctex"
+path.s3tc="res://.godot/imported/Menú.png-1b1556dde0d34dd24accb964b89cbba5.s3tc.ctex"
+path.etc2="res://.godot/imported/Menú.png-1b1556dde0d34dd24accb964b89cbba5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Menú.png"
-dest_files=["res://.godot/imported/Menú.png-f7d70986681ee32eb4779d8e0e85916e.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Menú.png"
+dest_files=["res://.godot/imported/Menú.png-1b1556dde0d34dd24accb964b89cbba5.s3tc.ctex", "res://.godot/imported/Menú.png-1b1556dde0d34dd24accb964b89cbba5.etc2.ctex"]
 
 [params]
 

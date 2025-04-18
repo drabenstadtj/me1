@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4u0idc70i8te"
-path.s3tc="res://.godot/imported/Cupcakes.png-8c48f848e6def62695eb2865d617bace.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cupcakes.png-1426d47376efcc43f8ba8ff900d7e7aa.s3tc.ctex"
+path.etc2="res://.godot/imported/Cupcakes.png-1426d47376efcc43f8ba8ff900d7e7aa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Cupcakes.png"
-dest_files=["res://.godot/imported/Cupcakes.png-8c48f848e6def62695eb2865d617bace.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Cupcakes.png"
+dest_files=["res://.godot/imported/Cupcakes.png-1426d47376efcc43f8ba8ff900d7e7aa.s3tc.ctex", "res://.godot/imported/Cupcakes.png-1426d47376efcc43f8ba8ff900d7e7aa.etc2.ctex"]
 
 [params]
 

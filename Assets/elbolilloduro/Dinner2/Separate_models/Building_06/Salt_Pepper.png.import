@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc5jmu4781okx"
 path.s3tc="res://.godot/imported/Salt_Pepper.png-dd189333647d1e4d823a4394b780a5dc.s3tc.ctex"
+path.etc2="res://.godot/imported/Salt_Pepper.png-dd189333647d1e4d823a4394b780a5dc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Salt_Pepper.png"
-dest_files=["res://.godot/imported/Salt_Pepper.png-dd189333647d1e4d823a4394b780a5dc.s3tc.ctex"]
+dest_files=["res://.godot/imported/Salt_Pepper.png-dd189333647d1e4d823a4394b780a5dc.s3tc.ctex", "res://.godot/imported/Salt_Pepper.png-dd189333647d1e4d823a4394b780a5dc.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5f5vvlt3qebn"
 path.s3tc="res://.godot/imported/Tiles052_1K-JPG_Color.jpg-ee1172c61ce9553996caf2f71d83f151.s3tc.ctex"
+path.etc2="res://.godot/imported/Tiles052_1K-JPG_Color.jpg-ee1172c61ce9553996caf2f71d83f151.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Materials/Tiles052_1K-JPG/Tiles052_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Tiles052_1K-JPG_Color.jpg-ee1172c61ce9553996caf2f71d83f151.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tiles052_1K-JPG_Color.jpg-ee1172c61ce9553996caf2f71d83f151.s3tc.ctex", "res://.godot/imported/Tiles052_1K-JPG_Color.jpg-ee1172c61ce9553996caf2f71d83f151.etc2.ctex"]
 
 [params]
 

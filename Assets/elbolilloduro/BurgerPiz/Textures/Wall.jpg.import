@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn68g561o8674"
-path.s3tc="res://.godot/imported/Wall.jpg-6536c3fe1b65828f53148573157cff21.s3tc.ctex"
+path.s3tc="res://.godot/imported/Wall.jpg-45e9e2f66034bf91ecf357c538bca4f2.s3tc.ctex"
+path.etc2="res://.godot/imported/Wall.jpg-45e9e2f66034bf91ecf357c538bca4f2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Wall.jpg"
-dest_files=["res://.godot/imported/Wall.jpg-6536c3fe1b65828f53148573157cff21.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Wall.jpg"
+dest_files=["res://.godot/imported/Wall.jpg-45e9e2f66034bf91ecf357c538bca4f2.s3tc.ctex", "res://.godot/imported/Wall.jpg-45e9e2f66034bf91ecf357c538bca4f2.etc2.ctex"]
 
 [params]
 

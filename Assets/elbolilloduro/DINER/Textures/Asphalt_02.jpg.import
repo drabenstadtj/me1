@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0uf5ufgvko82"
-path.s3tc="res://.godot/imported/Asphalt_02.jpg-a7364e3b54bb3608e57f1df365a6553b.s3tc.ctex"
+path.s3tc="res://.godot/imported/Asphalt_02.jpg-4ea1b4b2d4ea1df2e1f0db21ed61a97d.s3tc.ctex"
+path.etc2="res://.godot/imported/Asphalt_02.jpg-4ea1b4b2d4ea1df2e1f0db21ed61a97d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Asphalt_02.jpg"
-dest_files=["res://.godot/imported/Asphalt_02.jpg-a7364e3b54bb3608e57f1df365a6553b.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Asphalt_02.jpg"
+dest_files=["res://.godot/imported/Asphalt_02.jpg-4ea1b4b2d4ea1df2e1f0db21ed61a97d.s3tc.ctex", "res://.godot/imported/Asphalt_02.jpg-4ea1b4b2d4ea1df2e1f0db21ed61a97d.etc2.ctex"]
 
 [params]
 

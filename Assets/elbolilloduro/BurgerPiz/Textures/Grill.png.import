@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://huu6nywqia58"
-path.s3tc="res://.godot/imported/Grill.png-03ee723b4e9178054cf1b49d4f4b5ff1.s3tc.ctex"
+path.s3tc="res://.godot/imported/Grill.png-f9dd7430a8a679e57ea7da6261edc73a.s3tc.ctex"
+path.etc2="res://.godot/imported/Grill.png-f9dd7430a8a679e57ea7da6261edc73a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Grill.png"
-dest_files=["res://.godot/imported/Grill.png-03ee723b4e9178054cf1b49d4f4b5ff1.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Grill.png"
+dest_files=["res://.godot/imported/Grill.png-f9dd7430a8a679e57ea7da6261edc73a.s3tc.ctex", "res://.godot/imported/Grill.png-f9dd7430a8a679e57ea7da6261edc73a.etc2.ctex"]
 
 [params]
 

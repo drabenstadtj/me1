@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fqtxpoqlnkhk"
-path.s3tc="res://.godot/imported/Terminal.png-ccefd925d8b6cf0827d995f699c185df.s3tc.ctex"
+path.s3tc="res://.godot/imported/Terminal.png-3c76cd3e81d3f7d1506f5c9a41b15d5b.s3tc.ctex"
+path.etc2="res://.godot/imported/Terminal.png-3c76cd3e81d3f7d1506f5c9a41b15d5b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Terminal.png"
-dest_files=["res://.godot/imported/Terminal.png-ccefd925d8b6cf0827d995f699c185df.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Terminal.png"
+dest_files=["res://.godot/imported/Terminal.png-3c76cd3e81d3f7d1506f5c9a41b15d5b.s3tc.ctex", "res://.godot/imported/Terminal.png-3c76cd3e81d3f7d1506f5c9a41b15d5b.etc2.ctex"]
 
 [params]
 

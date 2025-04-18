@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbvp2ccm2uayv"
 path.s3tc="res://.godot/imported/Cash_register.png-d2cd31a8ff66a87d5c7d03c04de75edb.s3tc.ctex"
+path.etc2="res://.godot/imported/Cash_register.png-d2cd31a8ff66a87d5c7d03c04de75edb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Cash_register.png"
-dest_files=["res://.godot/imported/Cash_register.png-d2cd31a8ff66a87d5c7d03c04de75edb.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cash_register.png-d2cd31a8ff66a87d5c7d03c04de75edb.s3tc.ctex", "res://.godot/imported/Cash_register.png-d2cd31a8ff66a87d5c7d03c04de75edb.etc2.ctex"]
 
 [params]
 

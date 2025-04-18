@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqrbm6n7jmf1"
 path.s3tc="res://.godot/imported/Branch.png-5a29a69bfef2e10a932a0af0022bf23d.s3tc.ctex"
+path.etc2="res://.godot/imported/Branch.png-5a29a69bfef2e10a932a0af0022bf23d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Branch.png"
-dest_files=["res://.godot/imported/Branch.png-5a29a69bfef2e10a932a0af0022bf23d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Branch.png-5a29a69bfef2e10a932a0af0022bf23d.s3tc.ctex", "res://.godot/imported/Branch.png-5a29a69bfef2e10a932a0af0022bf23d.etc2.ctex"]
 
 [params]
 

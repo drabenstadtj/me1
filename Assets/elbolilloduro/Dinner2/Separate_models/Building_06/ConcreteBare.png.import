@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgj1ksj31yp0e"
 path.s3tc="res://.godot/imported/ConcreteBare.png-4e7e0eb55cc5544cd79f464b534a9fcf.s3tc.ctex"
+path.etc2="res://.godot/imported/ConcreteBare.png-4e7e0eb55cc5544cd79f464b534a9fcf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/ConcreteBare.png"
-dest_files=["res://.godot/imported/ConcreteBare.png-4e7e0eb55cc5544cd79f464b534a9fcf.s3tc.ctex"]
+dest_files=["res://.godot/imported/ConcreteBare.png-4e7e0eb55cc5544cd79f464b534a9fcf.s3tc.ctex", "res://.godot/imported/ConcreteBare.png-4e7e0eb55cc5544cd79f464b534a9fcf.etc2.ctex"]
 
 [params]
 

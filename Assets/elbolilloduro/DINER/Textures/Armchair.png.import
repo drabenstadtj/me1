@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crh1oebrt4f7b"
-path.s3tc="res://.godot/imported/Armchair.png-818abbb5b1860c748fc3875fd23430d7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Armchair.png-a9a9499f9adf4e0e327476f0be780d33.s3tc.ctex"
+path.etc2="res://.godot/imported/Armchair.png-a9a9499f9adf4e0e327476f0be780d33.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Armchair.png"
-dest_files=["res://.godot/imported/Armchair.png-818abbb5b1860c748fc3875fd23430d7.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Armchair.png"
+dest_files=["res://.godot/imported/Armchair.png-a9a9499f9adf4e0e327476f0be780d33.s3tc.ctex", "res://.godot/imported/Armchair.png-a9a9499f9adf4e0e327476f0be780d33.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dper3e1msr460"
 path.s3tc="res://.godot/imported/PaintedPlaster014.png-2d80c2458092e02d5fac3118fc0c9ce5.s3tc.ctex"
+path.etc2="res://.godot/imported/PaintedPlaster014.png-2d80c2458092e02d5fac3118fc0c9ce5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Materials/PaintedPlaster014_1K-JPG/PaintedPlaster014.png"
-dest_files=["res://.godot/imported/PaintedPlaster014.png-2d80c2458092e02d5fac3118fc0c9ce5.s3tc.ctex"]
+dest_files=["res://.godot/imported/PaintedPlaster014.png-2d80c2458092e02d5fac3118fc0c9ce5.s3tc.ctex", "res://.godot/imported/PaintedPlaster014.png-2d80c2458092e02d5fac3118fc0c9ce5.etc2.ctex"]
 
 [params]
 

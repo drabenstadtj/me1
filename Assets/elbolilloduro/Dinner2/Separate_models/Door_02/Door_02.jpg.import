@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://oecvvhoal80x"
 path.s3tc="res://.godot/imported/Door_02.jpg-e698666ecc6702fe0c95ac131658ad3f.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_02.jpg-e698666ecc6702fe0c95ac131658ad3f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Door_02/Door_02.jpg"
-dest_files=["res://.godot/imported/Door_02.jpg-e698666ecc6702fe0c95ac131658ad3f.s3tc.ctex"]
+dest_files=["res://.godot/imported/Door_02.jpg-e698666ecc6702fe0c95ac131658ad3f.s3tc.ctex", "res://.godot/imported/Door_02.jpg-e698666ecc6702fe0c95ac131658ad3f.etc2.ctex"]
 
 [params]
 

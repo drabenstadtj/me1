@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfa0djgj46psr"
 path.s3tc="res://.godot/imported/semi-automatic_machine.png-fcff941320a8ebd343fa5a19f1f54374.s3tc.ctex"
+path.etc2="res://.godot/imported/semi-automatic_machine.png-fcff941320a8ebd343fa5a19f1f54374.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/semi-automatic_machine/semi-automatic_machine.png"
-dest_files=["res://.godot/imported/semi-automatic_machine.png-fcff941320a8ebd343fa5a19f1f54374.s3tc.ctex"]
+dest_files=["res://.godot/imported/semi-automatic_machine.png-fcff941320a8ebd343fa5a19f1f54374.s3tc.ctex", "res://.godot/imported/semi-automatic_machine.png-fcff941320a8ebd343fa5a19f1f54374.etc2.ctex"]
 
 [params]
 

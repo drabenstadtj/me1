@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://33oqrds6t1wx"
-path.s3tc="res://.godot/imported/Hand_dryer.png-60d8e8bb151a772faa924c48996c9d28.s3tc.ctex"
+path.s3tc="res://.godot/imported/Hand_dryer.png-01099a2e12d8b90a61c4b07604289574.s3tc.ctex"
+path.etc2="res://.godot/imported/Hand_dryer.png-01099a2e12d8b90a61c4b07604289574.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Hand_dryer.png"
-dest_files=["res://.godot/imported/Hand_dryer.png-60d8e8bb151a772faa924c48996c9d28.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Hand_dryer.png"
+dest_files=["res://.godot/imported/Hand_dryer.png-01099a2e12d8b90a61c4b07604289574.s3tc.ctex", "res://.godot/imported/Hand_dryer.png-01099a2e12d8b90a61c4b07604289574.etc2.ctex"]
 
 [params]
 

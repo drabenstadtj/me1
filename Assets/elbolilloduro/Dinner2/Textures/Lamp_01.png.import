@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wmd2i4mhutno"
-path.s3tc="res://.godot/imported/Lamp_01.png-935e46a28db3d3a14267c4aef6044b88.s3tc.ctex"
+path.s3tc="res://.godot/imported/Lamp_01.png-17d0fb6f3fed8e7dd87051577ebb4a54.s3tc.ctex"
+path.etc2="res://.godot/imported/Lamp_01.png-17d0fb6f3fed8e7dd87051577ebb4a54.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Lamp_01.png"
-dest_files=["res://.godot/imported/Lamp_01.png-935e46a28db3d3a14267c4aef6044b88.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Lamp_01.png"
+dest_files=["res://.godot/imported/Lamp_01.png-17d0fb6f3fed8e7dd87051577ebb4a54.s3tc.ctex", "res://.godot/imported/Lamp_01.png-17d0fb6f3fed8e7dd87051577ebb4a54.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b54ju2xer68wa"
-path.s3tc="res://.godot/imported/Wood.png-edbbb85bbcd5e159e5e20711913a3372.s3tc.ctex"
+path.s3tc="res://.godot/imported/Wood.png-a703b350b88afa164fd91cdccca06a54.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood.png-a703b350b88afa164fd91cdccca06a54.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Wood.png"
-dest_files=["res://.godot/imported/Wood.png-edbbb85bbcd5e159e5e20711913a3372.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Wood.png"
+dest_files=["res://.godot/imported/Wood.png-a703b350b88afa164fd91cdccca06a54.s3tc.ctex", "res://.godot/imported/Wood.png-a703b350b88afa164fd91cdccca06a54.etc2.ctex"]
 
 [params]
 

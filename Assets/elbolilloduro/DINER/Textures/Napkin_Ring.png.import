@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br507anf4ehpq"
-path.s3tc="res://.godot/imported/Napkin_Ring.png-cd783b3dd2739e3fbace57b39f36d672.s3tc.ctex"
+path.s3tc="res://.godot/imported/Napkin_Ring.png-64be751446d818779e9b08fcd11da70f.s3tc.ctex"
+path.etc2="res://.godot/imported/Napkin_Ring.png-64be751446d818779e9b08fcd11da70f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Napkin_Ring.png"
-dest_files=["res://.godot/imported/Napkin_Ring.png-cd783b3dd2739e3fbace57b39f36d672.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Napkin_Ring.png"
+dest_files=["res://.godot/imported/Napkin_Ring.png-64be751446d818779e9b08fcd11da70f.s3tc.ctex", "res://.godot/imported/Napkin_Ring.png-64be751446d818779e9b08fcd11da70f.etc2.ctex"]
 
 [params]
 

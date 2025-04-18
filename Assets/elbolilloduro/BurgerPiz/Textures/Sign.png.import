@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d246730eo31xs"
-path.s3tc="res://.godot/imported/Sign.png-da3c3f633938ae6d2ae6a7a7992627c3.s3tc.ctex"
+path.s3tc="res://.godot/imported/Sign.png-572524410f531c87cde0d439b6d11463.s3tc.ctex"
+path.etc2="res://.godot/imported/Sign.png-572524410f531c87cde0d439b6d11463.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Sign.png"
-dest_files=["res://.godot/imported/Sign.png-da3c3f633938ae6d2ae6a7a7992627c3.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Sign.png"
+dest_files=["res://.godot/imported/Sign.png-572524410f531c87cde0d439b6d11463.s3tc.ctex", "res://.godot/imported/Sign.png-572524410f531c87cde0d439b6d11463.etc2.ctex"]
 
 [params]
 

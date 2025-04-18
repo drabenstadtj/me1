@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2sly7114fpwd"
-path.s3tc="res://.godot/imported/Vending_machine.png-c59087b954ef92cede8acaf794e66c62.s3tc.ctex"
+path.s3tc="res://.godot/imported/Vending_machine.png-74c67338ca0b19008b1a544580f09ae0.s3tc.ctex"
+path.etc2="res://.godot/imported/Vending_machine.png-74c67338ca0b19008b1a544580f09ae0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Vending_machine.png"
-dest_files=["res://.godot/imported/Vending_machine.png-c59087b954ef92cede8acaf794e66c62.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Vending_machine.png"
+dest_files=["res://.godot/imported/Vending_machine.png-74c67338ca0b19008b1a544580f09ae0.s3tc.ctex", "res://.godot/imported/Vending_machine.png-74c67338ca0b19008b1a544580f09ae0.etc2.ctex"]
 
 [params]
 

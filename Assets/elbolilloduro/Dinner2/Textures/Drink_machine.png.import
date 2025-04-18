@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c36gv5pxi3nx1"
-path.s3tc="res://.godot/imported/Drink_machine.png-a02b16f8b5572492dcff8dc88cbc7460.s3tc.ctex"
+path.s3tc="res://.godot/imported/Drink_machine.png-09e5654bf9430c176170c6af171e8a3b.s3tc.ctex"
+path.etc2="res://.godot/imported/Drink_machine.png-09e5654bf9430c176170c6af171e8a3b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Drink_machine.png"
-dest_files=["res://.godot/imported/Drink_machine.png-a02b16f8b5572492dcff8dc88cbc7460.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Drink_machine.png"
+dest_files=["res://.godot/imported/Drink_machine.png-09e5654bf9430c176170c6af171e8a3b.s3tc.ctex", "res://.godot/imported/Drink_machine.png-09e5654bf9430c176170c6af171e8a3b.etc2.ctex"]
 
 [params]
 

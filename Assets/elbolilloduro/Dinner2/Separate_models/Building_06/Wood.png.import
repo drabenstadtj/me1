@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2n24hoiouwsa"
 path.s3tc="res://.godot/imported/Wood.png-3121185f11939b1145afb7ed48a7d919.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood.png-3121185f11939b1145afb7ed48a7d919.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Wood.png"
-dest_files=["res://.godot/imported/Wood.png-3121185f11939b1145afb7ed48a7d919.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wood.png-3121185f11939b1145afb7ed48a7d919.s3tc.ctex", "res://.godot/imported/Wood.png-3121185f11939b1145afb7ed48a7d919.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://biporka6xa4as"
 path.s3tc="res://.godot/imported/buildings_modern_02.jpg-1046c3d0e560d1ac10c67cf0246fc348.s3tc.ctex"
+path.etc2="res://.godot/imported/buildings_modern_02.jpg-1046c3d0e560d1ac10c67cf0246fc348.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/buildings_modern_02/buildings_modern_02.jpg"
-dest_files=["res://.godot/imported/buildings_modern_02.jpg-1046c3d0e560d1ac10c67cf0246fc348.s3tc.ctex"]
+dest_files=["res://.godot/imported/buildings_modern_02.jpg-1046c3d0e560d1ac10c67cf0246fc348.s3tc.ctex", "res://.godot/imported/buildings_modern_02.jpg-1046c3d0e560d1ac10c67cf0246fc348.etc2.ctex"]
 
 [params]
 

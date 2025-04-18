@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmdt54lcb6yp6"
-path.s3tc="res://.godot/imported/Cup_Plate.png-37394fea64221b38a0dcf64bb8e06838.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cup_Plate.png-71b7aa91c38314f7a340818a0f55ecaf.s3tc.ctex"
+path.etc2="res://.godot/imported/Cup_Plate.png-71b7aa91c38314f7a340818a0f55ecaf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Cup_Plate.png"
-dest_files=["res://.godot/imported/Cup_Plate.png-37394fea64221b38a0dcf64bb8e06838.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Cup_Plate.png"
+dest_files=["res://.godot/imported/Cup_Plate.png-71b7aa91c38314f7a340818a0f55ecaf.s3tc.ctex", "res://.godot/imported/Cup_Plate.png-71b7aa91c38314f7a340818a0f55ecaf.etc2.ctex"]
 
 [params]
 

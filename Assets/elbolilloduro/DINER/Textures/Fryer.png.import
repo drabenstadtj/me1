@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgkrv4ohhydmd"
-path.s3tc="res://.godot/imported/Fryer.png-c556f3c87a9efb928adc2f2ffaddf301.s3tc.ctex"
+path.s3tc="res://.godot/imported/Fryer.png-465d350030a176f3532bdca6f998fa38.s3tc.ctex"
+path.etc2="res://.godot/imported/Fryer.png-465d350030a176f3532bdca6f998fa38.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Fryer.png"
-dest_files=["res://.godot/imported/Fryer.png-c556f3c87a9efb928adc2f2ffaddf301.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Fryer.png"
+dest_files=["res://.godot/imported/Fryer.png-465d350030a176f3532bdca6f998fa38.s3tc.ctex", "res://.godot/imported/Fryer.png-465d350030a176f3532bdca6f998fa38.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xsrqbvovako2"
-path.s3tc="res://.godot/imported/Building_02.jpg-785884eb23f84dbcae4c2a8f40f29665.s3tc.ctex"
+path.s3tc="res://.godot/imported/Building_02.jpg-32de72c5437247b5cb255106678304be.s3tc.ctex"
+path.etc2="res://.godot/imported/Building_02.jpg-32de72c5437247b5cb255106678304be.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Building_02.jpg"
-dest_files=["res://.godot/imported/Building_02.jpg-785884eb23f84dbcae4c2a8f40f29665.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Building_02.jpg"
+dest_files=["res://.godot/imported/Building_02.jpg-32de72c5437247b5cb255106678304be.s3tc.ctex", "res://.godot/imported/Building_02.jpg-32de72c5437247b5cb255106678304be.etc2.ctex"]
 
 [params]
 

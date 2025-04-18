@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://kmfpuua1pq8b"
+path="res://.godot/imported/wall_window.obj-8114116ec950dd15520662f62c739e49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_window.obj-8114116ec950dd15520662f62c739e49.mesh"]
+
+source_file="res://Assets/elbolilloduro/[AR] Hospital Assets - FREE/3. Models/obj/wall_window.obj"
+dest_files=["res://.godot/imported/wall_window.obj-8114116ec950dd15520662f62c739e49.mesh", "res://.godot/imported/wall_window.obj-8114116ec950dd15520662f62c739e49.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

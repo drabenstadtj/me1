@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0075hvhdw347"
-path.s3tc="res://.godot/imported/Leather.jpg-e6fd2e4b12791c4845dcb84425e1d184.s3tc.ctex"
+path.s3tc="res://.godot/imported/Leather.jpg-7a6a946925ac6a1f078bc4ef66c667a6.s3tc.ctex"
+path.etc2="res://.godot/imported/Leather.jpg-7a6a946925ac6a1f078bc4ef66c667a6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/DINER/textures/Leather.jpg"
-dest_files=["res://.godot/imported/Leather.jpg-e6fd2e4b12791c4845dcb84425e1d184.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/DINER/Textures/Leather.jpg"
+dest_files=["res://.godot/imported/Leather.jpg-7a6a946925ac6a1f078bc4ef66c667a6.s3tc.ctex", "res://.godot/imported/Leather.jpg-7a6a946925ac6a1f078bc4ef66c667a6.etc2.ctex"]
 
 [params]
 

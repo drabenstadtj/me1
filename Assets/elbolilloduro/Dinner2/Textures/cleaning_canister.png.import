@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6ec7gfovta2c"
-path.s3tc="res://.godot/imported/cleaning_canister.png-ca36aae1fbbfa03ed2c808dd4da6b5bd.s3tc.ctex"
+path.s3tc="res://.godot/imported/cleaning_canister.png-8de665c7966f24ca30f35e0cadf3417d.s3tc.ctex"
+path.etc2="res://.godot/imported/cleaning_canister.png-8de665c7966f24ca30f35e0cadf3417d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/cleaning_canister.png"
-dest_files=["res://.godot/imported/cleaning_canister.png-ca36aae1fbbfa03ed2c808dd4da6b5bd.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/cleaning_canister.png"
+dest_files=["res://.godot/imported/cleaning_canister.png-8de665c7966f24ca30f35e0cadf3417d.s3tc.ctex", "res://.godot/imported/cleaning_canister.png-8de665c7966f24ca30f35e0cadf3417d.etc2.ctex"]
 
 [params]
 

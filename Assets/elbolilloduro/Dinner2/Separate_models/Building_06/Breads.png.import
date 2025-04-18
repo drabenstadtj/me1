@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf15jbjtwe18u"
 path.s3tc="res://.godot/imported/Breads.png-99b5f1f505ffe79691224ece35801759.s3tc.ctex"
+path.etc2="res://.godot/imported/Breads.png-99b5f1f505ffe79691224ece35801759.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Breads.png"
-dest_files=["res://.godot/imported/Breads.png-99b5f1f505ffe79691224ece35801759.s3tc.ctex"]
+dest_files=["res://.godot/imported/Breads.png-99b5f1f505ffe79691224ece35801759.s3tc.ctex", "res://.godot/imported/Breads.png-99b5f1f505ffe79691224ece35801759.etc2.ctex"]
 
 [params]
 

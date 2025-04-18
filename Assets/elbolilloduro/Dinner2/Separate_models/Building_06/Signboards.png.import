@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5r36r6frqw8f"
 path.s3tc="res://.godot/imported/Signboards.png-7cb3a5cdf3735e693bde54354e73b82a.s3tc.ctex"
+path.etc2="res://.godot/imported/Signboards.png-7cb3a5cdf3735e693bde54354e73b82a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/elbolilloduro/Dinner2/Separate_models/Building_06/Signboards.png"
-dest_files=["res://.godot/imported/Signboards.png-7cb3a5cdf3735e693bde54354e73b82a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Signboards.png-7cb3a5cdf3735e693bde54354e73b82a.s3tc.ctex", "res://.godot/imported/Signboards.png-7cb3a5cdf3735e693bde54354e73b82a.etc2.ctex"]
 
 [params]
 

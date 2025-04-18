@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds4tq28isy1gm"
-path.s3tc="res://.godot/imported/Paper_dispenser.png-cb25abfae99c79100446538e393b4fa2.s3tc.ctex"
+path.s3tc="res://.godot/imported/Paper_dispenser.png-571a8e31f6abcfb11aed47ee9c47010d.s3tc.ctex"
+path.etc2="res://.godot/imported/Paper_dispenser.png-571a8e31f6abcfb11aed47ee9c47010d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/BurgerPiz/textures/Paper_dispenser.png"
-dest_files=["res://.godot/imported/Paper_dispenser.png-cb25abfae99c79100446538e393b4fa2.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/BurgerPiz/Textures/Paper_dispenser.png"
+dest_files=["res://.godot/imported/Paper_dispenser.png-571a8e31f6abcfb11aed47ee9c47010d.s3tc.ctex", "res://.godot/imported/Paper_dispenser.png-571a8e31f6abcfb11aed47ee9c47010d.etc2.ctex"]
 
 [params]
 

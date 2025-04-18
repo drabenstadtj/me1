@@ -3,16 +3,17 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dep6gisf4ldxj"
-path.s3tc="res://.godot/imported/Seat_01.png-d736d193f2dedf881a365a98d22d7aa5.s3tc.ctex"
+path.s3tc="res://.godot/imported/Seat_01.png-59900f52de38784ed0520e7410a57f44.s3tc.ctex"
+path.etc2="res://.godot/imported/Seat_01.png-59900f52de38784ed0520e7410a57f44.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/elbolilloduro/Dinner2/textures/Seat_01.png"
-dest_files=["res://.godot/imported/Seat_01.png-d736d193f2dedf881a365a98d22d7aa5.s3tc.ctex"]
+source_file="res://Assets/elbolilloduro/Dinner2/Textures/Seat_01.png"
+dest_files=["res://.godot/imported/Seat_01.png-59900f52de38784ed0520e7410a57f44.s3tc.ctex", "res://.godot/imported/Seat_01.png-59900f52de38784ed0520e7410a57f44.etc2.ctex"]
 
 [params]
 
