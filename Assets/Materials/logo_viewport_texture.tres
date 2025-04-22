@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cvawwhshbxef2"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_7j85k"]
+viewport_path = NodePath("Screen/SubViewport")
+
+[resource]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_7j85k")
