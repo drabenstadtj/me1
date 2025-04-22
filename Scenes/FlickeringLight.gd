@@ -1,7 +1,7 @@
 extends SpotLight3D
 
 @export var base_energy := 20.0               # Normal light energy when on
-@export var flicker_chance := 0.5            # Chance per second to flicker
+@export var flicker_chance := 0.75            # Chance per second to flicker
 @export var min_flicker_duration := 0.05     # Shortest flicker (seconds)
 @export var max_flicker_duration := 0.5      # Longest flicker (seconds)
 

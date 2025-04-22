@@ -1,4 +1,4 @@
-[gd_scene load_steps=169 format=4 uid="uid://d1xltgfb1lgsm"]
+[gd_scene load_steps=175 format=4 uid="uid://d1xltgfb1lgsm"]
 
 [ext_resource type="Shader" uid="uid://jybcwocnhirr" path="res://Assets/Visuals/psx.gdshader" id="1_7mal8"]
 [ext_resource type="Texture2D" uid="uid://c6t0qfv0y6lwj" path="res://Assets/Materials/Plastic012A_1K-JPG/Plastic012A_1K-JPG_Color.jpg" id="2_3dw23"]
@@ -46,9 +46,10 @@
 [ext_resource type="Script" uid="uid://luue02a5ksse" path="res://Scenes/Character.gd" id="36_rnf1m"]
 [ext_resource type="AudioStream" uid="uid://dumvew7umrw5q" path="res://Assets/Sounds/snap.wav" id="37_6pav1"]
 [ext_resource type="AudioStream" uid="uid://dbsiid76kfwvr" path="res://Assets/Sounds/bar_ambience.wav" id="39_proxd"]
-[ext_resource type="Script" uid="uid://c45tyu4ba75kt" path="res://Scenes/ambient_sound_loop.gd" id="40_6pav1"]
 [ext_resource type="AudioStream" uid="uid://t7yqg1pnj58e" path="res://Assets/Sounds/drink_slide.wav" id="41_3yt8s"]
 [ext_resource type="AudioStream" uid="uid://bo6gnk72bpprv" path="res://Assets/Sounds/gulp.wav" id="44_ouw71"]
+[ext_resource type="Script" uid="uid://btci7klxchqmg" path="res://Scenes/ambient_sound.gd" id="48_r1fol"]
+[ext_resource type="Script" uid="uid://do5x0j7tuiq4p" path="res://Scenes/DialogueController.gd" id="50_r1fol"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pkg7o"]
 shader = ExtResource("1_7mal8")
@@ -574,6 +575,12 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6ux7u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4i0pi"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r1fol"]
+size = Vector3(0.35, 2.16, 0.46)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d8vnr"]
 resource_name = "Soda_fountain"
@@ -1297,6 +1304,18 @@ bind/27/name = &"mixamorig_LeftHandIndex3"
 bind/27/bone = -1
 bind/27/pose = Transform3D(-12.3591, -99.5191, -4.8903, 70.2199, -12.1955, 70.7188, -70.6904, 5.28492, 71.1031, 0.0240553, 0.20239, 1.35131)
 
+[sub_resource type="Animation" id="Animation_r1fol"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_4i0pi"]
+resource_name = "gesture"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_opf1p"]
+_data = {
+&"RESET": SubResource("Animation_r1fol"),
+&"gesture": SubResource("Animation_4i0pi")
+}
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hl7h6"]
 albedo_texture = ExtResource("33_r2ex4")
 
@@ -1517,7 +1536,7 @@ tracks/0/path = NodePath("../Player")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1.66667, 7.5, 12.7, 19.9),
+"times": PackedFloat32Array(1.66667, 7.5, 15.1667, 19.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "values": [{
 "args": [NodePath("../World/Characters/Customer/Look")],
@@ -1557,7 +1576,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(3),
 "transitions": PackedFloat32Array(1),
 "values": [{
-"args": ["Hey bartender, get our buddy over here a drink", 3.0],
+"args": ["New face. First one’s on me. Give them the special.", 3.0],
 "method": &"say"
 }]
 }
@@ -1615,15 +1634,19 @@ tracks/7/keys = {
 "method": &"play"
 }]
 }
-tracks/8/type = "animation"
+tracks/8/type = "method"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("../World/Characters/Bartender/AnimationPlayer")
+tracks/8/path = NodePath("../AmbientSound")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"clips": PackedStringArray(),
-"times": PackedFloat32Array()
+"times": PackedFloat32Array(17.8),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"fade_out"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_co2xs"]
@@ -1771,26 +1794,26 @@ pitch_scale = 0.5
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0)
 
 [node name="rig" parent="SubViewportContainer/SubViewport/Player/Model/Node" index="0"]
-transform = Transform3D(0.998223, 0.0582423, 0.0125687, -0.0141348, 0.0265571, 0.999547, 0.0578822, -0.997949, 0.0273332, 0.00488102, -0.0729772, 0.0204133)
+transform = Transform3D(0.998789, -0.0454844, 0.018708, -0.0179174, 0.017727, 0.999682, -0.0458016, -0.998807, 0.0168906, -0.0184234, -0.00812042, 0.0199206)
 
 [node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Player/Model/Node/rig" index="0"]
-bones/1/rotation = Quaternion(-0.104444, 0.0238858, -0.0148691, 0.994133)
-bones/2/rotation = Quaternion(-0.080477, 0.0627315, -0.0255587, 0.994452)
-bones/3/rotation = Quaternion(0.489433, 0.431677, 0.572656, -0.49616)
-bones/4/rotation = Quaternion(-0.518637, 0.607345, -0.221386, 0.559586)
-bones/5/rotation = Quaternion(0.307385, 0.264866, -0.0472241, 0.91276)
-bones/6/rotation = Quaternion(-0.0883806, 0.0867529, -0.0108953, 0.992242)
+bones/1/rotation = Quaternion(-0.0985069, 0.00569734, -0.00115555, 0.995119)
+bones/2/rotation = Quaternion(-0.0687199, 0.00986037, 0.00751117, 0.997559)
+bones/3/rotation = Quaternion(0.485078, 0.436445, 0.584237, -0.482578)
+bones/4/rotation = Quaternion(-0.329421, 0.569664, -0.37417, 0.653423)
+bones/5/rotation = Quaternion(0.26592, 0.256992, -0.0815266, 0.925524)
+bones/6/rotation = Quaternion(0.0983399, 0.0357903, 0.105773, 0.988868)
 bones/7/rotation = Quaternion(0.284003, 0.936214, 0.18495, -0.0929449)
-bones/10/rotation = Quaternion(0.288517, -0.00799796, 0.0396261, 0.956621)
-bones/12/rotation = Quaternion(-0.492915, 0.432023, 0.543285, 0.524625)
-bones/13/rotation = Quaternion(0.332899, 0.562985, -0.437278, -0.617263)
-bones/14/rotation = Quaternion(0.445943, -0.171116, -0.0163118, 0.878401)
-bones/15/rotation = Quaternion(0.0560233, -0.0252939, -0.197231, 0.978428)
-bones/16/rotation = Quaternion(-0.235764, 0.947177, 0.200244, 0.0846995)
-bones/19/rotation = Quaternion(0.993009, -0.0299273, 0.11359, -0.0116361)
-bones/20/rotation = Quaternion(0.329916, -0.0688193, -0.0152695, 0.941375)
-bones/22/rotation = Quaternion(0.907738, 0.0048841, -0.0586861, 0.415384)
-bones/23/rotation = Quaternion(0.289236, 0.0439721, 0.0246056, 0.955931)
+bones/10/rotation = Quaternion(0.27883, -0.00583172, -0.00964176, 0.960274)
+bones/12/rotation = Quaternion(-0.517964, 0.398155, 0.556263, 0.513574)
+bones/13/rotation = Quaternion(0.430171, 0.567516, -0.298347, -0.635506)
+bones/14/rotation = Quaternion(0.205156, -0.214627, 0.110025, 0.948547)
+bones/15/rotation = Quaternion(0.0421206, -0.069544, -0.0559494, 0.995118)
+bones/16/rotation = Quaternion(-0.183119, 0.958077, 0.202448, 0.0870148)
+bones/19/rotation = Quaternion(0.977971, 0.0312069, 0.0740314, 0.192663)
+bones/20/rotation = Quaternion(0.146611, -0.076322, -0.024522, 0.985941)
+bones/22/rotation = Quaternion(0.949689, 0.0355999, -0.0773254, 0.301403)
+bones/23/rotation = Quaternion(0.537708, 0.0163894, 0.0121168, 0.842885)
 
 [node name="male_player" parent="SubViewportContainer/SubViewport/Player/Model/Node/rig/Skeleton3D" index="0"]
 layers = 2
@@ -1835,6 +1858,20 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="ThoughtLabel" type="Label" parent="SubViewportContainer/SubViewport/UI"]
+modulate = Color(1, 1, 1, 0.588235)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -140.0
+offset_right = 20.0
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="World" type="Node3D" parent="SubViewportContainer/SubViewport"]
 
@@ -2169,6 +2206,12 @@ transform = Transform3D(4.899, 0, 0, 0, 0.1, 0, 0, 0, 1.101, -2.81661, 1.44381, 
 mesh = SubResource("BoxMesh_yru2x")
 skeleton = NodePath("../../../../../../../..")
 
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter"]
+transform = Transform3D(4.899, 0, 0, 0, 0.1, 0, 0, 0, 1.101, -1.41661, 1.64381, -4.64237)
+material_override = SubResource("StandardMaterial3D_4i0pi")
+mesh = SubResource("BoxMesh_r1fol")
+skeleton = NodePath("../../../../../../../..")
+
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter"]
 transform = Transform3D(0.1, 0, 0, 0, 1.62658, 0, 0, 0, 1.101, -0.417622, 0.672467, -4.36375)
 material_override = ExtResource("19_nyhs1")
@@ -2264,7 +2307,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.65224, 1.9731, -4.26319)
 [node name="Rum_SM" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles"]
 
 [node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Rum_SM"]
-transform = Transform3D(-1.36047, 0.631767, 2.76154e-08, 0, -6.55671e-08, 1.5, 0.631767, 1.36047, 5.94679e-08, 0, -0.240186, 0)
+transform = Transform3D(-1.36047, 0.631767, 2.76154e-08, 0, -6.55671e-08, 1.5, 0.631767, 1.36047, 5.94679e-08, 0, -0.240186, 0.15)
 material_override = SubResource("StandardMaterial3D_3xuya")
 mesh = SubResource("ArrayMesh_rlkr0")
 skeleton = NodePath("")
@@ -2278,7 +2321,7 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.231341, 0.180514, 0.00297397)
 
 [node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Vodka_SM"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.122151, -0.428251, -0.038067)
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.122151, -0.428251, 0.111933)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_th27m")
 skeleton = NodePath("")
@@ -2292,7 +2335,7 @@ libraries = {
 transform = Transform3D(-0.993719, 0, -0.111903, 0, 1, 0, 0.111903, 0, -0.993719, 0.534899, 0, -0.00997913)
 
 [node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Rum_SM2"]
-transform = Transform3D(-0.835941, -0.548819, 0, 0, 0, 1, -0.548819, 0.835941, 0, 0, -0.240186, 0)
+transform = Transform3D(-0.835941, -0.548819, 0, 0, 0, 1, -0.548819, 0.835941, 0, 0.0167854, -0.240186, -0.149058)
 material_override = SubResource("StandardMaterial3D_3xuya")
 mesh = SubResource("ArrayMesh_rlkr0")
 skeleton = NodePath("")
@@ -2306,7 +2349,7 @@ libraries = {
 transform = Transform3D(-0.993719, 0, -0.111903, 0, 1, 0, 0.111903, 0, -0.993719, 0.304679, 0.180514, 0.0129532)
 
 [node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Vodka_SM2"]
-transform = Transform3D(1.5, 0, 0, 0, -6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, -0.122151, -0.428251, -0.038067)
+transform = Transform3D(1.5, 0, -8.88178e-16, 0, -6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, -0.105366, -0.428251, -0.187125)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_th27m")
 skeleton = NodePath("")
@@ -2320,7 +2363,7 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0966665, -0.241869, -0.0581514)
 
 [node name="Object002" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/BourbonWhiskey_SM"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0.15)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_xjf17")
 skeleton = NodePath("")
@@ -2334,7 +2377,7 @@ libraries = {
 transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.389865, 0, -0.14249)
 
 [node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Rum_SM3"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -0.240186, 0)
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.0131673, -0.240186, -0.149421)
 material_override = SubResource("StandardMaterial3D_3xuya")
 mesh = SubResource("ArrayMesh_rlkr0")
 skeleton = NodePath("")
@@ -2348,7 +2391,7 @@ libraries = {
 transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.159678, 0.180514, -0.16576)
 
 [node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Vodka_SM3"]
-transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.122151, -0.428251, -0.038067)
+transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.135318, -0.428251, -0.187488)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_th27m")
 skeleton = NodePath("")
@@ -2362,7 +2405,7 @@ libraries = {
 transform = Transform3D(0.999706, 0, 0.0242403, 0, 1, 0, -0.0242403, 0, 0.999706, -0.143845, 0, -0.179504)
 
 [node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Rum_SM4"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -0.240186, 0)
+transform = Transform3D(1, -1.86265e-09, 0, 0, 0, 1, -1.86265e-09, -1, 0, -0.00363606, -0.240186, 0.149956)
 material_override = SubResource("StandardMaterial3D_3xuya")
 mesh = SubResource("ArrayMesh_rlkr0")
 skeleton = NodePath("")
@@ -2376,7 +2419,7 @@ libraries = {
 transform = Transform3D(0.999706, 0, 0.0242403, 0, 1, 0, -0.0242403, 0, 0.999706, 0.0874998, 0.180514, -0.182139)
 
 [node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/Vodka_SM4"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.122151, -0.428251, -0.038067)
+transform = Transform3D(1, -1.86265e-09, 0, 0, 0, 1, -1.86265e-09, -1, 0, -0.125787, -0.428251, 0.111889)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_th27m")
 skeleton = NodePath("")
@@ -2390,12 +2433,154 @@ libraries = {
 transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.481054, -0.241869, -0.0760779)
 
 [node name="Object002" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/BourbonWhiskey_SM2"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.0131673, 0, -0.149421)
 material_override = ExtResource("25_ljn48")
 mesh = SubResource("ArrayMesh_xjf17")
 skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles/BourbonWhiskey_SM2"]
+libraries = {
+&"": SubResource("AnimationLibrary_b601p")
+}
+
+[node name="Bottles2" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter"]
+transform = Transform3D(-2, 0, 1.74846e-07, 0, 2, 0, -1.74846e-07, 0, -2, -1.05224, 2.2731, -4.36319)
+
+[node name="Rum_SM" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+
+[node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM"]
+transform = Transform3D(-1.36047, 0.631767, 2.76154e-08, 0, -6.55671e-08, 1.5, 0.631767, 1.36047, 5.94679e-08, 0, -0.240186, 0.15)
+material_override = SubResource("StandardMaterial3D_3xuya")
+mesh = SubResource("ArrayMesh_rlkr0")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM"]
+libraries = {
+&"": SubResource("AnimationLibrary_6n4kn")
+}
+
+[node name="Vodka_SM" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.231341, 0.180514, 0.00297397)
+
+[node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.122151, -0.428251, 0.111933)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_th27m")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxbbd")
+}
+
+[node name="Rum_SM2" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(-0.993719, 0, -0.111903, 0, 1, 0, 0.111903, 0, -0.993719, 0.534899, 0, -0.00997913)
+
+[node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM2"]
+transform = Transform3D(-0.835941, -0.548819, 0, 0, 0, 1, -0.548819, 0.835941, 0, 0.0167854, -0.240186, -0.149058)
+material_override = SubResource("StandardMaterial3D_3xuya")
+mesh = SubResource("ArrayMesh_rlkr0")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM2"]
+libraries = {
+&"": SubResource("AnimationLibrary_6n4kn")
+}
+
+[node name="Vodka_SM2" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(-0.993719, 0, -0.111903, 0, 1, 0, 0.111903, 0, -0.993719, 0.304679, 0.180514, 0.0129532)
+
+[node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM2"]
+transform = Transform3D(1.5, 0, -8.88178e-16, 0, -6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, -0.105366, -0.428251, -0.187125)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_th27m")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM2"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxbbd")
+}
+
+[node name="BourbonWhiskey_SM" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0966665, -0.241869, -0.0581514)
+
+[node name="Object002" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/BourbonWhiskey_SM"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0.15)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_xjf17")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/BourbonWhiskey_SM"]
+libraries = {
+&"": SubResource("AnimationLibrary_b601p")
+}
+
+[node name="Rum_SM3" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.389865, 0, -0.14249)
+
+[node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM3"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.0219454, -0.240186, -0.249035)
+material_override = SubResource("StandardMaterial3D_3xuya")
+mesh = SubResource("ArrayMesh_rlkr0")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM3"]
+libraries = {
+&"": SubResource("AnimationLibrary_6n4kn")
+}
+
+[node name="Vodka_SM3" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.159678, 0.180514, -0.16576)
+
+[node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM3"]
+transform = Transform3D(1.5, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.139707, -0.428251, -0.237295)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_th27m")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM3"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxbbd")
+}
+
+[node name="Rum_SM4" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(0.999706, 0, 0.0242403, 0, 1, 0, -0.0242403, 0, 0.999706, -0.143845, 0, -0.179504)
+
+[node name="Object003" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM4"]
+transform = Transform3D(1, -1.86265e-09, 0, 0, 0, 1, -1.86265e-09, -1, 0, -0.0084841, -0.240186, 0.349897)
+material_override = SubResource("StandardMaterial3D_3xuya")
+mesh = SubResource("ArrayMesh_rlkr0")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Rum_SM4"]
+libraries = {
+&"": SubResource("AnimationLibrary_6n4kn")
+}
+
+[node name="Vodka_SM4" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(0.999706, 0, 0.0242403, 0, 1, 0, -0.0242403, 0, 0.999706, 0.0874998, 0.180514, -0.182139)
+
+[node name="Object004" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM4"]
+transform = Transform3D(1, -1.86265e-09, 0, 0, 0, 1, -1.86265e-09, -1, 0, -0.129423, -0.428251, 0.261845)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_th27m")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/Vodka_SM4"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxbbd")
+}
+
+[node name="BourbonWhiskey_SM2" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2"]
+transform = Transform3D(-0.99614, 0, 0.0877817, 0, 1, 0, -0.0877817, 0, -0.99614, 0.481054, -0.241869, -0.0760779)
+
+[node name="Object002" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/BourbonWhiskey_SM2"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -0.0131673, 0, -0.149421)
+material_override = ExtResource("25_ljn48")
+mesh = SubResource("ArrayMesh_xjf17")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/Bottles2/BourbonWhiskey_SM2"]
 libraries = {
 &"": SubResource("AnimationLibrary_b601p")
 }
@@ -2935,6 +3120,11 @@ material_override = SubResource("StandardMaterial3D_dnn7o")
 mesh = SubResource("ArrayMesh_atihx")
 skin = SubResource("Skin_p57su")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/World/Characters/Customer/Skeleton3D"]
+libraries = {
+&"": SubResource("AnimationLibrary_opf1p")
+}
+
 [node name="SpeechBubble" type="Label3D" parent="SubViewportContainer/SubViewport/World/Characters/Customer"]
 transform = Transform3D(1, 0, -1.86265e-09, 0, 1, 0, 1.86265e-09, 0, 1, 0, 1.3471, 0)
 billboard = 1
@@ -2990,7 +3180,7 @@ stream = ExtResource("41_3yt8s")
 stream = ExtResource("39_proxd")
 volume_db = -5.0
 autoplay = true
-script = ExtResource("40_6pav1")
+script = ExtResource("48_r1fol")
 
 [node name="CutscenePlayer" type="Node3D" parent="SubViewportContainer/SubViewport"]
 
@@ -3010,6 +3200,11 @@ stream = ExtResource("44_ouw71")
 libraries = {
 &"": SubResource("AnimationLibrary_hmvaf")
 }
+
+[node name="ThoughtController" type="Node3D" parent="SubViewportContainer/SubViewport"]
+script = ExtResource("50_r1fol")
+dialogue_lines = ["One drink, maybe two. Just enough to quiet the edges."]
+autoplay = true
 
 [editable path="SubViewportContainer/SubViewport/Player/Model"]
 [editable path="SubViewportContainer/SubViewport/World/Characters/Bartender"]

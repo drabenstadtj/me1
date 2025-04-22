@@ -27,15 +27,20 @@ func _ready():
 		var tween := get_tree().create_tween()
 		tween.tween_property(fade_rect, "modulate:a", 0.0, fade_duration)
 
-
-func fade_out():
+func fade_out(duration: float = -1.0):
 	if not fade_rect:
 		fade_rect = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/Fade")
 
 	if fade_rect:
-		# Ensure starting transparent
 		fade_rect.modulate.a = 0.0
-
-		# Fade to black
 		var tween := get_tree().create_tween()
-		tween.tween_property(fade_rect, "modulate:a", 1.0, fade_duration)
+		tween.tween_property(fade_rect, "modulate:a", 1.0, duration if duration > 0.0 else fade_duration)
+
+func fade_in(duration: float = -1.0):
+	if not fade_rect:
+		fade_rect = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/Fade")
+
+	if fade_rect:
+		fade_rect.modulate.a = 1.0
+		var tween := get_tree().create_tween()
+		tween.tween_property(fade_rect, "modulate:a", 0.0, duration if duration > 0.0 else fade_duration)

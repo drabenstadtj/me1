@@ -20,10 +20,16 @@ var shake_time := 0.0
 @onready var camera = $Camera3D
 @onready var footstep_player = $FootstepPlayer
 
+@onready var raycast = $Camera3D/RayCast3D
+var last_prompt_target: Node = null
+
 var pitch = 0.0
 var bob_timer = 0.0
 var camera_base_height = 0.0
 var last_bob_sign = 0
+
+var prompts_enabled := false
+
 
 var current_state: State
 var states = {}
@@ -56,6 +62,9 @@ func _unhandled_input(event):
 			get_tree().quit()	
 		return
 		
+
+
+	
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
 		pitch = clamp(pitch - event.relative.y * MOUSE_SENSITIVITY, deg_to_rad(-60), deg_to_rad(60))
@@ -71,17 +80,44 @@ func _physics_process(delta):
 func _process(delta):
 	if current_state:
 		current_state.update(delta)
-		
+
+	if not prompts_enabled:
+		_clear_prompt()
+		return
+
 	if distortion_active:
 		shake_time += delta
-		var base_pitch = deg_to_rad(-15.0)  # or use a variable if it's dynamic
+		var base_pitch = deg_to_rad(-15.0)
 		var shake_x = sin(shake_time * 2.3) * deg_to_rad(0.5) * distortion_strength
 		var shake_z = cos(shake_time * 1.8) * deg_to_rad(0.3) * distortion_strength
-
 		camera.rotation.x = base_pitch + shake_x
 		camera.rotation.z = shake_z
 
-	
+	# Raycast prompt detection
+	raycast.force_raycast_update()
+	if raycast.is_colliding():
+		var hit = raycast.get_collider()
+
+		if hit.has_method("show_prompt"):
+			if last_prompt_target and last_prompt_target != hit:
+				if last_prompt_target.has_method("hide_prompt"):
+					last_prompt_target.hide_prompt()
+
+			hit.show_prompt()
+			last_prompt_target = hit
+		else:
+			_clear_prompt()
+	else:
+		_clear_prompt()
+
+func _clear_prompt():
+	if last_prompt_target and last_prompt_target.has_method("hide_prompt"):
+		last_prompt_target.hide_prompt()
+	last_prompt_target = null
+
+
+
+
 
 func change_state(new_state_name: String):
 	if current_state:
@@ -141,3 +177,11 @@ func start_drunk_effect():
 
 func switch_to_scene(path: String):
 	get_tree().change_scene_to_file(path)
+
+
+func enable_prompt():
+	prompts_enabled = true
+	
+	
+func disable_prompt():
+	prompts_enabled = false

@@ -19,6 +19,8 @@ var is_player_near = false
 var has_sat = false
 var original_camera_rotation := Vector3.ZERO
 
+var enabled = false
+
 func _ready():
 	player = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/Player")
 	camera = player.get_node("Camera3D")  # adjust path if needed
@@ -30,7 +32,7 @@ func _process(_delta):
 		return
 
 	var distance = player.global_position.distance_to(global_position)
-	if distance <= interaction_distance:
+	if distance <= interaction_distance and enabled:
 		is_player_near = true
 		ui_prompt.text = prompt_text
 		ui_prompt.visible = true
@@ -73,3 +75,9 @@ func _input(event):
 	# Apply to player and camera
 	player.rotation.y = player_sit_rotation.y + current_yaw
 	camera.rotation.x = original_camera_rotation.x + current_pitch
+
+func disable():
+	enabled = false;
+	
+func enable():
+	enabled = true;

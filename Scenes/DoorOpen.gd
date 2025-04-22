@@ -7,9 +7,11 @@ extends Node3D  # DoorPivot
 
 var is_open := false
 var target_angle := 0.0
+var cracked_angle := deg_to_rad(-10.0)  # Slight crack open
 
 func _ready():
-	target_angle = 0.0
+	rotation.y = cracked_angle  # Visually crack open
+	target_angle = cracked_angle  # So it doesn't animate shut
 	trigger_area.body_entered.connect(_on_body_entered)
 
 func _process(delta):
@@ -19,9 +21,9 @@ func _process(delta):
 
 func toggle_door():
 	is_open = !is_open
-	target_angle = deg_to_rad(open_angle_degrees) if is_open else 0.0
+	target_angle = deg_to_rad(open_angle_degrees) if is_open else cracked_angle
 	audio_player.play()
 
 func _on_body_entered(body):
-	if body.name == "Player" and not is_open:  # adjust as needed
+	if body.name == "Player" and not is_open:
 		toggle_door()
