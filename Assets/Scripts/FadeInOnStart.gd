@@ -1,7 +1,7 @@
 extends Node
 
 @export var fade_duration: float = 1.0
-
+@export var auto_fade: bool = true
 var fade_rect: ColorRect
 var door_sound_player: AudioStreamPlayer3D = null  # Make nullable
 
@@ -19,7 +19,7 @@ func _ready():
 		door_sound_player = root.get_node(door_path)
 		door_sound_player.play()
 
-	if fade_rect:
+	if fade_rect and auto_fade:
 		# Ensure starting black
 		fade_rect.modulate.a = 1.0
 

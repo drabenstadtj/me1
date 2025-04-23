@@ -13,6 +13,8 @@ const BOB_AMOUNT = 0.05
 
 var input_enabled := true
 
+
+
 var distortion_active := false
 var distortion_strength := 1.0
 var shake_time := 0.0
@@ -62,13 +64,14 @@ func _unhandled_input(event):
 			get_tree().quit()	
 		return
 		
-
-
-	
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
 		pitch = clamp(pitch - event.relative.y * MOUSE_SENSITIVITY, deg_to_rad(-60), deg_to_rad(60))
 		camera.rotation.x = pitch
+	
+	if event.is_action_pressed("interact") and last_prompt_target:
+		if last_prompt_target.has_method("interact"):
+			last_prompt_target.interact()
 
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
@@ -81,10 +84,6 @@ func _process(delta):
 	if current_state:
 		current_state.update(delta)
 
-	if not prompts_enabled:
-		_clear_prompt()
-		return
-
 	if distortion_active:
 		shake_time += delta
 		var base_pitch = deg_to_rad(-15.0)
@@ -92,7 +91,10 @@ func _process(delta):
 		var shake_z = cos(shake_time * 1.8) * deg_to_rad(0.3) * distortion_strength
 		camera.rotation.x = base_pitch + shake_x
 		camera.rotation.z = shake_z
-
+		
+	if not prompts_enabled:
+		_clear_prompt()
+		return
 	# Raycast prompt detection
 	raycast.force_raycast_update()
 	if raycast.is_colliding():
@@ -102,7 +104,7 @@ func _process(delta):
 			if last_prompt_target and last_prompt_target != hit:
 				if last_prompt_target.has_method("hide_prompt"):
 					last_prompt_target.hide_prompt()
-
+					
 			hit.show_prompt()
 			last_prompt_target = hit
 		else:
@@ -114,10 +116,6 @@ func _clear_prompt():
 	if last_prompt_target and last_prompt_target.has_method("hide_prompt"):
 		last_prompt_target.hide_prompt()
 	last_prompt_target = null
-
-
-
-
 
 func change_state(new_state_name: String):
 	if current_state:
@@ -185,3 +183,10 @@ func enable_prompt():
 	
 func disable_prompt():
 	prompts_enabled = false
+
+
+func freeze():
+	input_enabled = false
+		
+func unfreeze():
+	input_enabled = true

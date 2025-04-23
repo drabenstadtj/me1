@@ -1,4 +1,4 @@
-[gd_scene load_steps=175 format=4 uid="uid://d1xltgfb1lgsm"]
+[gd_scene load_steps=180 format=4 uid="uid://d1xltgfb1lgsm"]
 
 [ext_resource type="Shader" uid="uid://jybcwocnhirr" path="res://Assets/Visuals/psx.gdshader" id="1_7mal8"]
 [ext_resource type="Texture2D" uid="uid://c6t0qfv0y6lwj" path="res://Assets/Materials/Plastic012A_1K-JPG/Plastic012A_1K-JPG_Color.jpg" id="2_3dw23"]
@@ -20,9 +20,13 @@
 [ext_resource type="Texture2D" uid="uid://crh1oebrt4f7b" path="res://Assets/elbolilloduro/DINER/Textures/Armchair.png" id="12_co2xs"]
 [ext_resource type="Texture2D" uid="uid://1bj5b5y2mqc8" path="res://Assets/elbolilloduro/DINER/Textures/Metal_02.jpg" id="13_hmvaf"]
 [ext_resource type="AudioStream" uid="uid://bx1v0es7sfw1w" path="res://Assets/Sounds/doorclosing.wav" id="13_klmf6"]
+[ext_resource type="AudioStream" uid="uid://dpw2toarwu3tx" path="res://Assets/Sounds/eviljazz slow.wav" id="13_nyhs1"]
 [ext_resource type="Texture2D" uid="uid://bxn0wyffdy2b7" path="res://Assets/elbolilloduro/DINER/Textures/Metal.jpg" id="14_lgavi"]
+[ext_resource type="Script" uid="uid://dog7ficyhoyyk" path="res://Scenes/music_player.gd" id="14_o4hkc"]
 [ext_resource type="Texture2D" uid="uid://b16e8qqnjwl6u" path="res://Assets/elbolilloduro/DINER/Textures/Metal_01.jpg" id="15_3dw23"]
 [ext_resource type="Texture2D" uid="uid://trqpmwv8o16g" path="res://Assets/elbolilloduro/DINER/Textures/Wood_04.jpg" id="16_4i0pi"]
+[ext_resource type="Shader" uid="uid://pp4bkmu3nvup" path="res://Scenes/crt.gdshader" id="16_o4hkc"]
+[ext_resource type="LabelSettings" uid="uid://cneqdvxsajcd2" path="res://Assets/Font.tres" id="16_ri6cp"]
 [ext_resource type="Texture2D" uid="uid://b566tmwwghi8" path="res://Assets/elbolilloduro/DINER/Textures/Plastic_01.jpg" id="17_r1fol"]
 [ext_resource type="Texture2D" uid="uid://4xc7exxwm40t" path="res://Assets/elbolilloduro/DINER/Textures/Coffee_machine.jpg" id="18_opf1p"]
 [ext_resource type="Material" uid="uid://b6fubydt3o15k" path="res://Assets/Materials/Wood049_1K-JPG/Wood.tres" id="19_nyhs1"]
@@ -211,6 +215,23 @@ height = 1.7509
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5o46"]
 albedo_texture = ExtResource("9_lgavi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ri6cp"]
+shader = ExtResource("16_o4hkc")
+shader_parameter/resolution = Vector2(320, 180)
+shader_parameter/scan_line_amount = 1.0
+shader_parameter/warp_amount = 0.1
+shader_parameter/noise_amount = 0.03
+shader_parameter/interference_amount = 0.2
+shader_parameter/grille_amount = 0.1
+shader_parameter/grille_size = 1.0
+shader_parameter/vignette_amount = 0.6
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/aberation_amount = 0.5
+shader_parameter/roll_line_amount = 0.3
+shader_parameter/roll_speed = 1.0
+shader_parameter/scan_line_strength = -8.0
+shader_parameter/pixel_strength = -2.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_ui7dm"]
 
@@ -817,7 +838,7 @@ _data = {
 size = Vector3(9.17691, 1.96045, 0.513916)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rnf1m"]
-size = Vector3(15.4908, 1, 4.88794)
+size = Vector3(20, 1, 4.88794)
 
 [sub_resource type="BoxMesh" id="BoxMesh_y0e7a"]
 
@@ -1641,11 +1662,25 @@ tracks/8/path = NodePath("../AmbientSound")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(17.8),
+"times": PackedFloat32Array(16.6667),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"fade_out"
+}]
+}
+tracks/9/type = "method"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../Player/MusicPlayer")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(16.5333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [5.0],
+"method": &"_fade_out"
 }]
 }
 
@@ -1697,6 +1732,7 @@ render_target_update_mode = 4
 
 [node name="TV" type="Node3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -7.8, 3.9, -4.3)
+visible = false
 
 [node name="Cube_174" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/TV"]
 transform = Transform3D(75, 0, 0, 0, -3.27835e-06, 75, 0, -75, -3.27835e-06, 0, 0, 0)
@@ -1712,6 +1748,7 @@ mesh = SubResource("PlaneMesh_4i0pi")
 size = Vector2i(1280, 720)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SubViewportContainer/SubViewport/TV/VideoViewport"]
+visible = false
 offset_right = 40.0
 offset_bottom = 40.0
 audio_track = 2
@@ -1722,9 +1759,9 @@ loop = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="SubViewportContainer/SubViewport/TV"]
 transform = Transform3D(0.996388, 0, 0.0849126, 0, 1, 0, -0.0849126, 0, 0.996388, 0.155284, 0, -0.579554)
+visible = false
 stream = ExtResource("4_4i0pi")
 unit_size = 1.0
-autoplay = true
 panning_strength = 2.0
 emission_angle_enabled = true
 emission_angle_degrees = 57.0
@@ -1777,6 +1814,11 @@ lifetime = 1.5
 process_material = SubResource("ParticleProcessMaterial_y3uxk")
 draw_pass_1 = ExtResource("5_klmf6")
 
+[node name="RayCast3D" type="RayCast3D" parent="SubViewportContainer/SubViewport/Player/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.134139)
+target_position = Vector3(0, 0, -2)
+collision_mask = 2
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0015966, 0.858132, -0.0332513)
 shape = SubResource("CapsuleShape3D_tlwt5")
@@ -1819,6 +1861,12 @@ bones/23/rotation = Quaternion(0.537708, 0.0163894, 0.0121168, 0.842885)
 layers = 2
 material_override = SubResource("StandardMaterial3D_d5o46")
 
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="SubViewportContainer/SubViewport/Player"]
+stream = ExtResource("13_nyhs1")
+volume_db = -20.0
+script = ExtResource("14_o4hkc")
+fade_time = 2.0
+
 [node name="UI" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 
 [node name="Crosshair" type="TextureRect" parent="SubViewportContainer/SubViewport/UI"]
@@ -1848,9 +1896,21 @@ offset_right = 20.0
 offset_bottom = -212.5
 grow_horizontal = 2
 grow_vertical = 0
+label_settings = ExtResource("16_ri6cp")
 
 [node name="Fade" type="ColorRect" parent="SubViewportContainer/SubViewport/UI"]
 modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Fade2" type="ColorRect" parent="SubViewportContainer/SubViewport/UI"]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_ri6cp")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1872,6 +1932,7 @@ offset_right = 20.0
 offset_bottom = -117.0
 grow_horizontal = 2
 grow_vertical = 0
+label_settings = ExtResource("16_ri6cp")
 
 [node name="World" type="Node3D" parent="SubViewportContainer/SubViewport"]
 
@@ -2595,7 +2656,7 @@ shape = SubResource("BoxShape3D_6pav1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.927264)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar/BackCounter/StaticBody3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.14359, 0.480225, -2.18701)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11101, 0.480225, -2.18701)
 shape = SubResource("BoxShape3D_rnf1m")
 
 [node name="BackCounter2" type="Node3D" parent="SubViewportContainer/SubViewport/World/BarRoom/Bar"]

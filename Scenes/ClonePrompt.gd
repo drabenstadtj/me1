@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var thought_label_path: NodePath  # Path to the ThoughtLabel node
+var thought_label_path  # Path to the ThoughtLabel node
 @export var thought_text: String = "What the fuck? Is that... me?"
 @export var char_delay: float = 0.04
 @export var animation_name: String = ""  # Leave empty if no animation should play
@@ -12,7 +12,7 @@ var _has_been_triggered = false
 var animator: AnimationPlayer
 
 func _ready():
-	_label = get_node(thought_label_path)
+	_label =  get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/ThoughtLabel")
 	animator = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/CutsceneController/AnimationPlayer")
 	self.body_entered.connect(_on_body_entered)
 

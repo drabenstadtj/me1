@@ -15,7 +15,7 @@ func _process(_delta):
 	var mirrored_pos = cam_pos - 2.0 * distance * normal
 	
 	# Step 2: Mirror the basis (rotation)
-	var basis = player_cam.global_transform.basis
+	basis = player_cam.global_transform.basis
 	var mirrored_basis = Basis(
 		basis.x - 2.0 * basis.x.dot(normal) * normal,
 		basis.y - 2.0 * basis.y.dot(normal) * normal,

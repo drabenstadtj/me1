@@ -12,12 +12,13 @@ var player_camera: Camera3D
 var ui_prompt: Label
 var fade_rect: ColorRect
 var fading := false
+var music_player 
 
 func _ready():
 	player_camera = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/Player/Camera3D")
 	ui_prompt = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/PromptLabel")
 	fade_rect = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/Fade")
-
+	music_player = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/Player/MusicPlayer")
 	if ui_prompt:
 		ui_prompt.visible = false
 
@@ -40,6 +41,7 @@ func _process(_delta):
 		ui_prompt.visible = true
 
 		if Input.is_action_just_pressed("interact"):
+			music_player._fade_out(1.0)
 			emit_signal("interacted")
 			fading = true
 			start_fade()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=219 format=4 uid="uid://u03u0v6uuold"]
+[gd_scene load_steps=224 format=4 uid="uid://u03u0v6uuold"]
 
 [ext_resource type="Shader" uid="uid://jybcwocnhirr" path="res://Assets/Visuals/psx.gdshader" id="1_s73dv"]
 [ext_resource type="Script" uid="uid://c8evkocx60s0w" path="res://Assets/Scripts/Player.gd" id="2_lxtj3"]
@@ -73,8 +73,12 @@
 [ext_resource type="Texture2D" uid="uid://bby5lknhxdfvw" path="res://Assets/Materials/crosshair.png" id="69_mpqa5"]
 [ext_resource type="Script" uid="uid://b4xm2wsvg8tc3" path="res://Assets/Scripts/DoorInteractable.gd" id="70_iauj0"]
 [ext_resource type="AudioStream" uid="uid://cfuc6eu221a7l" path="res://Assets/Sounds/City Ambience For Clean Loop Sound Effect [HipuoBEH3_w].mp3" id="71_lxtj3"]
+[ext_resource type="AudioStream" uid="uid://b0uk6fnx3m75n" path="res://Assets/Sounds/spookydroning.wav" id="72_ctcri"]
+[ext_resource type="Script" uid="uid://dog7ficyhoyyk" path="res://Scenes/music_player.gd" id="73_mkebs"]
 [ext_resource type="Script" uid="uid://v8x07le7d3dv" path="res://Assets/Scripts/FadeInOnStart.gd" id="73_uoh4w"]
 [ext_resource type="AudioStream" uid="uid://uplywctcl056" path="res://Assets/Sounds/Car Arrive And Stop Sound Effect [RqzDXXYaQWM].ogg" id="75_3spdv"]
+[ext_resource type="FontFile" uid="uid://bg8sw1jubdwlx" path="res://Assets/RobotoMonoNerdFont-Bold.ttf" id="75_a4ai1"]
+[ext_resource type="LabelSettings" uid="uid://cneqdvxsajcd2" path="res://Assets/Font.tres" id="75_h2ogk"]
 [ext_resource type="Script" uid="uid://bjrh0j3abrg02" path="res://Assets/Scripts/BeginningCutscene.gd" id="75_wex5w"]
 [ext_resource type="Script" uid="uid://do5x0j7tuiq4p" path="res://Scenes/DialogueController.gd" id="77_de5wk"]
 
@@ -2705,19 +2709,23 @@ height = 1.7509
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5o46"]
 albedo_texture = ExtResource("8_wex5w")
 
+[sub_resource type="LabelSettings" id="LabelSettings_h2ogk"]
+font = ExtResource("75_a4ai1")
+font_size = 12
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_tj74d"]
 size = Vector3(1.1427, 2.77777, 1)
 
 [sub_resource type="Animation" id="Animation_ctcri"]
 resource_name = "Cutscene"
-length = 14.0
+length = 24.0
 tracks/0/type = "position_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("../World/Bus")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(4.1, 1, -10, 1.9, 2, 13.0667, 1, 38.2, 1.9, 2)
+tracks/0/keys = PackedFloat32Array(13.6333, 1, -10, 1.9, 2, 22.6, 1, 38.2, 1.9, 2)
 tracks/1/type = "animation"
 tracks/1/imported = false
 tracks/1/enabled = true
@@ -2726,7 +2734,7 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "clips": PackedStringArray("Walking", "Idle"),
-"times": PackedFloat32Array(3.06667, 4.06667)
+"times": PackedFloat32Array(12.6, 13.6)
 }
 tracks/2/type = "position_3d"
 tracks/2/imported = false
@@ -2734,7 +2742,7 @@ tracks/2/enabled = true
 tracks/2/path = NodePath("../Player")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array(3, 1, -7.5, 0.4, 2.5, 4.06667, 1, -7.5, 0.4, 4.5)
+tracks/2/keys = PackedFloat32Array(12.5333, 1, -7.5, 0.4, 2.5, 13.6, 1, -7.5, 0.4, 4.5)
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
@@ -2742,7 +2750,7 @@ tracks/3/path = NodePath("../Player/Camera3D:current")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(10.6),
+"times": PackedFloat32Array(20.1333),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -2754,10 +2762,10 @@ tracks/4/path = NodePath("../FadeController")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.0666666),
 "transitions": PackedFloat32Array(1),
 "values": [{
-"args": [],
+"args": [10.0],
 "method": &"fade_in"
 }]
 }
@@ -2768,7 +2776,7 @@ tracks/5/path = NodePath("Camera3D:current")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.0333328),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -2780,7 +2788,7 @@ tracks/6/path = NodePath("../World/Bus/AudioStreamPlayer3D")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(4.1),
+"times": PackedFloat32Array(13.6333),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [0.0],
@@ -2794,7 +2802,7 @@ tracks/7/path = NodePath("../World/Bus:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0.1, 10.6),
+"times": PackedFloat32Array(0.133333, 20.1333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -2806,7 +2814,7 @@ tracks/8/path = NodePath("../ThoughtController")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(13.9333),
+"times": PackedFloat32Array(23.4666),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -3643,6 +3651,11 @@ transform = Transform3D(1, 0, 3.72529e-09, 0, 1, 0, -3.72529e-09, 0, 1, -0.00400
 cull_mask = 1048573
 near = 0.16
 
+[node name="RayCast3D" type="RayCast3D" parent="SubViewportContainer/SubViewport/Player/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.134139)
+target_position = Vector3(0, 0, -2)
+collision_mask = 2
+
 [node name="Collider" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0015966, 0.858132, -0.0332513)
 shape = SubResource("CapsuleShape3D_ara7v")
@@ -3652,10 +3665,6 @@ transform = Transform3D(1, -3.72529e-09, 0, 0, -4.37114e-08, 1, -3.72529e-09, -1
 light_color = Color(0.61339, 0.61339, 0.61339, 1)
 light_negative = true
 
-[node name="FootstepPlayerOld" type="AudioStreamPlayer3D" parent="SubViewportContainer/SubViewport/Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0299712, 1.10379, -0.624192)
-stream = ExtResource("6_3spdv")
-
 [node name="FootstepPlayer" type="AudioStreamPlayer" parent="SubViewportContainer/SubViewport/Player"]
 stream = ExtResource("6_3spdv")
 pitch_scale = 0.5
@@ -3664,30 +3673,35 @@ pitch_scale = 0.5
 transform = Transform3D(-1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, -1, 0, 1, 0)
 
 [node name="rig" parent="SubViewportContainer/SubViewport/Player/Model/Node" index="0"]
-transform = Transform3D(0.999043, -0.0393503, 0.0190972, -0.0184099, 0.0177535, 0.999672, -0.0396764, -0.999068, 0.0170121, -0.0193017, -0.00672958, 0.0188488)
+transform = Transform3D(0.994113, 0.0910474, 0.0587413, -0.05291, -0.0651904, 0.996468, 0.0945552, -0.993711, -0.0599893, -0.0591793, 0.00443578, 0.0940642)
 
 [node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Player/Model/Node/rig" index="0"]
-bones/1/rotation = Quaternion(-0.0984243, 0.00671582, -0.00183716, 0.99512)
-bones/2/rotation = Quaternion(-0.0685593, 0.0125641, 0.00615941, 0.997549)
-bones/3/rotation = Quaternion(0.485533, 0.436116, 0.581852, -0.485291)
-bones/4/rotation = Quaternion(-0.340897, 0.570396, -0.369619, 0.649477)
-bones/5/rotation = Quaternion(0.2627, 0.254626, -0.0791497, 0.927302)
-bones/6/rotation = Quaternion(0.100655, 0.040859, 0.103244, 0.988706)
-bones/7/rotation = Quaternion(0.284003, 0.936214, 0.18495, -0.0929449)
-bones/10/rotation = Quaternion(0.280116, -0.00588531, -0.00776944, 0.959917)
-bones/12/rotation = Quaternion(-0.516396, 0.400334, 0.55632, 0.513396)
-bones/13/rotation = Quaternion(0.432114, 0.56095, -0.29627, -0.640966)
-bones/14/rotation = Quaternion(0.228955, -0.209179, 0.114298, 0.943801)
-bones/15/rotation = Quaternion(0.0267613, -0.0770362, -0.0521819, 0.995302)
-bones/16/rotation = Quaternion(-0.185171, 0.957381, 0.203915, 0.0868971)
-bones/19/rotation = Quaternion(0.979889, 0.0315503, 0.0757261, 0.181903)
-bones/20/rotation = Quaternion(0.141526, -0.078483, -0.024723, 0.986509)
-bones/22/rotation = Quaternion(0.946576, 0.0342319, -0.0767115, 0.311349)
-bones/23/rotation = Quaternion(0.522325, 0.0109235, 0.0116599, 0.852597)
+bones/1/rotation = Quaternion(-0.0849599, 0.00839099, 0.0150939, 0.996235)
+bones/2/rotation = Quaternion(-0.041497, 0.0113462, 0.0321275, 0.998558)
+bones/3/rotation = Quaternion(0.456873, 0.469326, 0.577738, -0.487052)
+bones/4/rotation = Quaternion(-0.30798, 0.635172, -0.563424, 0.429253)
+bones/5/rotation = Quaternion(0.0127336, 0.0996024, 0.000186568, 0.994946)
+bones/6/rotation = Quaternion(0.0263889, -0.400544, -0.0485445, 0.91461)
+bones/7/rotation = Quaternion(0.185539, 0.939806, 0.229511, -0.172233)
+bones/10/rotation = Quaternion(0.325635, -0.000153236, 0.00402411, 0.945487)
+bones/12/rotation = Quaternion(-0.473339, 0.446893, 0.580109, 0.489602)
+bones/13/rotation = Quaternion(0.226553, 0.7085, -0.538817, -0.395447)
+bones/14/rotation = Quaternion(0.0583744, -0.0994407, -0.000855261, 0.993329)
+bones/15/rotation = Quaternion(0.00542218, 0.294804, 0.059077, 0.953714)
+bones/16/rotation = Quaternion(-0.187427, 0.935979, 0.247977, 0.165296)
+bones/19/rotation = Quaternion(0.991837, 0.033714, 0.0898617, 0.0839564)
+bones/20/rotation = Quaternion(0.0264222, 0.0777023, 0.0102268, 0.996574)
+bones/22/rotation = Quaternion(0.969975, 0.061229, -0.150729, 0.180779)
+bones/23/rotation = Quaternion(0.103176, -0.00819429, -0.0207209, 0.994414)
 
 [node name="male_player" parent="SubViewportContainer/SubViewport/Player/Model/Node/rig/Skeleton3D" index="0"]
 layers = 2
 material_override = SubResource("StandardMaterial3D_d5o46")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="SubViewportContainer/SubViewport/Player"]
+stream = ExtResource("72_ctcri")
+volume_db = -20.0
+script = ExtResource("73_mkebs")
 
 [node name="UI" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 
@@ -3718,6 +3732,7 @@ offset_right = 20.0
 offset_bottom = -212.5
 grow_horizontal = 2
 grow_vertical = 0
+label_settings = ExtResource("75_h2ogk")
 
 [node name="ThoughtLabel" type="Label" parent="SubViewportContainer/SubViewport/UI"]
 modulate = Color(1, 1, 1, 0.588235)
@@ -3732,9 +3747,9 @@ offset_right = 20.0
 offset_bottom = -117.0
 grow_horizontal = 2
 grow_vertical = 0
+label_settings = ExtResource("75_h2ogk")
 
 [node name="Fade" type="ColorRect" parent="SubViewportContainer/SubViewport/UI"]
-modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -3742,6 +3757,19 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="ControlsLabel" type="Label" parent="SubViewportContainer/SubViewport/UI/Fade"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -22.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "CONTROLS: Left Click  —  Advance Dialogue  |  E  —  Interact  | WASD  —  Move  |  Mouse  —  Look Around"
+label_settings = SubResource("LabelSettings_h2ogk")
+horizontal_alignment = 1
 
 [node name="Interactables" type="Node3D" parent="SubViewportContainer/SubViewport"]
 
@@ -3762,6 +3790,7 @@ autoplay = true
 
 [node name="FadeController" type="Node3D" parent="SubViewportContainer/SubViewport"]
 script = ExtResource("73_uoh4w")
+auto_fade = false
 
 [node name="CutsceneController" type="Node3D" parent="SubViewportContainer/SubViewport"]
 script = ExtResource("75_wex5w")
