@@ -3673,7 +3673,7 @@ pitch_scale = 0.5
 transform = Transform3D(-1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, -1, 0, 1, 0)
 
 [node name="rig" parent="SubViewportContainer/SubViewport/Player/Model/Node" index="0"]
-transform = Transform3D(0.994113, 0.0910474, 0.0587413, -0.05291, -0.0651904, 0.996468, 0.0945552, -0.993711, -0.0599893, -0.0591793, 0.00443578, 0.0940642)
+transform = Transform3D(0.994113, 0.0910474, 0.0587413, -0.05291, -0.0651905, 0.996468, 0.0945553, -0.993711, -0.0599892, -0.0591793, 0.00443578, 0.0940642)
 
 [node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Player/Model/Node/rig" index="0"]
 bones/1/rotation = Quaternion(-0.0849599, 0.00839099, 0.0150939, 0.996235)

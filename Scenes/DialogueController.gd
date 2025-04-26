@@ -15,6 +15,7 @@ var started = false
 @export var start_delay = 0.0
 
 func _ready():
+	thought_label = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/ThoughtLabel")
 	if autoplay:
 		start()
 	
@@ -22,7 +23,7 @@ func _ready():
 func start():
 	await get_tree().create_timer(start_delay).timeout
 	started = true
-	thought_label = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/ThoughtLabel")
+	
 	thought_label.visible = false
 	show_next_line()
 

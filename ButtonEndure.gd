@@ -11,18 +11,19 @@ func _ready():
 	anim_player = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/CutsceneController/AnimationPlayer")
 	prompt_label = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/UI/PromptLabel")
 	audio_player = get_tree().get_root().get_node("World/SubViewportContainer/SubViewport/Selector/AudioStreamPlayer3D")
-	prompt_label.visible = false
-	
 
+	prompt_label.visible = false
+
+
+func play_sound():
+	audio_player.play()
+	
 func show_prompt():
 	prompt_label.text = prompt_text
 	prompt_label.visible = true
 
 func hide_prompt():
 	prompt_label.visible = false
-
-func play_sound():
-	audio_player.play()
 
 func interact():
 	play_sound()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=261 format=4 uid="uid://ban6r8s6hgmy2"]
+[gd_scene load_steps=267 format=4 uid="uid://ban6r8s6hgmy2"]
 
 [ext_resource type="Script" uid="uid://c8evkocx60s0w" path="res://Assets/Scripts/Player.gd" id="2_21uur"]
 [ext_resource type="Shader" uid="uid://bk6xsnw5wdqyt" path="res://Scenes/staticrainbow.gdshader" id="2_rs0ne"]
@@ -56,9 +56,13 @@
 [ext_resource type="Texture2D" uid="uid://jwivvqrs8qre" path="res://Assets/Materials/neuroform logo.png" id="46_kn1gu"]
 [ext_resource type="Script" uid="uid://c5i37un65sfl0" path="res://Scenes/rotate.gd" id="47_6e4k5"]
 [ext_resource type="AudioStream" uid="uid://c0bpxmywv1ohq" path="res://Assets/Sounds/horror2.wav" id="48_o2rua"]
+[ext_resource type="AudioStream" uid="uid://beq41rqbl3o2s" path="res://Assets/Sounds/footstep.mp3" id="49_aye0n"]
 [ext_resource type="Texture2D" uid="uid://ev8c5p6jkido" path="res://Assets/Characters/male_casual_legless/headed_man_tex.png" id="50_hqasj"]
+[ext_resource type="AudioStream" uid="uid://cfhte5sjnx2ju" path="res://Assets/Sounds/fall.wav" id="50_jha37"]
+[ext_resource type="Script" uid="uid://cg2oi60433gp4" path="res://ButtonEndure.gd" id="51_j4476"]
 [ext_resource type="Texture2D" uid="uid://m5t2f8ufmc0e" path="res://Assets/Characters/male_casual_legless/headless_man_tex_legless.png" id="51_ktbja"]
 [ext_resource type="Script" uid="uid://c7imicm3dvifc" path="res://Scenes/reactive_audio.gd" id="52_6hemi"]
+[ext_resource type="AudioStream" uid="uid://d3k1mrpk3y2n6" path="res://Assets/Sounds/button.wav" id="52_i22c6"]
 
 [sub_resource type="Environment" id="Environment_l5h37"]
 background_mode = 2
@@ -1585,9 +1589,149 @@ tracks/7/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_er0pt"]
+resource_name = "Endure"
+length = 14.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/FadeController")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(6.83333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.1],
+"method": &"fade_out"
+}]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/HorrorPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("45_rnvy4")
+}, {
+"end_offset": 0.01,
+"start_offset": 0.0,
+"stream": ExtResource("45_rnvy4")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("45_rnvy4")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("45_rnvy4")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("35_vgnq7")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("50_jha37")
+}],
+"times": PackedFloat32Array(4, 4.5, 5, 5.5, 6.36667, 6.8)
+}
+tracks/1/use_blend = true
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer/SubViewport/CutsceneController")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(13.0333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["res://Scenes/worldfree.tscn"],
+"method": &"load_new_scene_from_path"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_rs0ne"]
+resource_name = "KnockOut"
+length = 9.0
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/HorrorPlayer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("49_aye0n")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("49_aye0n")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("49_aye0n")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("35_vgnq7")
+}],
+"times": PackedFloat32Array(4.16667, 4.8, 5.43333, 7.03333)
+}
+tracks/0/use_blend = true
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/ThoughtController")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.03333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": ["No substitution. No deflection. That’s more than most. You may go."],
+"method": &"type_text"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer/SubViewport/FadeController")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(7.23333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.5],
+"method": &"fade_out"
+}]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewportContainer/SubViewport/CutsceneController")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(8.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [""],
+"method": &"load_new_scene_from_path"
+}]
+}
+
 [sub_resource type="Animation" id="Animation_dgx0k"]
 resource_name = "PlayerCaught"
-length = 30.0
+length = 29.0645
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1849,6 +1993,8 @@ tracks/6/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fy6e6"]
 _data = {
 &"Amputation": SubResource("Animation_n8gx0"),
+&"Endure": SubResource("Animation_er0pt"),
+&"KnockOut": SubResource("Animation_rs0ne"),
 &"PlayerCaught": SubResource("Animation_dgx0k"),
 &"PlayerWakeUp": SubResource("Animation_jvn5t"),
 &"RESET": SubResource("Animation_qd1bk")
@@ -5424,8 +5570,9 @@ mesh = SubResource("CylinderMesh_hqasj")
 [node name="StaticBody3D2" type="StaticBody3D" parent="SubViewportContainer/SubViewport/Selector"]
 transform = Transform3D(0.980663, 0, 0.195707, 0, 1, 0, -0.195707, 0, 0.980663, 0.400002, 0, -0.222431)
 collision_layer = 2
-script = ExtResource("37_0hjx4")
+script = ExtResource("51_j4476")
 prompt_text = "[E] Endure"
+animation_name = "Endure"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/Selector/StaticBody3D2"]
 transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, 0, 0, 0)
@@ -5441,6 +5588,11 @@ skeleton = NodePath("")
 transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_6e4k5")
 mesh = SubResource("CylinderMesh_hqasj")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="SubViewportContainer/SubViewport/Selector"]
+transform = Transform3D(0.666667, 0, 0, 0, 0.666667, 0, 0, 0, 0.666667, 0.266666, 0, 0)
+stream = ExtResource("52_i22c6")
+volume_db = -9.674
 
 [node name="Player" type="CharacterBody3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -9.8)
@@ -5503,7 +5655,7 @@ material_override = SubResource("StandardMaterial3D_aewrt")
 
 [node name="HorrorPlayer" type="AudioStreamPlayer3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(0.34202, 0, -0.939693, 0, 1, 0, 0.939693, 0, 0.34202, -21.4, 1.10269, -1)
-volume_db = -3.0
+volume_db = -10.0
 bus = &"Reactive"
 script = ExtResource("52_6hemi")
 

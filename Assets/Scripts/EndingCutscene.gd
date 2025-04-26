@@ -5,3 +5,6 @@ extends Node3D
 
 func _ready():
 	cutscene.play("Outro")
+
+func quit_game():
+	get_tree().quit()
